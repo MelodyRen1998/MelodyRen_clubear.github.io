@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>狗熊会人才计划第三期——My Case</title>
+  <meta name="description" content="人才计划TASK &amp; Final Project。">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="狗熊会人才计划第三期——My Case" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="人才计划TASK &amp; Final Project。" />
+  <meta name="github-repo" content="yihui/bookdown-chinese" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="狗熊会人才计划第三期——My Case" />
+  
+  <meta name="twitter:description" content="人才计划TASK &amp; Final Project。" />
+  
+
+<meta name="author" content="yimeng">
+
+
+<meta name="date" content="2018-09-08">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="descriptive.html">
+<link rel="next" href="binomial.html">
+<script src="libs/jquery/jquery.min.js"></script>
+<link href="libs/gitbook/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="css\style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">狗熊会人才计划第三期</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#e887b4e8b0a2"><i class="fa fa-check"></i>致谢</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="author.html"><a href="author.html"><i class="fa fa-check"></i>作者简介</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> 狗熊会人才计划介绍</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#whats-that"><i class="fa fa-check"></i><b>1.1</b> 狗熊会，what’s that?!</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#omd"><i class="fa fa-check"></i><b>1.2</b> 人才计划，OMD!</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#section-1.3"><i class="fa fa-check"></i><b>1.3</b> 人才计划导师天团</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="wind.html"><a href="wind.html"><i class="fa fa-check"></i><b>2</b> 人才计划章程</a><ul>
+<li class="chapter" data-level="2.1" data-path="wind.html"><a href="wind.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 纪律</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="wind.html"><a href="wind.html#ddl"><i class="fa fa-check"></i><b>2.1.1</b> DDL</a></li>
+<li class="chapter" data-level="2.1.2" data-path="wind.html"><a href="wind.html#section-2.1.2"><i class="fa fa-check"></i><b>2.1.2</b> 礼貌</a></li>
+<li class="chapter" data-level="2.1.3" data-path="wind.html"><a href="wind.html#section-2.1.3"><i class="fa fa-check"></i><b>2.1.3</b> 作业</a></li>
+<li class="chapter" data-level="2.1.4" data-path="wind.html"><a href="wind.html#section-2.1.4"><i class="fa fa-check"></i><b>2.1.4</b> 退出</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="wind.html"><a href="wind.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 禁止抄袭</a></li>
+<li class="chapter" data-level="2.3" data-path="wind.html"><a href="wind.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 作业质量</a></li>
+<li class="chapter" data-level="2.4" data-path="wind.html"><a href="wind.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 自学</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>3</b> TASK 1 背景介绍</a><ul>
+<li class="chapter" data-level="3.1" data-path="background.html"><a href="background.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 学习资料</a></li>
+<li class="chapter" data-level="3.2" data-path="background.html"><a href="background.html#good-work"><i class="fa fa-check"></i><b>3.2</b> Good Work</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>4</b> TASK 2 数据说明</a><ul>
+<li class="chapter" data-level="4.1" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>4.1</b> 学习资料</a></li>
+<li class="chapter" data-level="4.2" data-path="data.html"><a href="data.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 数据概览</a></li>
+<li class="chapter" data-level="4.3" data-path="data.html"><a href="data.html#good-work-1"><i class="fa fa-check"></i><b>4.3</b> Good Work</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="code.html"><a href="code.html"><i class="fa fa-check"></i><b>5</b> TASK 3 代码规范</a><ul>
+<li class="chapter" data-level="5.1" data-path="code.html"><a href="code.html#-2"><i class="fa fa-check"></i><b>5.1</b> 学习资料</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="code.html"><a href="code.html#section-5.1.1"><i class="fa fa-check"></i><b>5.1.1</b> 注释篇</a></li>
+<li class="chapter" data-level="5.1.2" data-path="code.html"><a href="code.html#section-5.1.2"><i class="fa fa-check"></i><b>5.1.2</b> 命名篇</a></li>
+<li class="chapter" data-level="5.1.3" data-path="code.html"><a href="code.html#section-5.1.3"><i class="fa fa-check"></i><b>5.1.3</b> 函数模块化</a></li>
+<li class="chapter" data-level="5.1.4" data-path="code.html"><a href="code.html#section-5.1.4"><i class="fa fa-check"></i><b>5.1.4</b> 纠错与调试</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="code.html"><a href="code.html#section-5.2"><i class="fa fa-check"></i><b>5.2</b> 共享单车案例</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="code.html"><a href="code.html#section-5.2.1"><i class="fa fa-check"></i><b>5.2.1</b> 准备工作</a></li>
+<li class="chapter" data-level="5.2.2" data-path="code.html"><a href="code.html#-"><i class="fa fa-check"></i><b>5.2.2</b> 分析报告 &amp; 代码</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="descriptive.html"><a href="descriptive.html"><i class="fa fa-check"></i><b>6</b> TASK 4 描述分析</a><ul>
+<li class="chapter" data-level="6.1" data-path="descriptive.html"><a href="descriptive.html#-3"><i class="fa fa-check"></i><b>6.1</b> 学习资料</a></li>
+<li class="chapter" data-level="6.2" data-path="descriptive.html"><a href="descriptive.html#section-6.2"><i class="fa fa-check"></i><b>6.2</b> 题目</a></li>
+<li class="chapter" data-level="6.3" data-path="descriptive.html"><a href="descriptive.html#section-6.3"><i class="fa fa-check"></i><b>6.3</b> 探究影响消费金融贷款申请人数的因素——描述性分析</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="descriptive.html"><a href="descriptive.html#section-6.3.1"><i class="fa fa-check"></i><b>6.3.1</b> 对申请人数（因变量）进行描述</a></li>
+<li class="chapter" data-level="6.3.2" data-path="descriptive.html"><a href="descriptive.html#section-6.3.2"><i class="fa fa-check"></i><b>6.3.2</b> 对借贷变量（自变量）进行描述</a></li>
+<li class="chapter" data-level="6.3.3" data-path="descriptive.html"><a href="descriptive.html#section-6.3.3"><i class="fa fa-check"></i><b>6.3.3</b> 对还贷变量（自变量）进行描述</a></li>
+<li class="chapter" data-level="6.3.4" data-path="descriptive.html"><a href="descriptive.html#section-6.3.4"><i class="fa fa-check"></i><b>6.3.4</b> 初步结论</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="descriptive.html"><a href="descriptive.html#section-6.4"><i class="fa fa-check"></i><b>6.4</b> 代码</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="linear-model.html"><a href="linear-model.html"><i class="fa fa-check"></i><b>7</b> TASK 5 线性回归分析</a><ul>
+<li class="chapter" data-level="7.1" data-path="linear-model.html"><a href="linear-model.html#-4"><i class="fa fa-check"></i><b>7.1</b> 学习资料</a></li>
+<li class="chapter" data-level="7.2" data-path="linear-model.html"><a href="linear-model.html#section-7.2"><i class="fa fa-check"></i><b>7.2</b> 短租房热度案例</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>7.2.1</b> 准备工作</a></li>
+<li class="chapter" data-level="7.2.2" data-path="linear-model.html"><a href="linear-model.html#--1"><i class="fa fa-check"></i><b>7.2.2</b> 分析报告 &amp; 代码</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="binomial.html"><a href="binomial.html"><i class="fa fa-check"></i><b>8</b> TASK 6 分类问题</a><ul>
+<li class="chapter" data-level="8.1" data-path="binomial.html"><a href="binomial.html#-5"><i class="fa fa-check"></i><b>8.1</b> 学习资料</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="binomial.html"><a href="binomial.html#section-8.1.1"><i class="fa fa-check"></i><b>8.1.1</b> 逻辑回归模型</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>8.2</b> 题目</a></li>
+<li class="chapter" data-level="8.3" data-path="binomial.html"><a href="binomial.html#section-8.3"><i class="fa fa-check"></i><b>8.3</b> 影响消费贷款有效性的因素分析</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="binomial.html"><a href="binomial.html#section-8.3.1"><i class="fa fa-check"></i><b>8.3.1</b> 背景与研究问题</a></li>
+<li class="chapter" data-level="8.3.2" data-path="binomial.html"><a href="binomial.html#section-8.3.2"><i class="fa fa-check"></i><b>8.3.2</b> 描述性分析</a></li>
+<li class="chapter" data-level="8.3.3" data-path="binomial.html"><a href="binomial.html#section-8.3.3"><i class="fa fa-check"></i><b>8.3.3</b> 模型建立与选择</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>8.4</b> 代码</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="final.html"><a href="final.html"><i class="fa fa-check"></i><b>9</b> Fianl Project</a><ul>
+<li class="chapter" data-level="9.1" data-path="final.html"><a href="final.html#slides"><i class="fa fa-check"></i><b>9.1</b> 作品Slides</a></li>
+<li class="chapter" data-level="9.2" data-path="code.html"><a href="code.html#-2"><i class="fa fa-check"></i><b>9.2</b> 代码</a></li>
+</ul></li>
+<li class="appendix"><span><b>附录</b></span></li>
+<li class="chapter" data-level="A" data-path="sound.html"><a href="sound.html"><i class="fa fa-check"></i><b>A</b> 附录</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="blank">本书由 bookdown 强力驱动</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">狗熊会人才计划第三期——My Case</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="linear-model" class="section level1">
+<h1><span class="header-section-number">第 7 章</span> TASK 5 线性回归分析</h1>
+<div id="-4" class="section level2">
+<h2><span class="header-section-number">7.1</span> 学习资料</h2>
+<p>大家好，从这个任务开始，进入到建模的工作当中。任务的难度开始增加，自学的成分也更重了，我不再提供学习材料。你应该已经习惯高强度的自学，以及摸索出了自己的学习途径。关于线性回归的知识点和案例，参考公众号熊大的数据价值回归系列，以及精品案例的推文。 这个TASK是我们上一期的优秀学员完成的，我希望你们做得更好，具体要求。</p>
+<ol style="list-style-type: decimal">
+<li><p>下载数据和任务文档。</p></li>
+<li><p>完成任务文档里面的所有题目，注意解读，注意代码规范和注释！</p></li>
+<li><p>排版整齐即可，没有特殊要求。</p></li>
+<li><p>提交HTML文件，由于熊学堂无法直接上传HTML文件，请先压缩再上传压缩文档。</p></li>
+<li><p>DDL：2018年7月30日晚24:00.</p></li>
+</ol>
+</div>
+<div id="section-7.2" class="section level2">
+<h2><span class="header-section-number">7.2</span> 短租房热度案例</h2>
+<blockquote>
+<p>案例难度：***</p>
+</blockquote>
+<div id="-1" class="section level3">
+<h3><span class="header-section-number">7.2.1</span> 准备工作</h3>
+<p>案例背景：短租房是当前火热的“共享经济”的一种，房主将闲置的房屋、房间布置装修，并以按天计费的方式提供短期出租服务。短租房性价比高、个性化、居家感浓厚，已经成为人们出行住宿的新选择，特别是对年轻人和短期游客，短租越来越受到他们的青睐。短租房数据通过对短租平台爬取得到，包括短租房的价格、面积、位置、软硬件条件、评分、评论信息等。其中短租房得到的评论的多少可以用来衡量短租房的热度。通过对短租房数据的统计分析，可以了解短租房的热度受到哪些因素的影响，进而为优化短租房的经营、提升短租房的热度提供参考信息。</p>
+<p>案例数据提供了一批短租房的数据，包括：从网页爬取的短租房基本信息、地理位置信息，以及退房规定、房屋配置、房屋得分等。详细的案例介绍请查看案例推文 短租房热度影响因素分析。</p>
+<p>这个案例的<strong>学习目标</strong>包括：</p>
+<ul>
+<li><p>了解短租房数据；</p></li>
+<li><p>学会对于短租房的数据做适当描述分析，并进行结果解读；</p></li>
+<li><p>掌握变量构造的思路；</p></li>
+<li><p>用回归分析寻找短租房热度的影响因素；</p></li>
+</ul>
+<p>以下为<strong>数据中的变量及其介绍</strong>：</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">变量名</th>
+<th align="center">变量介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">vol_num</td>
+<td align="center">短租房评论数</td>
+</tr>
+<tr class="even">
+<td align="center">price</td>
+<td align="center">价格</td>
+</tr>
+<tr class="odd">
+<td align="center">deposit</td>
+<td align="center">押金</td>
+</tr>
+<tr class="even">
+<td align="center">area</td>
+<td align="center">面积</td>
+</tr>
+<tr class="odd">
+<td align="center">capacity</td>
+<td align="center">宜住人数</td>
+</tr>
+<tr class="even">
+<td align="center">bed</td>
+<td align="center">床数</td>
+</tr>
+<tr class="odd">
+<td align="center">room</td>
+<td align="center">房间数</td>
+</tr>
+<tr class="even">
+<td align="center">office</td>
+<td align="center">客厅数</td>
+</tr>
+<tr class="odd">
+<td align="center">toilet</td>
+<td align="center">厕所数</td>
+</tr>
+<tr class="even">
+<td align="center">kitchen</td>
+<td align="center">厨房数</td>
+</tr>
+<tr class="odd">
+<td align="center">balcony</td>
+<td align="center">阳台数</td>
+</tr>
+<tr class="even">
+<td align="center">history</td>
+<td align="center">累积上线时间（单位：月）</td>
+</tr>
+<tr class="odd">
+<td align="center">book_type</td>
+<td align="center">出租类型</td>
+</tr>
+<tr class="even">
+<td align="center">latitude</td>
+<td align="center">纬度</td>
+</tr>
+<tr class="odd">
+<td align="center">longitude</td>
+<td align="center">经度</td>
+</tr>
+<tr class="even">
+<td align="center">district_with_outer</td>
+<td align="center">城区（四环外各区合并为“其他”）</td>
+</tr>
+<tr class="odd">
+<td align="center">is_foreigner</td>
+<td align="center">是否接待外国人</td>
+</tr>
+<tr class="even">
+<td align="center">is_cook</td>
+<td align="center">是否允许做饭</td>
+</tr>
+<tr class="odd">
+<td align="center">is_party</td>
+<td align="center">是否允许聚会</td>
+</tr>
+<tr class="even">
+<td align="center">is_smoke</td>
+<td align="center">是否允许抽烟</td>
+</tr>
+<tr class="odd">
+<td align="center">is_parking</td>
+<td align="center">是否有停车位</td>
+</tr>
+<tr class="even">
+<td align="center">is_security</td>
+<td align="center">是否有门禁系统</td>
+</tr>
+<tr class="odd">
+<td align="center">is_elevator</td>
+<td align="center">是否有电梯</td>
+</tr>
+<tr class="even">
+<td align="center">is_wifi</td>
+<td align="center">是否有wifi</td>
+</tr>
+<tr class="odd">
+<td align="center">is_washing</td>
+<td align="center">是否有洗衣机</td>
+</tr>
+<tr class="even">
+<td align="center">is_refrigerator</td>
+<td align="center">是否有冰箱</td>
+</tr>
+<tr class="odd">
+<td align="center">is_soap</td>
+<td align="center">是否提供肥皂</td>
+</tr>
+<tr class="even">
+<td align="center">is_drinkingwater</td>
+<td align="center">是否有饮水机</td>
+</tr>
+<tr class="odd">
+<td align="center">is_heating</td>
+<td align="center">是否有暖气</td>
+</tr>
+<tr class="even">
+<td align="center">is_aircondition</td>
+<td align="center">是否有空调</td>
+</tr>
+<tr class="odd">
+<td align="center">is_tv</td>
+<td align="center">是否有电视</td>
+</tr>
+<tr class="even">
+<td align="center">is_hotwater</td>
+<td align="center">是否有热水</td>
+</tr>
+<tr class="odd">
+<td align="center">toilet_type</td>
+<td align="center">是否为独立厕所</td>
+</tr>
+<tr class="even">
+<td align="center">rule_n</td>
+<td align="center">入住前多少天可退订</td>
+</tr>
+<tr class="odd">
+<td align="center">rule_a</td>
+<td align="center">退订需要扣除前多少天的定金</td>
+</tr>
+<tr class="even">
+<td align="center">otherscore_clean</td>
+<td align="center">房主其他房源清洁卫生得分</td>
+</tr>
+<tr class="odd">
+<td align="center">otherscore_description</td>
+<td align="center">房主其他房源描述相符得分</td>
+</tr>
+<tr class="even">
+<td align="center">otherscore_trans</td>
+<td align="center">房主其他房源交通得分</td>
+</tr>
+<tr class="odd">
+<td align="center">otherscore_safe</td>
+<td align="center">房主其他房源安全得分</td>
+</tr>
+<tr class="even">
+<td align="center">otherscore_performance</td>
+<td align="center">房主其他房源性价比得分</td>
+</tr>
+<tr class="odd">
+<td align="center">subway_num</td>
+<td align="center">附近地铁数量（定性变量，水平为：“3个以上”、“3个以下”）</td>
+</tr>
+<tr class="even">
+<td align="center">hospital_num</td>
+<td align="center">附近是否有医院</td>
+</tr>
+<tr class="odd">
+<td align="center">college_num</td>
+<td align="center">附近是否有学校</td>
+</tr>
+<tr class="even">
+<td align="center">scenic_spot_num</td>
+<td align="center">附近是否有景点</td>
+</tr>
+<tr class="odd">
+<td align="center">price_landmark_mean</td>
+<td align="center">同商圈短租房平均价格</td>
+</tr>
+<tr class="even">
+<td align="center">vol_landmark_mean</td>
+<td align="center">同商圈短租房平均评论数</td>
+</tr>
+<tr class="odd">
+<td align="center">vol_other_landmark_mean</td>
+<td align="center">同商圈房主平均其他房源评论数</td>
+</tr>
+<tr class="even">
+<td align="center">sp2</td>
+<td align="center">同商圈房屋中该短租房价格排名的比例</td>
+</tr>
+<tr class="odd">
+<td align="center">sp4</td>
+<td align="center">同商圈房屋中该短租房面积排名的比例</td>
+</tr>
+<tr class="even">
+<td align="center">sp6</td>
+<td align="center">同商圈房屋中该短租房清洁卫生得分排名的比例</td>
+</tr>
+<tr class="odd">
+<td align="center">sp8</td>
+<td align="center">同商圈房屋中该短租房描述相符得分排名的比例</td>
+</tr>
+<tr class="even">
+<td align="center">sp10</td>
+<td align="center">同商圈房屋中该短租房交通得分排名的比例</td>
+</tr>
+<tr class="odd">
+<td align="center">sp12</td>
+<td align="center">同商圈房屋中该短租房安全得分排名的比例</td>
+</tr>
+<tr class="even">
+<td align="center">sp14</td>
+<td align="center">同商圈房屋中该短租房性价比得分排名的比例</td>
+</tr>
+<tr class="odd">
+<td align="center">sp16</td>
+<td align="center">同商圈房屋中该短租房价格面积比排名的比例</td>
+</tr>
+</tbody>
+</table>
+<p>附近定义为：2500m内</p>
+<p>商圈为通过百度地图接口，根据经纬度定位确定房屋所属的商圈。</p>
+</div>
+<div id="--1" class="section level3">
+<h3><span class="header-section-number">7.2.2</span> 分析报告 &amp; 代码</h3>
+<p><strong>环境设置</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###清除工作环境###
+<span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###安装需要的程序包###
+<span class="kw">install.packages</span>(<span class="st">&quot;ggplot2&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;lubridate&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;plyr&quot;</span>)
+devtools<span class="op">::</span><span class="kw">install_github</span>( <span class="st">&quot;ricardo-bion/ggradar&quot;</span>, <span class="dt">dependencies=</span> <span class="ot">TRUE</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###加载程序包###
+<span class="kw">library</span>(ggplot2)
+<span class="kw">library</span>(lubridate)
+<span class="kw">library</span>(plyr)
+<span class="kw">library</span>(ggradar)</code></pre></div>
+<p><strong>任务一</strong></p>
+<p>找到数据data。读入样本数据（提前设置好工作路径），命名为dat0。用summary函数查看数据记录的变量等情况。将样本量定义为n，也就是观测数。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">setwd</span>(<span class="st">&quot;D:/Melody_Ren/onedrive/Rworkspace/bearclub&quot;</span>)               <span class="co">#设置工作路径</span>
+dat0 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data.csv&quot;</span>)                                      <span class="co">#读入文件中的数据并命名</span>
+dat1 &lt;-<span class="st"> </span>dat0                                                      <span class="co">#对原始数据备份，用于分析</span>
+<span class="kw">summary</span>(dat0)                                                     <span class="co">#查看数据记录的变量等情况</span></code></pre></div>
+<pre><code>##     house_id           vol_num          price      
+##  Min.   :1.10e+07   Min.   :  1.0   Min.   :   39  
+##  1st Qu.:2.92e+09   1st Qu.:  3.0   1st Qu.:  188  
+##  Median :6.32e+09   Median :  6.0   Median :  299  
+##  Mean   :7.72e+09   Mean   : 12.3   Mean   :  355  
+##  3rd Qu.:1.21e+10   3rd Qu.: 15.0   3rd Qu.:  428  
+##  Max.   :2.06e+10   Max.   :219.0   Max.   :10000  
+##     deposit          area          capacity    
+##  Min.   :   0   Min.   :  4.0   Min.   : 1.00  
+##  1st Qu.: 200   1st Qu.: 18.0   1st Qu.: 2.00  
+##  Median : 300   Median : 45.0   Median : 2.00  
+##  Mean   : 346   Mean   : 49.6   Mean   : 2.99  
+##  3rd Qu.: 500   3rd Qu.: 65.0   3rd Qu.: 4.00  
+##  Max.   :7000   Max.   :750.0   Max.   :10.00  
+##       bed             room           office    
+##  Min.   : 1.00   Min.   : 0.00   Min.   :0.00  
+##  1st Qu.: 1.00   1st Qu.: 1.00   1st Qu.:1.00  
+##  Median : 1.00   Median : 2.00   Median :1.00  
+##  Mean   : 1.72   Mean   : 2.09   Mean   :1.01  
+##  3rd Qu.: 2.00   3rd Qu.: 3.00   3rd Qu.:1.00  
+##  Max.   :18.00   Max.   :17.00   Max.   :6.00  
+##      toilet         kitchen          balcony     
+##  Min.   : 0.00   Min.   : 0.000   Min.   :0.000  
+##  1st Qu.: 1.00   1st Qu.: 1.000   1st Qu.:1.000  
+##  Median : 1.00   Median : 1.000   Median :1.000  
+##  Mean   : 1.21   Mean   : 0.951   Mean   :0.949  
+##  3rd Qu.: 1.00   3rd Qu.: 1.000   3rd Qu.:1.000  
+##  Max.   :17.00   Max.   :11.000   Max.   :6.000  
+##     history        book_type       latitude   
+##  Min.   : 1.0   床位出租: 115   Min.   :39.6  
+##  1st Qu.: 3.0   独立单间:1327   1st Qu.:39.9  
+##  Median : 7.0   沙发出租:  38   Median :39.9  
+##  Mean   :10.8   整套出租:2331   Mean   :39.9  
+##  3rd Qu.:15.0                   3rd Qu.:40.0  
+##  Max.   :53.0                   Max.   :40.4  
+##    longitude   district_with_outer  is_foreigner  
+##  Min.   :116   朝阳区:1666         Min.   :0.000  
+##  1st Qu.:116   东城区: 371         1st Qu.:0.000  
+##  Median :116   丰台区: 341         Median :1.000  
+##  Mean   :116   海淀区: 642         Mean   :0.634  
+##  3rd Qu.:116   其他  : 489         3rd Qu.:1.000  
+##  Max.   :117   西城区: 302         Max.   :1.000  
+##     is_cook         is_wifi         is_party    
+##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:1.000   1st Qu.:1.000   1st Qu.:0.000  
+##  Median :1.000   Median :1.000   Median :0.000  
+##  Mean   :0.809   Mean   :0.994   Mean   :0.305  
+##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
+##  Max.   :1.000   Max.   :1.000   Max.   :1.000  
+##    is_washing    is_refrigerator    is_smoke    
+##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:1.000   1st Qu.:1.000   1st Qu.:0.000  
+##  Median :1.000   Median :1.000   Median :0.000  
+##  Mean   :0.958   Mean   :0.965   Mean   :0.429  
+##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
+##  Max.   :1.000   Max.   :1.000   Max.   :1.000  
+##    is_parking     is_security     is_elevator   
+##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.000  
+##  Median :0.000   Median :1.000   Median :1.000  
+##  Mean   :0.469   Mean   :0.695   Mean   :0.727  
+##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
+##  Max.   :1.000   Max.   :1.000   Max.   :1.000  
+##     is_soap      is_drinkingwater   is_heating   
+##  Min.   :0.000   Min.   :0.000    Min.   :0.000  
+##  1st Qu.:0.000   1st Qu.:0.000    1st Qu.:1.000  
+##  Median :1.000   Median :1.000    Median :1.000  
+##  Mean   :0.738   Mean   :0.745    Mean   :0.965  
+##  3rd Qu.:1.000   3rd Qu.:1.000    3rd Qu.:1.000  
+##  Max.   :1.000   Max.   :1.000    Max.   :1.000  
+##  is_aircondition     is_tv        is_hotwater   
+##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:1.000   1st Qu.:1.000   1st Qu.:1.000  
+##  Median :1.000   Median :1.000   Median :1.000  
+##  Mean   :0.967   Mean   :0.813   Mean   :0.996  
+##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
+##  Max.   :1.000   Max.   :1.000   Max.   :1.000  
+##   toilet_type        rule_n         rule_a    
+##  Min.   :0.000   Min.   :1.00   Min.   :1.00  
+##  1st Qu.:0.000   1st Qu.:1.00   1st Qu.:1.00  
+##  Median :1.000   Median :3.00   Median :1.00  
+##  Mean   :0.655   Mean   :3.54   Mean   :2.74  
+##  3rd Qu.:1.000   3rd Qu.:7.00   3rd Qu.:4.00  
+##  Max.   :1.000   Max.   :7.00   Max.   :7.00  
+##  otherscore_clean otherscore_description
+##  Min.   :3.00     Min.   :3.60          
+##  1st Qu.:4.80     1st Qu.:4.80          
+##  Median :4.90     Median :4.90          
+##  Mean   :4.87     Mean   :4.88          
+##  3rd Qu.:5.00     3rd Qu.:5.00          
+##  Max.   :5.00     Max.   :5.00          
+##  otherscore_trans otherscore_safe
+##  Min.   :3.30     Min.   :3.60   
+##  1st Qu.:4.80     1st Qu.:4.90   
+##  Median :4.90     Median :5.00   
+##  Mean   :4.88     Mean   :4.92   
+##  3rd Qu.:5.00     3rd Qu.:5.00   
+##  Max.   :5.00     Max.   :5.00   
+##  otherscore_performance   subway_num   hospital_num
+##  Min.   :3.00           3个以上:3381   无:   5     
+##  1st Qu.:4.80           3个以下: 430   有:3806     
+##  Median :4.90                                      
+##  Mean   :4.85                                      
+##  3rd Qu.:5.00                                      
+##  Max.   :5.00                                      
+##  college_num scenic_spot_num price_landmark_mean
+##  无:  81     无:   7         Min.   :  88.7     
+##  有:3730     有:3804         1st Qu.: 319.2     
+##                              Median : 362.2     
+##                              Mean   : 370.7     
+##                              3rd Qu.: 402.5     
+##                              Max.   :2163.6     
+##  vol_landmark_mean vol_other_landmark_mean
+##  Min.   : 0.00     Min.   :  0.0          
+##  1st Qu.: 5.83     1st Qu.: 30.6          
+##  Median : 7.04     Median : 41.5          
+##  Mean   : 7.50     Mean   : 49.0          
+##  3rd Qu.: 8.93     3rd Qu.: 66.7          
+##  Max.   :15.69     Max.   :167.7          
+##       sp2             sp4             sp6       
+##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:0.194   1st Qu.:0.257   1st Qu.:0.000  
+##  Median :0.440   Median :0.526   Median :0.531  
+##  Mean   :0.456   Mean   :0.515   Mean   :0.430  
+##  3rd Qu.:0.703   3rd Qu.:0.786   3rd Qu.:0.700  
+##  Max.   :0.994   Max.   :0.995   Max.   :0.992  
+##       sp8             sp10            sp12      
+##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.000  
+##  Median :0.556   Median :0.571   Median :0.625  
+##  Mean   :0.442   Mean   :0.439   Mean   :0.466  
+##  3rd Qu.:0.710   3rd Qu.:0.722   3rd Qu.:0.745  
+##  Max.   :0.992   Max.   :0.992   Max.   :0.988  
+##       sp14            sp16      
+##  Min.   :0.000   Min.   :0.000  
+##  1st Qu.:0.000   1st Qu.:0.454  
+##  Median :0.500   Median :0.537  
+##  Mean   :0.418   Mean   :0.522  
+##  3rd Qu.:0.712   3rd Qu.:0.593  
+##  Max.   :0.988   Max.   :0.981</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n &lt;-<span class="st"> </span><span class="kw">nrow</span>(dat0)                                                   <span class="co">#观测数据数量n</span>
+n                                                                 <span class="co">#查看n值</span></code></pre></div>
+<pre><code>## [1] 3811</code></pre>
+<p><strong>任务二</strong></p>
+<p>绘制短租房评论数的直方图，通过这个任务，你可以了解短租房评论的分布情况。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###绘制短租房评论数的直方图###
+<span class="kw">ggplot</span>(dat1, <span class="kw">aes</span>(<span class="dt">x =</span> vol_num)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">10</span>, <span class="dt">fill=</span><span class="st">&quot;lightblue&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;评论数&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;频数&quot;</span>) <span class="op">+</span><span class="st">                                </span><span class="co">#坐标轴名称</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st">               </span><span class="co">#坐标轴及其刻度字体大小</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))</code></pre></div>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+<p><strong>描述与解读</strong></p>
+<p>短租房的评论数量呈现明显的右偏分布。具体地，只有23.3%的短租房超过15人评论，门庭冷落的短租房较多，约有67.3%的短租房评论数不超过10条，因此大多数短租房的热度都偏低。其中，评论数最多（219条）的短租房是位于北京市西城区月坛街道真武庙社区的整套出租房，其附近有3个以上的地铁站，并且还有医院、学校和景点，可谓是短租房中的战斗机。</p>
+<p><strong>任务三</strong></p>
+<p>分别绘制价格-评论数与面积-评论数对比箱线图，分析短租房的价格和面积与短租房热度之间的关系。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n){                                                             
+  <span class="cf">if</span>(dat1<span class="op">$</span>price[i] <span class="op">&lt;=</span><span class="st"> </span><span class="dv">300</span>)                                        <span class="co">#以300元为分界线，对价格分类</span>
+    dat1<span class="op">$</span>price_flag[i] &lt;-<span class="st"> &quot;小于或等于300元&quot;</span>
+  <span class="cf">else</span> dat1<span class="op">$</span>price_flag[i] &lt;-<span class="st"> &quot;大于300元&quot;</span>
+  <span class="cf">if</span>(dat1<span class="op">$</span>area[i] <span class="op">&lt;=</span><span class="st"> </span><span class="dv">50</span>)                                          <span class="co">#以50平米为分界线，对面积分类</span>
+    dat1<span class="op">$</span>area_flag[i] &lt;-<span class="st"> &quot;小于或等于50平米&quot;</span>
+<span class="st">  else dat1$area_flag[i] &lt;- &quot;</span>大于50平米&quot;
+}
+
+###绘制价格-评论数对比箱线图###
+dat1<span class="op">$</span>price_flag =<span class="st"> </span><span class="kw">factor</span>(dat1<span class="op">$</span>price_flag, <span class="dt">levels=</span><span class="kw">c</span>(<span class="st">&quot;小于或等于300元&quot;</span>,<span class="st">&quot;大于300元&quot;</span>))    <span class="co">#调整将价格的排序</span>
+
+<span class="kw">ggplot</span>(dat1, <span class="kw">aes</span>(<span class="dt">x =</span> price_flag, <span class="dt">y =</span> <span class="kw">log</span>(vol_num), <span class="dt">group =</span> price_flag)) <span class="op">+</span><span class="st">   </span>
+<span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>,<span class="st">&quot;lightpink&quot;</span>)) <span class="op">+</span><span class="st">                                   </span><span class="co">#设置箱子填充颜色</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;价格&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;对数评论数&quot;</span>) <span class="op">+</span><span class="st">                                                    </span><span class="co">#坐标轴名称</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st">                                     </span><span class="co">#坐标轴及其刻度字体大小</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))</code></pre></div>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###绘制面积-评论数对比箱线图###
+dat1<span class="op">$</span>area_flag =<span class="st"> </span><span class="kw">factor</span>(dat1<span class="op">$</span>area_flag, <span class="dt">levels=</span><span class="kw">c</span>(<span class="st">&quot;小于或等于50平米&quot;,&quot;</span>大于50平米&quot;))    <span class="co">#调整面积的排序</span>
+
+<span class="kw">ggplot</span>(dat1, <span class="kw">aes</span>(<span class="dt">x =</span> area_flag, <span class="dt">y =</span> <span class="kw">log</span>(vol_num), <span class="dt">group =</span> area_flag)) <span class="op">+</span><span class="st">  </span>
+<span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>,<span class="st">&quot;lightpink&quot;</span>)) <span class="op">+</span><span class="st">                                   </span><span class="co">#设置箱子填充颜色</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;面积&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;对数评论数&quot;</span>) <span class="op">+</span><span class="st">                                                    </span><span class="co">#坐标轴名称</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st">                                     </span><span class="co">#坐标轴及其刻度字体大小</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))</code></pre></div>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-37-2.png" width="672" /></p>
+<p><strong>描述与解读</strong></p>
+<p>从分组箱线图可以看出，不同价格的短租房和不同面积的短租房热度有一定的差异。其中，价格小于或等于300元和面积小于或等于50平米的的短租房热度更高，一种合理的推测是：短租房的需求更多来自于外地居民，由于较为迫切的需求，导致其对面积的要求不高，并且年轻人的经济实力不是很强，因此“便宜又小巧”成为短租房中更受青睐的种类。</p>
+<p><strong>任务四</strong></p>
+<p>统计各城区（四环外其他各区合并记为“其他”）的平均评论数，及短租房数量，并绘制城区-平均评论数的柱状图。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">plot_district &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">aggregate</span>(dat1<span class="op">$</span>vol_num, <span class="kw">list</span>(dat1<span class="op">$</span>district_with_outer), mean))   <span class="co">#按城区分组统计热度均值</span>
+<span class="kw">colnames</span>(plot_district) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;district_name&quot;</span>,<span class="st">&quot;ave_price&quot;</span>)                         <span class="co">#给数据框重命列名</span>
+
+<span class="kw">ggplot</span>(plot_district) <span class="op">+</span><span class="st">                                                           </span><span class="co">#绘制城区-平均评论数的柱状图</span>
+<span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">reorder</span>(district_name, <span class="op">-</span>ave_price), <span class="dt">y =</span> ave_price), 
+         <span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;lightblue&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>)<span class="op">+</span><span class="st">                 </span><span class="co">#按照柱状图高低排序</span>
+<span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">x =</span> district_name, <span class="dt">y =</span> ave_price, <span class="dt">label =</span> <span class="kw">round</span>(ave_price,<span class="dv">1</span>)), <span class="dt">vjust =</span> <span class="op">-</span><span class="fl">0.3</span>)<span class="op">+</span><span class="st">     </span><span class="co">#添加数据标签</span>
+<span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;平均评论数&quot;</span>, <span class="dt">caption =</span> <span class="st">&quot;（样本数量：341、642、302、1666、371、489）&quot;) +       #添加坐标轴名称和副标题</span>
+<span class="st">theme(axis.title.x = element_text(size = 16)) +                                   #坐标轴及其刻度字体大小</span>
+<span class="st">theme(axis.title.y = element_text(size = 16)) +</span>
+<span class="st">theme(axis.text.x = element_text(size = 16)) +</span>
+<span class="st">theme(axis.text.y = element_text(size = 16))</span></code></pre></div>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+<p><strong>描述与解读</strong></p>
+<p>通过条形图可以看出，虽然西城区的短租房数量最多，但是丰台区的房源热度（评价数量）最多，其他地区的房源热度最低。看来虽然西城区更靠近北京市中心，终究也是敌不过丰台区性价比更高的短租房来得“讨人欢心”。</p>
+<p><strong>任务五</strong></p>
+<p>以房主其他房源的性价比得分、描述相符得分为例，绘制对比柱状图来探索这些变量和平均评论数之间的关系。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">37</span><span class="op">:</span><span class="dv">41</span>){                                         <span class="co">#以4.8分为界限，将其他房源评分划分为两类</span>
+  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n){
+    <span class="cf">if</span> (dat1[i,j] <span class="op">&lt;=</span><span class="st"> </span><span class="fl">4.8</span>)
+    dat1[i,j <span class="op">+</span><span class="st"> </span><span class="dv">22</span>] &lt;-<span class="st"> &quot;小于或等于4.8分&quot;</span>
+    <span class="cf">else</span> dat1[i,j <span class="op">+</span><span class="st"> </span><span class="dv">22</span>] &lt;-<span class="st"> &quot;大于4.8分&quot;</span>
+  }
+}
+
+name_other_score &lt;-<span class="st"> </span>dat1[,<span class="dv">59</span><span class="op">:</span><span class="dv">63</span>]                                              <span class="co">#对得分分类变量的列重命名</span>
+<span class="kw">colnames</span>(name_other_score)&lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;other_clean_flag&quot;</span>,<span class="st">&quot;other_disc_flag&quot;</span>,
+              <span class="st">&quot;other_trans_flag&quot;</span>,<span class="st">&quot;other_safe_flag&quot;</span>,<span class="st">&quot;other_perf_flag&quot;</span>)
+
+dat1 &lt;-<span class="st"> </span><span class="kw">cbind</span>(dat1[,<span class="op">-</span>(<span class="dv">59</span><span class="op">:</span><span class="dv">63</span>)],name_other_score)                               <span class="co">#合并两个数据框</span>
+
+PlotOtherSource &lt;-<span class="st"> </span><span class="cf">function</span>(other_source_flag){           <span class="co">#定义“绘制其他房源得分”函数，输入值为得分方面</span>
+other_flag &lt;-<span class="st"> </span><span class="kw">aggregate</span>(dat1<span class="op">$</span>vol_num,<span class="kw">list</span>(dat1[,other_source_flag]),mean)     <span class="co">#按照得分高低统计热度均值</span>
+<span class="kw">colnames</span>(other_flag) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;other_factor&quot;</span>,<span class="st">&quot;ave_vol_num&quot;</span>)                       <span class="co">#给数据框重命列名</span>
+other_flag<span class="op">$</span>other_factor =<span class="st"> </span><span class="kw">factor</span>(other_flag<span class="op">$</span>other_factor,
+                                <span class="dt">levels=</span><span class="kw">c</span>(<span class="st">&quot;小于或等于4.8分&quot;</span>,<span class="st">&quot;大于4.8分&quot;</span>))            <span class="co">#调整得分的排序</span>
+
+<span class="kw">ggplot</span>(other_flag, <span class="kw">aes</span>(<span class="dt">x =</span> other_factor ,<span class="dt">y =</span> ave_vol_num,<span class="dt">fill =</span> other_factor)) <span class="op">+</span><span class="st">    </span><span class="co">#绘制得分-平均评论数柱状图</span>
+<span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&#39;identity&#39;</span>, <span class="dt">fill =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>,<span class="st">&quot;lightpink&quot;</span>), <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span><span class="st">   </span><span class="co">#设置颜色 </span>
+<span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;平均评论数&quot;</span>,                                                      <span class="co">#坐标轴名称</span>
+     <span class="dt">caption =</span> <span class="kw">paste</span>(<span class="st">&quot;（样本数量：&quot;</span>,                                                <span class="co">#副标题名称，计算样本量</span>
+                     <span class="kw">nrow</span>(dat1[<span class="kw">which</span>(dat1[,other_source_flag] <span class="op">==</span><span class="st"> &quot;小于或等于4.8分&quot;</span>),]),
+                     <span class="st">&quot;、&quot;</span>,
+                     <span class="kw">nrow</span>(dat1[<span class="kw">which</span>(dat1[,other_source_flag] <span class="op">==</span><span class="st"> &quot;大于4.8分&quot;</span>),]),
+                     <span class="st">&quot;）&quot;</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st">                                     </span><span class="co">#坐标轴及其刻度字体大小                                                                           </span>
+<span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>)) <span class="op">+</span>
+<span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">x =</span> other_factor, <span class="dt">y =</span> ave_vol_num, <span class="dt">label =</span> <span class="kw">round</span>(ave_vol_num,<span class="dv">1</span>), <span class="dt">vjust =</span> <span class="op">-</span><span class="fl">0.5</span>)) <span class="co">#添加数据标签</span>
+}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">PlotOtherSource</span>(<span class="st">&quot;other_disc_flag&quot;</span>)                                            <span class="co">#绘制描述得分-平均评论数柱状图</span></code></pre></div>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">PlotOtherSource</span>(<span class="st">&quot;other_perf_flag&quot;</span>)                                            <span class="co">#绘制性价比得分-平均评论数柱状图</span></code></pre></div>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
+<p><strong>描述与解读</strong></p>
+<p>通过两个柱状图可以看出，对其他房源表述相符得分和性价比得分方面，都是高分（大于4.8分）样本数量较多，而房主其他房源高分的短租房热度也高于其他房源低分的短租房。这说明大多数房主经营的租住房在性价比和描述相符方面都是较为优秀的，并且这会具有良性循环的效果，“你好我好大家好”，其他房源评价高，那这间房屋也不差。</p>
+<p><strong>任务六</strong></p>
+<p>建立回归模型来分析短租房评论数和各影响因素之间的关系，观察最终得到的回归系数并尝试解释对系数进行解释。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">### 建模 <span class="al">###</span>
+tem_house &lt;-<span class="st"> </span>dat0                                         <span class="co">#拷贝原始数据作为建模数据</span>
+tem_house<span class="op">$</span>log_price &lt;-<span class="st"> </span><span class="kw">log</span>(tem_house<span class="op">$</span>price)               <span class="co">#对价格取对数</span>
+tem_house<span class="op">$</span>log_history &lt;-<span class="st"> </span><span class="kw">log</span>(tem_house<span class="op">$</span>history)           <span class="co">#对累积在线时长取对数</span>
+tem_house &lt;-<span class="st"> </span>tem_house[,<span class="op">-</span><span class="dv">3</span>]                               <span class="co">#在模型数据中删除原始价格数据</span>
+tem_house &lt;-<span class="st"> </span>tem_house[,<span class="op">-</span><span class="dv">12</span>]                              <span class="co">#删除原始在线时长数据</span>
+tem_house &lt;-<span class="st"> </span>tem_house[,<span class="op">-</span><span class="dv">1</span>]                               <span class="co">#删除短租房ID</span>
+
+lm.full &lt;-<span class="st"> </span><span class="kw">lm</span>(<span class="kw">log</span>(vol_num) <span class="op">~</span><span class="st"> </span>., <span class="dt">data=</span>tem_house)           <span class="co">#建立全模型，因变量为对数评论数，自变量为其他所有变量</span>
+lm.null &lt;-<span class="st"> </span><span class="kw">lm</span>(<span class="kw">log</span>(vol_num) <span class="op">~</span><span class="st"> </span><span class="dv">1</span>,<span class="dt">data=</span>tem_house)            <span class="co">#建立空模型，因变量为对数评论数，不包括任何自变量</span>
+
+lm.bic &lt;-<span class="st"> </span><span class="kw">step</span>(lm.full,<span class="dt">k=</span><span class="kw">log</span>(n),<span class="dt">trace=</span>F)                  <span class="co">#使用BIC准则选择模型</span>
+<span class="kw">summary</span>(lm.bic)                                           <span class="co">#观察最终得到的回归系数</span></code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = log(vol_num) ~ area + book_type + is_smoke + is_parking + 
+##     is_drinkingwater + rule_n + rule_a + otherscore_clean + otherscore_description + 
+##     price_landmark_mean + vol_landmark_mean + sp6 + sp8 + sp10 + 
+##     sp12 + sp16 + log_price + log_history, data = tem_house)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.8871 -0.4414 -0.0467  0.4314  2.3243 
+## 
+## Coefficients:
+##                         Estimate Std. Error t value
+## (Intercept)            -3.567264   0.379302   -9.40
+## area                    0.001091   0.000360    3.03
+## book_type独立单间       0.024818   0.065899    0.38
+## book_type沙发出租      -0.212920   0.119676   -1.78
+## book_type整套出租       0.303494   0.072467    4.19
+## is_smoke               -0.073270   0.022206   -3.30
+## is_parking             -0.064830   0.021559   -3.01
+## is_drinkingwater        0.079655   0.024705    3.22
+## rule_n                  0.031557   0.005814    5.43
+## rule_a                 -0.018085   0.006306   -2.87
+## otherscore_clean        0.379932   0.101212    3.75
+## otherscore_description  0.609519   0.111464    5.47
+## price_landmark_mean     0.000428   0.000108    3.95
+## vol_landmark_mean       0.035380   0.004169    8.49
+## sp6                     0.483276   0.077611    6.23
+## sp8                     0.435986   0.084961    5.13
+## sp10                    0.548505   0.066734    8.22
+## sp12                    0.528108   0.078227    6.75
+## sp16                   -0.352273   0.086484   -4.07
+## log_price              -0.302287   0.031722   -9.53
+## log_history             0.429846   0.012848   33.46
+##                        Pr(&gt;|t|)    
+## (Intercept)             &lt; 2e-16 ***
+## area                    0.00249 ** 
+## book_type独立单间       0.70649    
+## book_type沙发出租       0.07530 .  
+## book_type整套出租       2.9e-05 ***
+## is_smoke                0.00098 ***
+## is_parking              0.00265 ** 
+## is_drinkingwater        0.00127 ** 
+## rule_n                  6.1e-08 ***
+## rule_a                  0.00416 ** 
+## otherscore_clean        0.00018 ***
+## otherscore_description  4.8e-08 ***
+## price_landmark_mean     7.8e-05 ***
+## vol_landmark_mean       &lt; 2e-16 ***
+## sp6                     5.3e-10 ***
+## sp8                     3.0e-07 ***
+## sp10                    2.8e-16 ***
+## sp12                    1.7e-11 ***
+## sp16                    4.7e-05 ***
+## log_price               &lt; 2e-16 ***
+## log_history             &lt; 2e-16 ***
+## ---
+## Signif. codes:  
+## 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.638 on 3790 degrees of freedom
+## Multiple R-squared:  0.706,  Adjusted R-squared:  0.705 
+## F-statistic:  455 on 20 and 3790 DF,  p-value: &lt;2e-16</code></pre>
+<p><strong>描述与解读</strong></p>
+<p>经过变量选择后，得到最终的对数线性回归模型。根据模型的系数，在控制其他因素不变时，可以得到如下结论：</p>
+<ul>
+<li>短租房的基本信息中，价格越低，面积越大，评论数越多；</li>
+<li>房屋的累计上线时间每多一个月，则热度会提升0.43条；</li>
+<li>对于出租类型这一变量，沙发出租的最低，整套出租的房屋热度最高，比床位出租短租房的评论数量每间高出0.3条；</li>
+<li>在房屋配置中，有饮水机的热度最高，其次是允许抽烟的房屋，有停车位的热度更低；</li>
+<li>有关退房规定，入住前可退定限制天数越多，租房热度越高，退订扣除的定金越多，租房热度越低；</li>
+<li>对于房主其他房源评分这一变量，描述相符评分每高出1分，则评论数会增加0.6，其次，干净卫生评分每高1分，评论数增加0.38条；</li>
+<li>同商圈房屋整体平均热度越高，该短租房的热度越高；</li>
+<li>在同商圈房屋中，该短租房在卫生得分、描述相符得分、交通得分、安全得分中排名越高，其热度越高，价格面积比排名越低，热度也会越高。</li>
+</ul>
+<p>这些结论与之前的猜想基本符合，而且模型的F检验拒绝原假设，说明建立的模型是显著的；调整的\(R^2\)为0.7045，模型的拟合程度较好。</p>
+<p><strong>任务七</strong></p>
+<p>使用任务六中得到的回归模型预测某房屋半年后收获的评论数，结果为13条。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">predict_set &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">area =</span> <span class="dv">17</span>,  <span class="dt">book_type =</span> <span class="st">&quot;独立单间&quot;</span>,             <span class="co">#将该短租房18个自变量设置为数据框</span>
+                          <span class="dt">is_smoke =</span> <span class="dv">0</span>, <span class="dt">is_parking =</span> <span class="dv">0</span>, <span class="dt">is_drinkingwater =</span> <span class="dv">0</span>,
+                          <span class="dt">rule_n =</span> <span class="dv">4</span>,<span class="dt">rule_a =</span> <span class="dv">3</span>,  
+                          <span class="dt">otherscore_clean =</span> <span class="fl">4.7</span>, <span class="dt">otherscore_description =</span> <span class="fl">4.9</span>, 
+                          <span class="dt">price_landmark_mean =</span> <span class="dv">10</span>, <span class="dt">vol_landmark_mean =</span> <span class="dv">350</span>,
+                          <span class="dt">sp6 =</span> <span class="fl">0.2</span>, <span class="dt">sp8 =</span> <span class="fl">0.2</span>, <span class="dt">sp10 =</span> <span class="fl">0.2</span>, <span class="dt">sp12 =</span> <span class="fl">0.2</span>, <span class="dt">sp16 =</span> <span class="fl">0.9</span>, 
+                          <span class="dt">log_history =</span> <span class="kw">log</span>(<span class="dv">6</span>), <span class="dt">log_price =</span> <span class="kw">log</span>(<span class="dv">200</span>)) 
+
+predict_vol_num &lt;-<span class="st"> </span><span class="kw">predict</span>(lm.bic, predict_set)                           <span class="co">#使用task6中的模型对评论数做预测</span>
+<span class="kw">round</span>(predict_vol_num,<span class="dv">0</span>)                                                  <span class="co">#将预测值四舍五入得到评论数</span></code></pre></div>
+<pre><code>##  1 
+## 13</code></pre>
+<p><strong>任务八</strong></p>
+<p>基于任务七中的短租房的数据绘制雷达图，根据以下几个方面描述该短租房的优势、劣势，对短租房的优化布置提供建议。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">coeff &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">t</span>(<span class="kw">as.matrix</span>(lm.bic<span class="op">$</span>coefficients)))           <span class="co">#回归系数数据框</span>
+coeff_to_percentile &lt;-<span class="st"> </span>coeff[,<span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">5</span><span class="op">:</span><span class="dv">21</span>)]                            <span class="co">#在出租类型只取一列，数据框列数等于自变量数量</span>
+
+GetPercentile &lt;-<span class="st"> </span><span class="cf">function</span>(variable_name){              <span class="co">#定义获取相对位置（percentile）的函数，输入值为自变量名称</span>
+  a &lt;-<span class="st"> </span><span class="kw">ecdf</span>(tem_house[,variable_name])                 <span class="co">#累积概率密度</span>
+  t &lt;-<span class="st"> </span><span class="kw">a</span>(predict_set[,variable_name]) 
+  <span class="kw">return</span>(t)                                            <span class="co">#返回值为输入变量在全部数据中的排名相对位置</span>
+} 
+
+variable_percentile &lt;-<span class="st"> </span><span class="kw">c</span>()                             <span class="co">#变量相对位置向量</span>
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span><span class="op">:</span><span class="dv">18</span>)){                                  <span class="co">#除去出租类型，计算其他变量排名相对位置</span>
+  <span class="cf">if</span>(coeff_to_percentile[<span class="dv">1</span>,i] <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>)                     <span class="co">#回归系数为正，取累计概率密度；反之，取1-累计概率密度</span>
+    variable_percentile[i] &lt;-<span class="st"> </span><span class="kw">GetPercentile</span>(<span class="kw">colnames</span>(predict_set)[i])
+  <span class="cf">else</span> variable_percentile[i] &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span><span class="kw">GetPercentile</span>(<span class="kw">colnames</span>(predict_set)[i])
+}
+
+var_percentile &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">t</span>(<span class="kw">as.matrix</span>(variable_percentile)))  <span class="co">#相对位置向量设置为数据框</span>
+<span class="kw">colnames</span>(var_percentile) &lt;-<span class="st"> </span><span class="kw">colnames</span>(predict_set)                   <span class="co">#取列名</span>
+<span class="co">#predict_set$book_type &lt;- as.character(predict_set$book_type)        </span>
+
+###基本信息得分###
+basic_info &lt;-<span class="st"> </span>coeff_to_percentile[,<span class="kw">c</span>(<span class="st">&quot;area&quot;</span>,<span class="st">&quot;log_price&quot;</span>)]                     <span class="co">#取回归系数为权重</span>
+basic_info_score &lt;-<span class="st"> </span><span class="kw">sum</span>(var_percentile<span class="op">$</span>area<span class="op">*</span>basic_info<span class="op">$</span>area,                  <span class="co">#对第一个维度下的变量相对位置加权</span>
+                        var_percentile<span class="op">$</span>log_price<span class="op">*</span>basic_info<span class="op">$</span>log_price)
+
+###房屋配置得分###
+house_allo &lt;-<span class="st"> </span>coeff_to_percentile[,<span class="kw">c</span>(<span class="st">&quot;is_smoke&quot;</span>,<span class="st">&quot;is_parking&quot;</span>,<span class="st">&quot;is_drinkingwater&quot;</span>)]
+house_allo_score &lt;-<span class="st"> </span><span class="kw">sum</span>(var_percentile<span class="op">$</span>is_smoke<span class="op">*</span>house_allo<span class="op">$</span>is_smoke,
+                        var_percentile<span class="op">$</span>is_parking<span class="op">*</span>house_allo<span class="op">$</span>is_parking,
+                        var_percentile<span class="op">$</span>is_drinkingwater<span class="op">*</span>house_allo<span class="op">$</span>is_drinkingwater)
+                    
+###退房规定得分###
+check_out &lt;-<span class="st"> </span>coeff_to_percentile[,<span class="kw">c</span>(<span class="st">&quot;rule_n&quot;</span>,<span class="st">&quot;rule_a&quot;</span>)]
+check_out_score &lt;-<span class="st"> </span><span class="kw">sum</span>(var_percentile<span class="op">$</span>rule_a<span class="op">*</span>check_out<span class="op">$</span>rule_a,
+                       var_percentile<span class="op">$</span>rule_n<span class="op">*</span>check_out<span class="op">$</span>rule_n)
+
+###其他房源评分###
+other_source &lt;-<span class="st"> </span>coeff_to_percentile[,<span class="kw">c</span>(<span class="st">&quot;otherscore_clean&quot;</span>,<span class="st">&quot;otherscore_description&quot;</span>)]
+other_source_score &lt;-<span class="st"> </span><span class="kw">sum</span>(var_percentile<span class="op">$</span>otherscore_clean<span class="op">*</span>other_source<span class="op">$</span>otherscore_clean,
+                          var_percentile<span class="op">$</span>otherscore_description<span class="op">*</span>other_source<span class="op">$</span>otherscore_description)
+
+
+###同商圈房屋整体情况###
+landmark &lt;-<span class="st"> </span>coeff_to_percentile[,<span class="kw">c</span>(<span class="st">&quot;price_landmark_mean&quot;</span>,<span class="st">&quot;vol_landmark_mean&quot;</span>)]
+landmark_score &lt;-<span class="st"> </span><span class="kw">sum</span>(var_percentile<span class="op">$</span>price_landmark_mean<span class="op">*</span>landmark<span class="op">$</span>price_landmark_mean,
+                      var_percentile<span class="op">$</span>vol_landmark_mean<span class="op">*</span>landmark<span class="op">$</span>vol_landmark_mean)
+
+###同商圈房屋比较###
+sp &lt;-<span class="st"> </span>coeff_to_percentile[,<span class="kw">c</span>(<span class="st">&quot;sp6&quot;</span>,<span class="st">&quot;sp8&quot;</span>,<span class="st">&quot;sp10&quot;</span>,<span class="st">&quot;sp12&quot;</span>,<span class="st">&quot;sp16&quot;</span>)]
+sp_score &lt;-<span class="st"> </span><span class="kw">sum</span>(var_percentile<span class="op">$</span>sp6<span class="op">*</span>sp<span class="op">$</span>sp6,
+                var_percentile<span class="op">$</span>sp8<span class="op">*</span>sp<span class="op">$</span>sp8,
+                var_percentile<span class="op">$</span>sp10<span class="op">*</span>sp<span class="op">$</span>sp10,
+                var_percentile<span class="op">$</span>sp12<span class="op">*</span>sp<span class="op">$</span>sp12,
+                var_percentile<span class="op">$</span>sp16<span class="op">*</span>sp<span class="op">$</span>sp16)
+
+###出租类型得分###
+<span class="co">#coeff[,3:5]</span>
+<span class="co">#出租类型的系数排名为：整套出租&gt;独立单间&gt;床位出租&gt;沙发出租</span>
+book_type_score &lt;-<span class="st"> </span><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">nrow</span>(tem_house[<span class="kw">which</span>(tem_house<span class="op">$</span>book_type <span class="op">==</span><span class="st"> &quot;整套出租&quot;</span>),])<span class="op">/</span>n     <span class="co">#出租类型的相对位置</span>
+
+###将7个维度下的得分放入rardarplot数据框
+rardarplot &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">V1 =</span> <span class="st">&quot;维度&quot;</span>,<span class="st">&quot;基本信息&quot;</span> =<span class="st"> </span>basic_info_score, <span class="st">&quot;房屋配置&quot;</span> =<span class="st"> </span>house_allo_score,
+                         <span class="st">&quot;退房规定&quot;</span> =<span class="st"> </span>check_out_score, <span class="st">&quot;其他房源&quot;</span> =<span class="st"> </span>other_source_score,
+                         <span class="st">&quot;商圈整体&quot;</span> =<span class="st"> </span>landmark_score, <span class="st">&quot;商圈房屋&quot;</span> =<span class="st"> </span>sp_score, <span class="st">&quot;出租类型&quot;</span> =<span class="st"> </span>book_type_score)
+
+
+###绘制雷达图###
+<span class="kw">ggradar</span>(rardarplot, <span class="dt">grid.label.size =</span> <span class="dv">5</span>, <span class="dt">axis.label.size =</span> <span class="dv">5</span>, <span class="dt">group.point.size =</span> <span class="dv">4</span>, <span class="dt">plot.legend =</span> <span class="ot">FALSE</span>)<span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>)</code></pre></div>
+<pre><code>## Warning in grid.Call.graphics(C_text,
+## as.graphicsAnnot(x$label), x$x, x$y, : Windows字体数据
+## 库里没有这样的字体系列
+
+## Warning in grid.Call.graphics(C_text,
+## as.graphicsAnnot(x$label), x$x, x$y, : Windows字体数据
+## 库里没有这样的字体系列</code></pre>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-45-1.png" width="672" /></p>
+<p><strong>说明</strong></p>
+<p>每个维度得分的计算方法：</p>
+<ul>
+<li>对于出租类型，按照每种取值的回归系数大小排序后，计算其相对位置的累计概率密度；</li>
+<li>对于除去出租类型的其他维度，以该维度下的每个自变量在原数据集对应变量的相对位置为被加权值，以每个自变量的回归系数为权重，进行加权，得到得分。</li>
+</ul>
+<p><strong>描述与解读</strong></p>
+<p>该短租房在同商圈房屋卫生得分、描述相符得分、交通得分、安全得分、价格面积比中排名占有较大优势，房主的其他房源评分也是一大优势。然而，在同商圈房屋平均价格、平均评论数两个方面较为劣势，“独立单间”的出租类型也降低该出租房的竞争力；此外，退房规定也是该房屋评论数上升的潜在威胁。</p>
+<p>根据该房屋雷达图和任务七中的系数解读，为提高该短租房的热度（评论数），对该房主提出几点建议：</p>
+<ul>
+<li>继续保持其在同商圈房屋各方面得分的排名；</li>
+<li>继续保持其他房源评分水平；</li>
+<li>对照同商圈房屋的平均评分，适当降低该房屋的出租价格；</li>
+<li>将出租类型调整为“整套出租”；</li>
+<li>尽量增加入住前可提前退订天数，减少退订扣除的定金。</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="descriptive.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="binomial.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook/js/app.min.js"></script>
+<script src="libs/gitbook/js/lunr.js"></script>
+<script src="libs/gitbook/js/plugin-search.js"></script>
+<script src="libs/gitbook/js/plugin-sharing.js"></script>
+<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/yihui/bookdown-chinese/edit/master/07-task-5.Rmd",
+"text": "缂栬緫"
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

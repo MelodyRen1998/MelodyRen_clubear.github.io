@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>吉他低吟浅唱，踏遍黄沙海洋</title>
+    <meta charset="utf-8">
+    <meta name="author" content="yimeng" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="zh-CN.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# 吉他低吟浅唱，踏遍黄沙海洋
+## 文本分析助力民谣创作
+### yimeng
+### 2018/9/6
+
+---
+
+
+
+
+background-image: url(background.jpg)
+
+---
+class: inverse, center, middle
+
+# PART 1 研究背景 &amp; 数据说明
+
+.center[![](title-pic.png)]
+
+---
+
+# 研究背景——民谣有多火？
+
+--
+
+- 火遍大江南北的《中国好声音》在全国刮起了现代“民谣风潮”。
+
+- 一曲《成都》、《南山南》捧红了民谣歌手赵雷、马頔。
+
+--
+
+&lt;div align=center&gt;
+&lt;img src="music-categ.png" width=55% height=55% alt="music-categ"/&gt;
+&lt;/div&gt;
+
+--
+
+- 用户听歌多元化
+
+- 音乐软件扶持原创的力度加强
+
+- 某音乐平台目前入驻的独立音乐人已超过1200位
+
+---
+
+# 研究背景——什么是民谣？
+
+--
+
+&lt;div align=center&gt;
+&lt;img src="intro.png" width=120% height=120% alt="music-intro"/&gt;
+&lt;/div&gt;
+
+--
+
+### 民谣特点
+
+**共鸣** ：在任意一首民谣歌曲中，你都能听到属于自己的情感和心声。
+
+**含蓄** ：我会洗干净头发爬上桅杆，撑起我们葡萄枝嫩叶般的家”
+
+**纯粹** ：民谣很穷，一把吉他。民谣很富，四海为家。
+
+---
+
+# 研究背景——价值
+
+--
+
+### 商业价值
+
+- 2016年，好妹妹成功登陆工人体育馆，实际票房收入360万元
+
+- 马頔、赵雷等人的身价超过10万元
+
+- 500元一张的民谣张片，购买者不在少数
+
+&lt;div align=center&gt;
+&lt;img src="slogan-1.png" width=120% height=120% alt="slogan-1"/&gt;
+&lt;/div&gt;
+
+--
+
+### 梦想价值
+
+- 写出热度高的歌词，“小白”民谣歌手也能实现自己的音乐梦想
+
+---
+
+# 研究问题
+
+--
+
+### 1. 探究影响民谣歌曲热度（评论量）的因素
+
+--
+
+### 2. 对民谣歌词进行挖掘，分析出热度高的民谣歌词具有的特点
+  
+- 情感类型
+  
+- 用词意象
+  
+- 句式规律
+
+--
+
+### 3. 为“小白”类型的年轻民谣歌手提出写词建议
+
+---
+
+# 数据来源
+
+&lt;figure class="half" align=center&gt;
+    &lt;img src="data-source-1.png" width=50% height=50% &gt;
+    &lt;img src="data-source-2.png" width=25% height=25% &gt;
+&lt;/figure&gt;
+
+--
+
+- 在QQ音乐搜索栏输入“华语”和“民谣”两个关键词
+
+- 所有歌单中的无重复曲目1823条
+
+- 注：后续用于分析的数据是去除异常值后的数据
+
+---
+
+# 数据说明
+
+&lt;div align=center&gt;
+&lt;img src="data-info.png" width=100% height=100% alt="data-info"/&gt;
+&lt;/div&gt;
+
+---
+
+class: inverse, center, middle
+
+# PART 2 描述分析
+
+.center[![](title-pic.png)]
+
+---
+
+### 评论数量呈现明显的右偏分布，在平均热度的右侧存在少数热度“极高”的歌曲。
+
+&lt;div align=center&gt;
+&lt;img src="dcp-1.jpg" width=60% height=60% alt="dcp-1"/&gt;
+&lt;/div&gt;
+
+--
+
+夺得前三名的歌曲分别为：
+
+TOP1:《成都》——赵雷
+
+TOP2:《往后余生》——马良
+
+TOP3:《安河桥》——宋东野
+
+---
+
+# 谁是最热门的歌手？
+
+- 根据歌手所有歌曲的**评论总数**来评价歌手的热门程度
+
+&lt;div align=center&gt;
+&lt;img src="dcp-3.jpg" width=80% height=80% alt="dcp-3"/&gt;
+&lt;/div&gt;
+
+- 赵雷、毛不易、宋东野、陈粒、齐一等民谣歌手脱颖而出
+
+- 注：1. 存在非民谣歌手翻唱民谣的数据；2. Jam指民谣歌手阿敬
+
+---
+
+# 歌曲发行年份
+
+- 年轻新创意，质量多样化
+
+- 经典永流传，民谣不例外
+
+&lt;div align=center&gt;
+&lt;img src="dcp-4.jpg" width=70% height=70% alt="dcp-4"/&gt;
+&lt;/div&gt;
+
+- 民谣歌手赵雷于2016年发行的《成都》，凭借浪漫的情感拔得“年轻派”的头筹。
+
+- 注：箱线图宽度表示样本量
+
+---
+
+# 歌曲流派
+
+- 原声音乐流派遥遥领先，民谣与情节更配哦
+
+- 流行民谣、摇滚民谣紧随其后，符合大众审美
+
+&lt;div align=center&gt;
+&lt;img src="dcp-5.jpg" width=65% height=60% alt="dcp-5"/&gt;
+&lt;/div&gt;
+
+- 最热门原声音乐为《牧马城市》（《老男孩》电影主题曲）
+
+- 以励志为主题，给迷茫中的男孩带去力量，和电影情节相符，获得听众喜爱。
+
+---
+
+# 词语热度
+
+.pull-left[
+&lt;div align=center&gt;
+  &lt;img src="dcp-6.png" width=70% height=70% alt="dcp-6"/&gt;
+&lt;/div&gt;
+
+
+]
+
+.pull-right[
+
+&lt;div align=center&gt;
+  &lt;img src="dcp-7.jpg" width=110% height=110% alt="dcp-7"/&gt;
+&lt;/div&gt;
+
+- 世界、时光、远方、姑娘、生活、城市等词语体现了民谣的梦想、爱情、奋斗、青春主题
+
+- TF-IDF得分体现了民谣歌词的关键信息，其中，时光飞逝，梦想远方，青春回忆最为热门
+
+]
+
+---
+class: inverse, center, middle
+
+# PART 3 创作五部曲
+
+.center[![](title-pic.png)]
+
+---
+
+# STEP1: 找准主题
+
+.pull-left[
+
+&lt;div align=center&gt;
+  &lt;img src="write-1.png" width=100% height=100% alt="write-1"/&gt;
+&lt;/div&gt;
+
+- 2005年之前，民谣歌词围绕思念、友情、惜别
+
+]
+
+.pull-right[
+
+&lt;div align=center&gt;
+  &lt;img src="write-2.png" width=100% height=100% alt="write-2"/&gt;
+&lt;/div&gt;
+
+- 2005-2018年，更多围绕爱情、青春、未来、城市生活
+
+]
+
+
+- 始终贯穿民谣歌词的主题是——情怀、理想（热词“世界”和“远方”）
+
+---
+
+# STEP2: 用对词语
+
+&lt;div align=center&gt;
+  &lt;img src="write-3.png" width=70% height=70% alt="write-3"/&gt;
+&lt;/div&gt;
+
+--
+
+- 选择评论数量最高的100首歌
+
+- 对Top100的热门词进行K-means聚类
+
+- 得到4类词语，分别体现：浪漫爱情、离别回忆、青春梦想、时光飞逝
+
+---
+
+### 词性分析
+
+- 热度TOP100的歌曲更多使用动词、数词、副词和成语
+
+- 名词、动词占领大半个民谣歌词江山，肩负起体现主题的任务
+
+- 形容词、副词功不可没，歌手情感淋漓尽致
+
+- 时间、地点荣誉登榜，歌词宛如小说般完整叙事
+
+- 最有文化是成语，含蓄委婉，情感到位
+
+&lt;div align=center&gt;
+  &lt;img src="write-4.jpg" width=80% height=80% alt="write-4"/&gt;
+&lt;/div&gt;
+
+---
+.pull-left[
+
+### 词性分析
+
+- 词云选择歌曲评论数量为TOP100的歌词
+
+&lt;div align=center&gt;
+  &lt;img src="write-5.png" width=55% height=55% alt="write-5"/&gt;
+&lt;/div&gt;
+
+- 形容词：桀骜、悲伤、真诚
+
+&lt;div align=center&gt;
+  &lt;img src="write-6.png" width=55% height=55% alt="write-6"/&gt;
+&lt;/div&gt;
+
+- 副词：追悔、不屈服
+
+]
+
+.pull-right[
+
+&lt;div align=center&gt;
+  &lt;img src="write-7.png" width=55% height=55% alt="write-7"/&gt;
+&lt;/div&gt;
+
+- 时间：春夏、长久、白昼
+
+&lt;div align=center&gt;
+  &lt;img src="write-8.png" width=55% height=55% alt="write-8"/&gt;
+&lt;/div&gt;
+
+- 地点：江岸、离别、遥远
+
+&lt;div align=center&gt;
+  &lt;img src="write-9.png" width=55% height=55% alt="write-9"/&gt;
+&lt;/div&gt;
+
+- 成语：感伤、旅途、气概
+
+]
+
+---
+
+# STEP3: 选好手法
+
+### 重复
+
+&lt;div align=center&gt;
+  &lt;img src="write-10.png" width=80% height=80% alt="write-10"/&gt;
+&lt;/div&gt;
+
+--
+
+- 大部分民谣不使用反复的手法，歌词更偏向叙事性，而非“简单粗暴”的强调情感
+
+- 歌词多样化更容易在民谣界胜出
+
+---
+
+### 工整
+
+&lt;div align=center&gt;
+  &lt;img src="write-11.png" width=100% height=100% alt="write-11"/&gt;
+&lt;/div&gt;
+
+--
+
+- 工整的句式演唱起来富有节奏感，体现“民谣”之“谣”的特点
+
+- 同样长度的歌词数量，为10-17句更朗朗上口
+
+---
+
+### 押韵
+
+### 押韵程度 &amp; 韵脚
+
+一首歌可以有多个韵脚，选择押韵次数最多的韵脚作为这首歌的押韵韵脚，该韵脚的押韵句数作为该歌曲的押韵程度
+
+&lt;div align=center&gt;
+  &lt;img src="write-12.jpg" width=65% height=65% alt="write-12"/&gt;
+&lt;/div&gt;
+
+--
+
+- 民谣歌词在押韵程度上各有千秋
+
+- 押韵程度保持在8-29句都有可能创作处出高热度歌曲
+
+---
+
+# 押韵
+
+.pull-left[
+
+### TOP10热门押韵韵脚
+
+&lt;div align=center&gt;
+  &lt;img src="write-13.png" width=100% height=100% alt="write-13"/&gt;
+&lt;/div&gt;
+
+]
+
+--
+
+.pull-right[
+
+- 选择TOP10热门的押韵韵脚，可以看出不同韵脚的歌曲热度没有明显的差异。
+
+&lt;div align=center&gt;
+  &lt;img src="write-14.jpg" width=100% height=100% alt="write-14"/&gt;
+&lt;/div&gt;
+
+- 注：箱线图宽度表示样本量
+
+]
+
+---
+
+# STEP4: 调整布局
+
+### 句子长度
+
+&lt;div align=center&gt;
+  &lt;img src="write-15.png" width=70% height=70% alt="write-15"/&gt;
+&lt;/div&gt;
+
+--
+
+- 长度适中的歌词演唱起来朗朗上口，节奏适宜
+
+- 平均长度为6-9句的歌词更容易获得听众的青睐
+
+- 平均句长为7.8字的歌词喜提热度榜第一
+
+---
+
+### 歌词篇幅
+
+&lt;div align=center&gt;
+  &lt;img src="write-16.png" width=90% height=90% alt="write-16"/&gt;
+&lt;/div&gt;
+
+--
+
+- 过长的篇幅会给听众留下枯燥冗长的印象，过短则会使听众意犹未尽
+
+- 歌词保持在25-55句为理想篇幅
+
+- 48句的民谣歌词（《成都》）喜提热度榜第一
+
+---
+
+# STEP5: 起好歌名
+
+&lt;div align=center&gt;
+  &lt;img src="write-17.png" width=100% height=100% alt="write-17"/&gt;
+&lt;/div&gt;
+
+--
+
+- 2-8个字的歌名更加言简意赅，容易获得高热度
+
+---
+
+# STEP5: 起好歌名
+
+&lt;div align=center&gt;
+  &lt;img src="write-18.jpg" width=80% height=80% alt="write-18"/&gt;
+&lt;/div&gt;
+
+--
+
+- 歌词不包含歌名时，歌曲平均热度更高
+
+---
+class: inverse, center, middle
+
+# PART 4 结论 &amp; 建议
+
+.center[![](title-pic.png)]
+---
+
+class: center, middle
+
+# 结论与建议
+
+&lt;div align=center&gt;
+  &lt;img src="conclusion.png" width=120% height=150% alt="conclusion"/&gt;
+&lt;/div&gt;
+
+---
+
+class: center, middle, inverse
+
+# 感谢观看！
+
+### author &amp; designer: yimeng
+
+---
+
+# MORE INFO
+
+本幻灯片由 R 包 [**xaringan**](https://github.com/yihui/xaringan) 生成；
+
+查克拉来自于 [remark.js](https://remarkjs.com)、[**knitr**](http://yihui.name/knitr)、以及 [R Markdown](https://rmarkdown.rstudio.com)。
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

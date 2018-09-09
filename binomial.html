@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>狗熊会人才计划第三期——My Case</title>
+  <meta name="description" content="人才计划TASK &amp; Final Project。">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="狗熊会人才计划第三期——My Case" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="人才计划TASK &amp; Final Project。" />
+  <meta name="github-repo" content="yihui/bookdown-chinese" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="狗熊会人才计划第三期——My Case" />
+  
+  <meta name="twitter:description" content="人才计划TASK &amp; Final Project。" />
+  
+
+<meta name="author" content="yimeng">
+
+
+<meta name="date" content="2018-09-08">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="linear-model.html">
+<link rel="next" href="final.html">
+<script src="libs/jquery/jquery.min.js"></script>
+<link href="libs/gitbook/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="css\style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">狗熊会人才计划第三期</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#e887b4e8b0a2"><i class="fa fa-check"></i>致谢</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="author.html"><a href="author.html"><i class="fa fa-check"></i>作者简介</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> 狗熊会人才计划介绍</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#whats-that"><i class="fa fa-check"></i><b>1.1</b> 狗熊会，what’s that?!</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#omd"><i class="fa fa-check"></i><b>1.2</b> 人才计划，OMD!</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#section-1.3"><i class="fa fa-check"></i><b>1.3</b> 人才计划导师天团</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="wind.html"><a href="wind.html"><i class="fa fa-check"></i><b>2</b> 人才计划章程</a><ul>
+<li class="chapter" data-level="2.1" data-path="wind.html"><a href="wind.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 纪律</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="wind.html"><a href="wind.html#ddl"><i class="fa fa-check"></i><b>2.1.1</b> DDL</a></li>
+<li class="chapter" data-level="2.1.2" data-path="wind.html"><a href="wind.html#section-2.1.2"><i class="fa fa-check"></i><b>2.1.2</b> 礼貌</a></li>
+<li class="chapter" data-level="2.1.3" data-path="wind.html"><a href="wind.html#section-2.1.3"><i class="fa fa-check"></i><b>2.1.3</b> 作业</a></li>
+<li class="chapter" data-level="2.1.4" data-path="wind.html"><a href="wind.html#section-2.1.4"><i class="fa fa-check"></i><b>2.1.4</b> 退出</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="wind.html"><a href="wind.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 禁止抄袭</a></li>
+<li class="chapter" data-level="2.3" data-path="wind.html"><a href="wind.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 作业质量</a></li>
+<li class="chapter" data-level="2.4" data-path="wind.html"><a href="wind.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 自学</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>3</b> TASK 1 背景介绍</a><ul>
+<li class="chapter" data-level="3.1" data-path="background.html"><a href="background.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 学习资料</a></li>
+<li class="chapter" data-level="3.2" data-path="background.html"><a href="background.html#good-work"><i class="fa fa-check"></i><b>3.2</b> Good Work</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>4</b> TASK 2 数据说明</a><ul>
+<li class="chapter" data-level="4.1" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>4.1</b> 学习资料</a></li>
+<li class="chapter" data-level="4.2" data-path="data.html"><a href="data.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 数据概览</a></li>
+<li class="chapter" data-level="4.3" data-path="data.html"><a href="data.html#good-work-1"><i class="fa fa-check"></i><b>4.3</b> Good Work</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="code.html"><a href="code.html"><i class="fa fa-check"></i><b>5</b> TASK 3 代码规范</a><ul>
+<li class="chapter" data-level="5.1" data-path="code.html"><a href="code.html#-2"><i class="fa fa-check"></i><b>5.1</b> 学习资料</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="code.html"><a href="code.html#section-5.1.1"><i class="fa fa-check"></i><b>5.1.1</b> 注释篇</a></li>
+<li class="chapter" data-level="5.1.2" data-path="code.html"><a href="code.html#section-5.1.2"><i class="fa fa-check"></i><b>5.1.2</b> 命名篇</a></li>
+<li class="chapter" data-level="5.1.3" data-path="code.html"><a href="code.html#section-5.1.3"><i class="fa fa-check"></i><b>5.1.3</b> 函数模块化</a></li>
+<li class="chapter" data-level="5.1.4" data-path="code.html"><a href="code.html#section-5.1.4"><i class="fa fa-check"></i><b>5.1.4</b> 纠错与调试</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="code.html"><a href="code.html#section-5.2"><i class="fa fa-check"></i><b>5.2</b> 共享单车案例</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="code.html"><a href="code.html#section-5.2.1"><i class="fa fa-check"></i><b>5.2.1</b> 准备工作</a></li>
+<li class="chapter" data-level="5.2.2" data-path="code.html"><a href="code.html#-"><i class="fa fa-check"></i><b>5.2.2</b> 分析报告 &amp; 代码</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="descriptive.html"><a href="descriptive.html"><i class="fa fa-check"></i><b>6</b> TASK 4 描述分析</a><ul>
+<li class="chapter" data-level="6.1" data-path="descriptive.html"><a href="descriptive.html#-3"><i class="fa fa-check"></i><b>6.1</b> 学习资料</a></li>
+<li class="chapter" data-level="6.2" data-path="descriptive.html"><a href="descriptive.html#section-6.2"><i class="fa fa-check"></i><b>6.2</b> 题目</a></li>
+<li class="chapter" data-level="6.3" data-path="descriptive.html"><a href="descriptive.html#section-6.3"><i class="fa fa-check"></i><b>6.3</b> 探究影响消费金融贷款申请人数的因素——描述性分析</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="descriptive.html"><a href="descriptive.html#section-6.3.1"><i class="fa fa-check"></i><b>6.3.1</b> 对申请人数（因变量）进行描述</a></li>
+<li class="chapter" data-level="6.3.2" data-path="descriptive.html"><a href="descriptive.html#section-6.3.2"><i class="fa fa-check"></i><b>6.3.2</b> 对借贷变量（自变量）进行描述</a></li>
+<li class="chapter" data-level="6.3.3" data-path="descriptive.html"><a href="descriptive.html#section-6.3.3"><i class="fa fa-check"></i><b>6.3.3</b> 对还贷变量（自变量）进行描述</a></li>
+<li class="chapter" data-level="6.3.4" data-path="descriptive.html"><a href="descriptive.html#section-6.3.4"><i class="fa fa-check"></i><b>6.3.4</b> 初步结论</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="descriptive.html"><a href="descriptive.html#section-6.4"><i class="fa fa-check"></i><b>6.4</b> 代码</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="linear-model.html"><a href="linear-model.html"><i class="fa fa-check"></i><b>7</b> TASK 5 线性回归分析</a><ul>
+<li class="chapter" data-level="7.1" data-path="linear-model.html"><a href="linear-model.html#-4"><i class="fa fa-check"></i><b>7.1</b> 学习资料</a></li>
+<li class="chapter" data-level="7.2" data-path="linear-model.html"><a href="linear-model.html#section-7.2"><i class="fa fa-check"></i><b>7.2</b> 短租房热度案例</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>7.2.1</b> 准备工作</a></li>
+<li class="chapter" data-level="7.2.2" data-path="linear-model.html"><a href="linear-model.html#--1"><i class="fa fa-check"></i><b>7.2.2</b> 分析报告 &amp; 代码</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="binomial.html"><a href="binomial.html"><i class="fa fa-check"></i><b>8</b> TASK 6 分类问题</a><ul>
+<li class="chapter" data-level="8.1" data-path="binomial.html"><a href="binomial.html#-5"><i class="fa fa-check"></i><b>8.1</b> 学习资料</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="binomial.html"><a href="binomial.html#section-8.1.1"><i class="fa fa-check"></i><b>8.1.1</b> 逻辑回归模型</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>8.2</b> 题目</a></li>
+<li class="chapter" data-level="8.3" data-path="binomial.html"><a href="binomial.html#section-8.3"><i class="fa fa-check"></i><b>8.3</b> 影响消费贷款有效性的因素分析</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="binomial.html"><a href="binomial.html#section-8.3.1"><i class="fa fa-check"></i><b>8.3.1</b> 背景与研究问题</a></li>
+<li class="chapter" data-level="8.3.2" data-path="binomial.html"><a href="binomial.html#section-8.3.2"><i class="fa fa-check"></i><b>8.3.2</b> 描述性分析</a></li>
+<li class="chapter" data-level="8.3.3" data-path="binomial.html"><a href="binomial.html#section-8.3.3"><i class="fa fa-check"></i><b>8.3.3</b> 模型建立与选择</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>8.4</b> 代码</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="final.html"><a href="final.html"><i class="fa fa-check"></i><b>9</b> Fianl Project</a><ul>
+<li class="chapter" data-level="9.1" data-path="final.html"><a href="final.html#slides"><i class="fa fa-check"></i><b>9.1</b> 作品Slides</a></li>
+<li class="chapter" data-level="9.2" data-path="code.html"><a href="code.html#-2"><i class="fa fa-check"></i><b>9.2</b> 代码</a></li>
+</ul></li>
+<li class="appendix"><span><b>附录</b></span></li>
+<li class="chapter" data-level="A" data-path="sound.html"><a href="sound.html"><i class="fa fa-check"></i><b>A</b> 附录</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="blank">本书由 bookdown 强力驱动</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">狗熊会人才计划第三期——My Case</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="binomial" class="section level1">
+<h1><span class="header-section-number">第 8 章</span> TASK 6 分类问题</h1>
+<div id="-5" class="section level2">
+<h2><span class="header-section-number">8.1</span> 学习资料</h2>
+<p>在这个TASK,我们尝试针对离散型因变量建立模型，这属于分类问题。当离散型因变量只有两个可能的取值（例如性别有’男’和’女’这两个取值）时，这就是一个’二分类’问题，也是这个TASK的学习重点。</p>
+<p>我们给出更多的二分类问题的例子。在消费者购买决策的研宄中，消费者的决策有两个可能的结果：‘购买’和’不购买’；在病人的癌症诊断过程中，诊断的结果有两个可能的取值：“得癌症”和“不得癌症”；在申请贷款的审批流程中，审批的结果有两个可能的取值：“审批”和“不审批”。</p>
+<p>二分类问题的因变量Y，惯例上取值为0和1（0和1只是数字符号，并不支持代数运算）。如果继续沿用线性模型，那么 <span class="math inline">\(Y = \beta_0 + \beta_1 X + \epsilon\)</span>（假设只有一个自变量）。线性回归模型并非不可行，最小二乘估计依然能够获得。其实，很多实际数据分析经常简单粗暴地采用线性回归模型来处理二分类问题。但是，细心的读者能够发现，理论上这个模型的左右两边并不等价。我们在这个TASK将要介绍两类模型（逻辑回归和决策树），用于解决二分类问题。</p>
+<div id="section-8.1.1" class="section level3">
+<h3><span class="header-section-number">8.1.1</span> 逻辑回归模型</h3>
+<p>逻辑回归模型并不直接对因变量Y进行建模，而是对<span class="math inline">\(Y = 1\)</span>的可能性（概率）建立模型。具体地，<span class="math display">\[P(Y = 1) = \frac{exp(\beta_0 + \beta_1 X)}{1 + exp(\beta_0 + \beta_1 X)}\]</span> 这个函数叫做Logistic函数，所以这个回归模型又叫做逻辑回归。关于逻辑回归，我们需要关注这样几个点。</p>
+<ol style="list-style-type: decimal">
+<li><p>odds的概念：odds是可能性的一种度量，即：<span class="math inline">\(P(Y=1)/P(Y=0)=exp(\beta_0+\beta_1 X)\)</span>。这个量是“因变量为1的概率”与“因变量为0的概率”的比值。</p></li>
+<li><p>log-odds的概念：log-odds是对odds取对数，这个变换也叫作logit变换，即：<span class="math display">\[log\frac{P(Y=1)}{P(Y=0)}=\beta_0+\beta_1 X\]</span>这个量，恰好是自变量的线性组合。在线性回归模型当中，自变量的线性组合（加上误3．差项）就是因变量。在逻辑回归模型当中，自变量的线性组合就是log-odds。</p></li>
+<li><p>系数的估计与解读：逻辑回归的系数估计，不再是最小二乘估计，而是要使用极大似然估计（MLE）。我们不去关心系数估计的理论性质，感兴趣的读者可以阅读广义线性模型的经典书籍。假设己经得到了系数估计，<span class="math inline">\(\hat\beta_1=3\)</span>，常见的有这样三个层面的解读。</p></li>
+</ol>
+<ul>
+<li><p>只关心系数估计的正和负。如果系数估计为正，说明相应的自变量的增加（控制其他因素不变），会导致Y=1的可能性的增加：相反，如果系数估计为负，说明相应的自变量的增加（控制其他因素不变），会导致Y=0的可能性的增加。当然，系数估计必须显著（相应的p值小于给定的显著性水平），我们才对其进行解读。</p></li>
+<li><p>关心odds的变化。之前介绍了什么是odds，以此为基础，还有odds ratio，即两个odds的比：<span class="math display">\[\frac{P(Y&#39;=1)}{P(Y&#39;=0)} \frac{P(Y=0)}{P(Y=1)}=\frac{exp(\beta_0+\beta_1 X&#39;)}{exp(\beta_0+\beta_1 X)}=exp(\beta_1 X&#39;-\beta_1X)\]</span>那么，<span class="math inline">\(\hat\beta_1=3\)</span>可以解读为，自变量增加一个单位，odds ratio增加<span class="math inline">\(exp(\hat\beta_1)=20\)</span>倍。</p></li>
+<li><p>关心log-odds的变化。log-odds是自变量的线性组合，因此，系数估计还可以解读为，自变量增加一个单位，log-odds增加3个单位。</p></li>
+</ul>
+</div>
+</div>
+<div id="-1" class="section level2">
+<h2><span class="header-section-number">8.2</span> 题目</h2>
+<p>这个TASK，我们自学分类问题的建模（可能很多同学在学校没学过这部分知识，自学十分有挑战）。学习材料主要讲述了逻辑回归与决策树的知识，请你仔细阅读。另外，公众号熊大的数据价值回归系列，0-1回归部分，有非常精彩的讲解，请大家认真学习。在学习完这些材料之后，尝试完成作业。具体要求如下。</p>
+<ol style="list-style-type: decimal">
+<li><p>继续使用TASK 3的消费金融数据。</p></li>
+<li><p>将原来的因变量【申请人数】做如下处理，如果申请人数是0，保持不变；如果申请人数大于0，处理成1。新生成的这个因变量就是【是否有人申请】。</p></li>
+<li><p>以是否有人申请为因变量，自己尝试构造有意义的自变量。分别建立逻辑回归模型和决策树模型，理解什么样的产品有人申请。注意，原始数据的很多变量不适合直接做自变量，你需要有理有据地自己构造【有意义的】自变量。</p></li>
+<li><p>形成一份PDF报告。报告主要由4部分组成：</p>
+<p>4.1 一个段落的文字，简单陈述背景和研究问题（注意这个TASK的因变量是0-1类型的）。</p>
+<p>4.2 两页左右的篇幅，进行简单的描述分析（注意，因变量是0-1，请选择适合的统计图表进行描述）。无需报告数据说明表，因为没有那么多篇幅了。有逻辑地组织好你的描述分析。</p>
+<p>4.3 三页左右的篇幅，报告逻辑回归以及决策树的估计结果、解读、以及预测精度。认真看学习材料，谁敢直接截图代码结果我就直接淘汰你！注意，认真解读结果，我要你有思考的解读！！！再注意，不要出现任何公式，也不要介绍方法和原理，我比你清楚！</p>
+<p>4.4 用几个段落说明，两个方法的结果比较。选择一个角度，说明一下你准备采用哪个方法。注意，时刻记住你的研究目的是什么。</p></li>
+<li><p>提交一份6页的PDF文件（超页说明你废话多，页数少说明没认真写）。写上报告题目！！！宋体，小四号字体，1.5倍行距。排版整齐。提交之前仔细阅读，避免语病和错别字。我要正式一点的报告，谁再写口语化的、推文风格的报告，我就罚你给狗熊会写一年推文！</p></li>
+<li><p>DDL：2018年8月2日晚24:00. 7. 别问我写这个行不行，写那个行不行，是不是应该这么写那么写，这不是证明题，没有标准答案！把我当成你的客户、你的老板，站在读者的角度想想什么样的报告会让人眼前一亮！注意，给你3天时间，是让你认真学习仔细打磨报告的。不是让你玩2天拖到最后1天赶一个仓促的报告。</p></li>
+</ol>
+</div>
+<div id="section-8.3" class="section level2">
+<h2><span class="header-section-number">8.3</span> 影响消费贷款有效性的因素分析</h2>
+<div id="section-8.3.1" class="section level3">
+<h3><span class="header-section-number">8.3.1</span> 背景与研究问题</h3>
+<p>消费金融作为一种提供消费贷款的现代金融服务方式，正在高速地渗透进人们的日常生活中。数据显示，2017年我国互联网消费金融的交易规模从60亿元猛增到3625亿元，其规模呈现爆发式增长意味着消费金融产品的数量和种类也相应急剧增长。然而，质量并不一定和数量正相关，消费金融产品良莠不齐，有些贷款收到广泛申请客户的钟爱，而有些产品自从发行以来根本没有吸引任何申请客户。为了保证消费金融市场健康、稳定、高效地发展，如何制定出真正有效的、可以吸引申请客户的贷款产品成为各消费金融公司关注的核心问题。</p>
+<p>本案例使用了1046家消费金融公司所发放的，贷款金额为10万元、还款期限为12个月的消费贷款明细数据，包括审批时间、担保方式等7个借贷变量，月供、还款总费用等4个还贷变量，以及贷款申请人数变量。其中，因变量为申请人数，当申请人数为0时，代表该贷款没有客户申请，是无效的；当申请人数大于0时，代表实际的申请人数。由此，将因变量处理成0-1变量，即相应贷款是否有人申请，将该变量定义为贷款产品的有效性，通过后续建模挖掘影响贷款产品有效性的重要因素。</p>
+</div>
+<div id="section-8.3.2" class="section level3">
+<h3><span class="header-section-number">8.3.2</span> 描述性分析</h3>
+<p>借贷变量包括城市、审批时间、放款日期、担保方式、期限最高与最低范围和申请条件。首先将城市变量分为两类：北上广深四个一线城市和其他非一线城市。</p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-46-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-46-2.png" width="672" /></p>
+<p>由图1可以看出一线城市的贷款产品有效性更高，因此初步判定城市会对消费金融产品的有效性产生影响。由图2可以看出，信用贷的担保方式有效性更高，由于其他三种担保方式的样本量远小于信用贷，可以得出初步结论：担保方式可能对贷款产品有效性有影响，然而，这种影响也可能是由于数据本身的样本量差异形成的。</p>
+<p><img src="bookdown_files/figure-html/message==FALSE-1.png" width="672" /><img src="bookdown_files/figure-html/message==FALSE-2.png" width="672" /></p>
+<p>审批时间和放款日期的总和表示从申请人发出申请至发放贷款的总时长，将二者的和定义为等待时间。由图3则可以看出，有效的贷款产品在申请人发出申请后的平均等待时间（中位数）要明显高于无效的贷款产品，说明客户更青睐具有严格的审批流程与放贷规则的产品，因此，初步认为等待时间对贷款产品有效性有影响。</p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-47-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-47-2.png" width="672" /></p>
+<p>还贷变量包括月供、还款总费用、月管理费和还款方式。由图4可以看出，有效和无效贷款产品的月供平均水平（中位数）差异并不明显；图5和图6显示，其不同月管理费率和不同总费用的贷款有效性差异也十分微小，初步结论为：月供、月管理费费率和还款总费用可能不影响贷款产品有效性，但是还需要借助后续建模结果进行定量判断。</p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-48-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-48-2.png" width="672" /></p>
+<p>由图7可以看出，月管理费类型中收取月管理费的产品有效性更高，但是其样本量大于参考月利率收费类型的样本量，并且远大于一次性收费类型的样本量，因此月管理费类型对与贷款的有效性影响也可能是由于数据本身的样本量差异形成的。由图8则可以看出，分期还款的产品有效性最高，但是到期还款和随借随还的产品样本量远小于分期还款的产品，因此，这种影响也可能是由于数据量的差异形成的。</p>
+<p>通过对数据的描述性分析，本案例认为贷款产品的借贷变量（包括城市、等待时间和担保方式）和还贷变量（包括月供、还款总费用、月管理费类型、月管理费费率和还款方式）都可能会影响贷款产品的有效与否。为了深入挖掘影响贷款产品有效性的显著因素，本案例将建立影响有效性因素的逻辑回归模型（使用AIC标准选择模型）和决策树模型，并综合模型的复杂程度和预测精度，选择最有利于预测贷款产品有效性的统计模型。</p>
+</div>
+<div id="section-8.3.3" class="section level3">
+<h3><span class="header-section-number">8.3.3</span> 模型建立与选择</h3>
+<div id="-1" class="section level4">
+<h4><span class="header-section-number">8.3.3.1</span> 逻辑回归模型</h4>
+<p>表1展示了AIC模型的回归结果。</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">变量</th>
+<th align="center">系数估计</th>
+<th align="center">p值</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">截距项</td>
+<td align="center">-21.851789</td>
+<td align="center">0.033589</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="center">一线城市</td>
+<td align="center">0.420865</td>
+<td align="center">0.002845</td>
+<td align="center">基准值：非一线城市</td>
+</tr>
+<tr class="odd">
+<td align="center">月供</td>
+<td align="center">0.002316</td>
+<td align="center">0.058691</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="center">还款总费用</td>
+<td align="center">-1.754429</td>
+<td align="center">0.089953</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="center">担保方式–抵押贷</td>
+<td align="center">1.238128</td>
+<td align="center">0.308079</td>
+<td align="center">基准值：担保贷</td>
+</tr>
+<tr class="even">
+<td align="center">担保方式–信用贷</td>
+<td align="center">1.801066</td>
+<td align="center">0.131809</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="center">担保方式–自由选</td>
+<td align="center">0.504714</td>
+<td align="center">0.690626</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="center">放款日期</td>
+<td align="center">-0.120479</td>
+<td align="center">0.01399</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="center">审批时长</td>
+<td align="center">0.321546</td>
+<td align="center">&lt;0.001</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="center">期限最高范围–18个月</td>
+<td align="center">0.221104</td>
+<td align="center">0.680911</td>
+<td align="center">基准值：12个月</td>
+</tr>
+<tr class="odd">
+<td align="center">期限最高范围–24个月</td>
+<td align="center">0.00529</td>
+<td align="center">0.986929</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="center">期限最高范围–36个月</td>
+<td align="center">0.787114</td>
+<td align="center">0.005764</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="center">期限最高范围–48个月</td>
+<td align="center">1.129317</td>
+<td align="center">0.001629</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="center">期限最高范围–60个月</td>
+<td align="center">0.982672</td>
+<td align="center">0.050331</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="center">期限最高范围–120个月</td>
+<td align="center">1.139409</td>
+<td align="center">0.077782</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="center">期限最高范围–360个月</td>
+<td align="center">-0.773112</td>
+<td align="center">0.570084</td>
+<td align="center">NA</td>
+</tr>
+</tbody>
+</table>
+<p>从估计结果来看，在0.05的显著性水平下，可得出以下结论：若控制其他影响因素不变，</p>
+<p>（1）对于城市因素而言，一线城市的贷款产品被申请的可能性更大，这说明在北上广深发行的贷款产品更加有效，容易吸引客户；</p>
+<p>（2）对于放款日期而言，时间越短，产品的有效性越高；对于审批时长而言，审批时间长的更有可能被申请；这说明具有严格的审批流程，同时具有高效的放款流程的贷款更可能收到青睐。</p>
+<p>（3）对于还款期限而言，最高范围为4年的贷款最有效，其次是1年的，最难吸引申请客户的是最高期限范围为3年的产品，这说明还款期限的上限给潜在客户带来的心理预期对产品有效性是有影响的。</p>
+<p>使用该模型进行预测，选定样本的有效比例62%为阈值，产生的混淆矩阵如表2所示。据此计算出来的错分率、TPR和FPR分别是36.2%、69.2%、45.1%。</p>
+<pre><code>##     predict
+## real   0   1
+##    0 217 178
+##    1 200 449</code></pre>
+</div>
+<div id="section-8.3.3.2" class="section level4">
+<h4><span class="header-section-number">8.3.3.2</span> 决策树模型</h4>
+<p>图9展示了决策树模型的估计结果。从决策树的第一层节点（担保方式）来看，非信用贷类型的产品进入了图的左侧，而左侧的第二层节点告诉我们，在担保贷、抵押贷和自由选三种担保方式下，月供大于9791元的贷款产品是更有可能被人申请（有效的）的产品，这说明当提供要求的抵押物或由第三方提供担保时，每个月还款总额越高，才能越早赎回抵押物，解除第三方的担保风险，因此月供较高的产品更吸引潜在申请人。进一步看决策树的右侧，审批时间超过1.5天，并且月管理费费率小于0.66%的产品是大概率有效的，严格的审批流程和较低的费率当然是申请人较为青睐的。还款的期限范围会对人们的心理预期产生影响，中间的第三个节点表示，期限最高范围在2年之内的贷款是没有人申请的，而最高范围大于2年并且还款总费用小于5700元的产品很可能是有效的；同样地，期限最低范围大于3个月（第六个节点）也会大概率提高产品的有效性。这说明，当还款期限的最高、最低范围都较大时，人们对于自己的还款能力更有把握，从而更可能选择这样的贷款产品。此外，一个有趣的现象是，信用贷产品的月供金额在9016至10000元时更可能被申请，较为明确的月还款范围可能和10万元贷款申请人的平均收入水平有关。</p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
+<p>同样地，选定样本的有效比例62%为阈值，用决策树模型预测产生的混淆矩阵如表3所示。据此计算出来的错分率、TPR和FPR分别是29.2%、78.4%、41.8%。</p>
+<pre><code>##     predict
+## real   0   1
+##    0 230 165
+##    1 140 509</code></pre>
+</div>
+<div id="section-8.3.3.3" class="section level4">
+<h4><span class="header-section-number">8.3.3.3</span> 模型的比较与选择</h4>
+<p>根据两个模型的评价指标，决策树模型的错分率和FPR更小，且TPR更大，说明其预测的精度比逻辑回归模型（AIC标准）更高。绘制两个模型的ROC曲线（图10和图11），得到AIC模型的AUC值为0.678，决策树模型的AUC值为0.732，说明决策树模型的预测能力更好。</p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-52-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-52-2.png" width="672" /></p>
+<p>因此，综合考虑模型的预测精度指标和整体预测能力，选择决策树模型来预测一种贷款产品的有效性（是否有人申请）更佳。</p>
+</div>
+</div>
+</div>
+<div id="-1" class="section level2">
+<h2><span class="header-section-number">8.4</span> 代码</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())
+<span class="kw">setwd</span>(<span class="st">&quot;D:/Melody_Ren/onedrive/Rworkspace/bearclub&quot;</span>) 
+dat0 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;task_3.csv&quot;</span>)                <span class="co">#读入数据，命名dat0</span>
+dat1 &lt;-<span class="st"> </span>dat0                                          <span class="co">#备份数据</span>
+dat1<span class="op">$</span>apply[<span class="kw">which</span>(dat1<span class="op">$</span>apply <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>)] &lt;-<span class="st"> </span><span class="dv">1</span>                <span class="co">#因变量设置为0-1</span>
+n &lt;-<span class="st"> </span><span class="kw">nrow</span>(dat1)                                       <span class="co">#数据量</span>
+
+###将管理费类型和费率分开###
+<span class="kw">library</span>(data.table)
+split_fee &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(dat1<span class="op">$</span>monthly_fee, <span class="st">&quot; &quot;</span>))
+<span class="kw">colnames</span>(split_fee) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;fee_type&quot;</span>,<span class="st">&quot;fee_rate&quot;</span>)
+dat1 &lt;-<span class="st"> </span><span class="kw">cbind</span>(dat1, split_fee)
+
+<span class="co">#转换费率类型#</span>
+trans &lt;-<span class="st"> </span><span class="kw">c</span>()
+trans &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">matrix</span>(<span class="kw">lapply</span>(split_fee[,<span class="st">&quot;fee_rate&quot;</span>], <span class="cf">function</span>(x) <span class="kw">as.numeric</span>(<span class="kw">sub</span>(<span class="st">&quot;%&quot;</span>, <span class="st">&quot;&quot;</span>, x))<span class="op">/</span><span class="dv">100</span>)))
+split_fee<span class="op">$</span>fee_rate &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(trans<span class="op">$</span>V1)
+dat1 &lt;-<span class="st"> </span>dat1 <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>monthly_fee)
+
+dat1 &lt;-<span class="st"> </span><span class="kw">cbind</span>(dat1, split_fee)
+
+###将城市划分为一线和非一线###
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n){
+  <span class="cf">if</span> (dat1<span class="op">$</span>city[i] <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;北京&quot;</span>,<span class="st">&quot;上海&quot;</span>,<span class="st">&quot;广州&quot;</span>,<span class="st">&quot;深圳&quot;</span>)){
+    dat1<span class="op">$</span>city_flag[i] &lt;-<span class="st"> &quot;一线&quot;</span>
+  } <span class="cf">else</span> dat1<span class="op">$</span>city_flag[i] &lt;-<span class="st"> &quot;非一线&quot;</span>
+}
+
+###棘状图###
+<span class="kw">library</span>(vcd)
+city_spine &lt;-<span class="st"> </span><span class="kw">table</span>(dat1<span class="op">$</span>city_flag, dat1<span class="op">$</span>apply)
+<span class="kw">spine</span>(city_spine, <span class="dt">main =</span> <span class="st">&quot;城市因素&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;是否申请&quot;</span>)
+<span class="co">#barplot(city_spine, main = &quot;城市因素&quot;, ylab = &quot;是否申请&quot;, col = c(&quot;lightblue&quot;,&quot;lightpink&quot;), legend = rownames(city_spine))</span>
+
+fee_type_spine &lt;-<span class="st"> </span><span class="kw">table</span>(dat1<span class="op">$</span>fee_type, dat1<span class="op">$</span>apply)
+<span class="kw">spine</span>(fee_type_spine, <span class="dt">main =</span> <span class="st">&quot;月管理费类型&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;是否申请&quot;</span>)
+
+
+insure_way_spine &lt;-<span class="st"> </span><span class="kw">table</span>(dat1<span class="op">$</span>way_to_insure, dat1<span class="op">$</span>apply)
+<span class="kw">spine</span>(insure_way_spine, <span class="dt">main =</span> <span class="st">&quot;担保方式&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;是否申请&quot;</span>)
+
+pay_way_spine &lt;-<span class="st"> </span><span class="kw">table</span>(dat1<span class="op">$</span>way_to_pay, dat1<span class="op">$</span>apply)
+<span class="kw">spine</span>(pay_way_spine, <span class="dt">main =</span> <span class="st">&quot;还款方式&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;是否申请&quot;</span>)
+
+###
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>wait_for_money <span class="op">==</span><span class="st"> &quot;审批后当日（审批为3&quot;</span>),<span class="st">&quot;wait_for_money&quot;</span>] &lt;-<span class="st"> </span><span class="dv">0</span>   <span class="co">#将文字改为意思相同的数字</span>
+dat1<span class="op">$</span>wait_for_money &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">as.character</span>(dat1<span class="op">$</span>wait_for_money))
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n){
+  dat1<span class="op">$</span>total_wait_time[i] &lt;-<span class="st"> </span>dat1<span class="op">$</span>wait_for_money[i] <span class="op">+</span><span class="st"> </span>dat1<span class="op">$</span>wait_for_permssion[i]
+}
+
+<span class="co">#等待时间#</span>
+<span class="kw">boxplot</span>( <span class="kw">log</span>(total_wait_time) <span class="op">~</span><span class="st"> </span>apply, dat1,  <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>, <span class="st">&quot;lightpink&quot;</span>), <span class="dt">names =</span> <span class="kw">c</span>(<span class="st">&quot;未申请&quot;</span>, <span class="st">&quot;申请&quot;</span>), <span class="dt">ylab =</span> <span class="st">&quot;对数等待时间/天&quot;</span>)
+
+<span class="co">#月供#</span>
+<span class="kw">boxplot</span>( monthly_pay <span class="op">~</span><span class="st"> </span>apply, dat1,  <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>, <span class="st">&quot;lightpink&quot;</span>), <span class="dt">names =</span> <span class="kw">c</span>(<span class="st">&quot;未申请&quot;</span>, <span class="st">&quot;申请&quot;</span>), <span class="dt">ylab =</span> <span class="st">&quot;月供/元&quot;</span>)
+
+<span class="co">#还款总费用#</span>
+<span class="kw">boxplot</span>( total_fee <span class="op">~</span><span class="st"> </span>apply, dat1,  <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>, <span class="st">&quot;lightpink&quot;</span>), <span class="dt">names =</span> <span class="kw">c</span>(<span class="st">&quot;未申请&quot;</span>, <span class="st">&quot;申请&quot;</span>), <span class="dt">ylab =</span> <span class="st">&quot;还款总费用/万元&quot;</span>)
+
+<span class="co">#月管理费费率#</span>
+
+<span class="kw">boxplot</span>( fee_rate <span class="op">~</span><span class="st"> </span>apply, dat1,  <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>, <span class="st">&quot;lightpink&quot;</span>), <span class="dt">names =</span> <span class="kw">c</span>(<span class="st">&quot;未申请&quot;</span>, <span class="st">&quot;申请&quot;</span>), <span class="dt">ylab =</span> <span class="st">&quot;月管理费费率&quot;</span>)
+
+<span class="co">#最高最低期限#</span>
+
+<span class="co"># dat1$duration &lt;- dat1$ddl_up_limit/dat1$ddl_low_limit</span>
+
+
+###建立模型###
+dat1 &lt;-<span class="st"> </span><span class="kw">na.omit</span>(dat1)
+n1 &lt;-<span class="st"> </span><span class="kw">nrow</span>(dat1)
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n1) {
+  <span class="cf">if</span>(dat1<span class="op">$</span>wait_for_money[i] <span class="op">&lt;=</span><span class="st"> </span><span class="dv">7</span>){
+    dat1<span class="op">$</span>wait_for_money_flag[i] &lt;-<span class="st"> &quot;7天内放款&quot;</span>
+  } <span class="cf">else</span> dat1<span class="op">$</span>wait_for_money_flag[i] &lt;-<span class="st"> &quot;7天后放款&quot;</span>
+}
+
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n1) {
+  <span class="cf">if</span>(dat1<span class="op">$</span>wait_for_permssion[i] <span class="op">&lt;=</span><span class="st"> </span><span class="dv">7</span>){
+    dat1<span class="op">$</span>wait_for_permssion_flag[i] &lt;-<span class="st"> &quot;7天内审批&quot;</span>
+  } <span class="cf">else</span> dat1<span class="op">$</span>wait_for_permssion_flag[i] &lt;-<span class="st"> &quot;7天后审批&quot;</span>
+}
+
+temp_data &lt;-<span class="st"> </span>dat1[,<span class="kw">c</span>(<span class="st">&quot;city_flag&quot;</span>,<span class="st">&quot;monthly_pay&quot;</span>,<span class="st">&quot;total_fee&quot;</span>,<span class="st">&quot;way_to_pay&quot;</span>,<span class="st">&quot;way_to_insure&quot;</span>,<span class="st">&quot;fee_type&quot;</span>,<span class="st">&quot;fee_rate&quot;</span>,<span class="st">&quot;wait_for_money&quot;</span>, <span class="st">&quot;wait_for_permssion&quot;</span>,<span class="st">&quot;apply&quot;</span>,<span class="st">&quot;ddl_low_limit&quot;</span>,<span class="st">&quot;ddl_up_limit&quot;</span>)]
+temp_data<span class="op">$</span>city_flag &lt;-<span class="st"> </span><span class="kw">factor</span>(temp_data<span class="op">$</span>city_flag) <span class="co">#城市转化为因子型</span>
+temp_data<span class="op">$</span>ddl_low_limit &lt;-<span class="st"> </span><span class="kw">factor</span>(temp_data<span class="op">$</span>ddl_low_limit)
+temp_data<span class="op">$</span>ddl_up_limit &lt;-<span class="st"> </span><span class="kw">factor</span>(temp_data<span class="op">$</span>ddl_up_limit)
+temp_data<span class="op">$</span>apply &lt;-<span class="st"> </span><span class="kw">as.factor</span>(temp_data<span class="op">$</span>apply)
+
+<span class="co">#logistic回归#</span>
+glm_full &lt;-<span class="st"> </span><span class="kw">glm</span>(apply <span class="op">~</span><span class="st"> </span>., <span class="dt">family =</span> <span class="kw">binomial</span>(<span class="dt">link =</span> <span class="st">&quot;logit&quot;</span>), <span class="dt">data =</span> temp_data)
+<span class="kw">summary</span>(glm_full)
+glm_AIC &lt;-<span class="st"> </span><span class="kw">step</span>(glm_full, <span class="dt">k =</span> <span class="dv">2</span>, <span class="dt">trace =</span> <span class="ot">FALSE</span>)
+<span class="kw">summary</span>(glm_AIC)
+
+<span class="co">#预测#</span>
+predict &lt;-<span class="st"> </span><span class="kw">predict</span>(glm_AIC,<span class="dt">type=</span><span class="st">&#39;response&#39;</span>, <span class="dt">newdata =</span> temp_data)
+
+<span class="co">#混淆矩阵#</span>
+real &lt;-<span class="st"> </span>temp_data<span class="op">$</span>apply
+ratio_yes &lt;-<span class="st"> </span><span class="kw">nrow</span>(temp_data[<span class="kw">which</span>(temp_data<span class="op">$</span>apply <span class="op">==</span><span class="dv">1</span> ),])<span class="op">/</span><span class="kw">nrow</span>(temp_data)
+<span class="kw">table</span>(real,<span class="dt">predict =</span> <span class="kw">ifelse</span>(predict <span class="op">&gt;</span><span class="st"> </span>ratio_yes,<span class="dv">1</span>,<span class="dv">0</span>))
+
+<span class="co">#ROC曲线#</span>
+<span class="kw">library</span>(pROC)
+modelroc &lt;-<span class="st"> </span><span class="kw">roc</span>(temp_data<span class="op">$</span>apply,predict)
+<span class="kw">plot</span>(modelroc, <span class="dt">print.auc =</span> <span class="ot">TRUE</span>, <span class="dt">print.thres =</span> <span class="ot">TRUE</span>, <span class="dt">xlab =</span> <span class="st">&quot;特异度&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;灵敏度&quot;</span>)
+
+<span class="co">#决策树#</span>
+<span class="kw">library</span>(rpart)
+<span class="kw">library</span>(rattle)
+
+treelm &lt;-<span class="st"> </span><span class="kw">rpart</span>(apply <span class="op">~</span><span class="st"> </span>., <span class="dt">data =</span> temp_data)
+<span class="kw">fancyRpartPlot</span>(treelm, <span class="dt">sub =</span> <span class="st">&quot;&quot;</span>)
+
+predict_tree &lt;-<span class="st"> </span><span class="kw">predict</span>(treelm,<span class="dt">type=</span><span class="st">&#39;prob&#39;</span>, <span class="dt">newdata =</span> temp_data)
+treeroc &lt;-<span class="st"> </span><span class="kw">roc</span>(temp_data<span class="op">$</span>apply, predict_tree[,<span class="dv">2</span>])
+<span class="kw">table</span>(real,<span class="dt">predict =</span> <span class="kw">ifelse</span>(predict_tree[,<span class="dv">2</span>] <span class="op">&gt;</span><span class="st"> </span>ratio_yes,<span class="dv">1</span>,<span class="dv">0</span>))
+<span class="kw">plot</span>(treeroc, <span class="dt">print.auc =</span> <span class="ot">TRUE</span>, <span class="dt">print.thres =</span> <span class="ot">TRUE</span>, <span class="dt">xlab =</span> <span class="st">&quot;特异度&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;灵敏度&quot;</span>)</code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="linear-model.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="final.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook/js/app.min.js"></script>
+<script src="libs/gitbook/js/lunr.js"></script>
+<script src="libs/gitbook/js/plugin-search.js"></script>
+<script src="libs/gitbook/js/plugin-sharing.js"></script>
+<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/yihui/bookdown-chinese/edit/master/08-task-6.Rmd",
+"text": "缂栬緫"
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

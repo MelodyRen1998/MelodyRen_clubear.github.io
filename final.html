@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>狗熊会人才计划第三期——My Case</title>
+  <meta name="description" content="人才计划TASK &amp; Final Project。">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="狗熊会人才计划第三期——My Case" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="人才计划TASK &amp; Final Project。" />
+  <meta name="github-repo" content="yihui/bookdown-chinese" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="狗熊会人才计划第三期——My Case" />
+  
+  <meta name="twitter:description" content="人才计划TASK &amp; Final Project。" />
+  
+
+<meta name="author" content="yimeng">
+
+
+<meta name="date" content="2018-09-08">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="binomial.html">
+<link rel="next" href="sound.html">
+<script src="libs/jquery/jquery.min.js"></script>
+<link href="libs/gitbook/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="css\style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">狗熊会人才计划第三期</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#e887b4e8b0a2"><i class="fa fa-check"></i>致谢</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="author.html"><a href="author.html"><i class="fa fa-check"></i>作者简介</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> 狗熊会人才计划介绍</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#whats-that"><i class="fa fa-check"></i><b>1.1</b> 狗熊会，what’s that?!</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#omd"><i class="fa fa-check"></i><b>1.2</b> 人才计划，OMD!</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#section-1.3"><i class="fa fa-check"></i><b>1.3</b> 人才计划导师天团</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="wind.html"><a href="wind.html"><i class="fa fa-check"></i><b>2</b> 人才计划章程</a><ul>
+<li class="chapter" data-level="2.1" data-path="wind.html"><a href="wind.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 纪律</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="wind.html"><a href="wind.html#ddl"><i class="fa fa-check"></i><b>2.1.1</b> DDL</a></li>
+<li class="chapter" data-level="2.1.2" data-path="wind.html"><a href="wind.html#section-2.1.2"><i class="fa fa-check"></i><b>2.1.2</b> 礼貌</a></li>
+<li class="chapter" data-level="2.1.3" data-path="wind.html"><a href="wind.html#section-2.1.3"><i class="fa fa-check"></i><b>2.1.3</b> 作业</a></li>
+<li class="chapter" data-level="2.1.4" data-path="wind.html"><a href="wind.html#section-2.1.4"><i class="fa fa-check"></i><b>2.1.4</b> 退出</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="wind.html"><a href="wind.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 禁止抄袭</a></li>
+<li class="chapter" data-level="2.3" data-path="wind.html"><a href="wind.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 作业质量</a></li>
+<li class="chapter" data-level="2.4" data-path="wind.html"><a href="wind.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 自学</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>3</b> TASK 1 背景介绍</a><ul>
+<li class="chapter" data-level="3.1" data-path="background.html"><a href="background.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 学习资料</a></li>
+<li class="chapter" data-level="3.2" data-path="background.html"><a href="background.html#good-work"><i class="fa fa-check"></i><b>3.2</b> Good Work</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>4</b> TASK 2 数据说明</a><ul>
+<li class="chapter" data-level="4.1" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>4.1</b> 学习资料</a></li>
+<li class="chapter" data-level="4.2" data-path="data.html"><a href="data.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 数据概览</a></li>
+<li class="chapter" data-level="4.3" data-path="data.html"><a href="data.html#good-work-1"><i class="fa fa-check"></i><b>4.3</b> Good Work</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="code.html"><a href="code.html"><i class="fa fa-check"></i><b>5</b> TASK 3 代码规范</a><ul>
+<li class="chapter" data-level="5.1" data-path="code.html"><a href="code.html#-2"><i class="fa fa-check"></i><b>5.1</b> 学习资料</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="code.html"><a href="code.html#section-5.1.1"><i class="fa fa-check"></i><b>5.1.1</b> 注释篇</a></li>
+<li class="chapter" data-level="5.1.2" data-path="code.html"><a href="code.html#section-5.1.2"><i class="fa fa-check"></i><b>5.1.2</b> 命名篇</a></li>
+<li class="chapter" data-level="5.1.3" data-path="code.html"><a href="code.html#section-5.1.3"><i class="fa fa-check"></i><b>5.1.3</b> 函数模块化</a></li>
+<li class="chapter" data-level="5.1.4" data-path="code.html"><a href="code.html#section-5.1.4"><i class="fa fa-check"></i><b>5.1.4</b> 纠错与调试</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="code.html"><a href="code.html#section-5.2"><i class="fa fa-check"></i><b>5.2</b> 共享单车案例</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="code.html"><a href="code.html#section-5.2.1"><i class="fa fa-check"></i><b>5.2.1</b> 准备工作</a></li>
+<li class="chapter" data-level="5.2.2" data-path="code.html"><a href="code.html#-"><i class="fa fa-check"></i><b>5.2.2</b> 分析报告 &amp; 代码</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="descriptive.html"><a href="descriptive.html"><i class="fa fa-check"></i><b>6</b> TASK 4 描述分析</a><ul>
+<li class="chapter" data-level="6.1" data-path="descriptive.html"><a href="descriptive.html#-3"><i class="fa fa-check"></i><b>6.1</b> 学习资料</a></li>
+<li class="chapter" data-level="6.2" data-path="descriptive.html"><a href="descriptive.html#section-6.2"><i class="fa fa-check"></i><b>6.2</b> 题目</a></li>
+<li class="chapter" data-level="6.3" data-path="descriptive.html"><a href="descriptive.html#section-6.3"><i class="fa fa-check"></i><b>6.3</b> 探究影响消费金融贷款申请人数的因素——描述性分析</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="descriptive.html"><a href="descriptive.html#section-6.3.1"><i class="fa fa-check"></i><b>6.3.1</b> 对申请人数（因变量）进行描述</a></li>
+<li class="chapter" data-level="6.3.2" data-path="descriptive.html"><a href="descriptive.html#section-6.3.2"><i class="fa fa-check"></i><b>6.3.2</b> 对借贷变量（自变量）进行描述</a></li>
+<li class="chapter" data-level="6.3.3" data-path="descriptive.html"><a href="descriptive.html#section-6.3.3"><i class="fa fa-check"></i><b>6.3.3</b> 对还贷变量（自变量）进行描述</a></li>
+<li class="chapter" data-level="6.3.4" data-path="descriptive.html"><a href="descriptive.html#section-6.3.4"><i class="fa fa-check"></i><b>6.3.4</b> 初步结论</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="descriptive.html"><a href="descriptive.html#section-6.4"><i class="fa fa-check"></i><b>6.4</b> 代码</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="linear-model.html"><a href="linear-model.html"><i class="fa fa-check"></i><b>7</b> TASK 5 线性回归分析</a><ul>
+<li class="chapter" data-level="7.1" data-path="linear-model.html"><a href="linear-model.html#-4"><i class="fa fa-check"></i><b>7.1</b> 学习资料</a></li>
+<li class="chapter" data-level="7.2" data-path="linear-model.html"><a href="linear-model.html#section-7.2"><i class="fa fa-check"></i><b>7.2</b> 短租房热度案例</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>7.2.1</b> 准备工作</a></li>
+<li class="chapter" data-level="7.2.2" data-path="linear-model.html"><a href="linear-model.html#--1"><i class="fa fa-check"></i><b>7.2.2</b> 分析报告 &amp; 代码</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="binomial.html"><a href="binomial.html"><i class="fa fa-check"></i><b>8</b> TASK 6 分类问题</a><ul>
+<li class="chapter" data-level="8.1" data-path="binomial.html"><a href="binomial.html#-5"><i class="fa fa-check"></i><b>8.1</b> 学习资料</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="binomial.html"><a href="binomial.html#section-8.1.1"><i class="fa fa-check"></i><b>8.1.1</b> 逻辑回归模型</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>8.2</b> 题目</a></li>
+<li class="chapter" data-level="8.3" data-path="binomial.html"><a href="binomial.html#section-8.3"><i class="fa fa-check"></i><b>8.3</b> 影响消费贷款有效性的因素分析</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="binomial.html"><a href="binomial.html#section-8.3.1"><i class="fa fa-check"></i><b>8.3.1</b> 背景与研究问题</a></li>
+<li class="chapter" data-level="8.3.2" data-path="binomial.html"><a href="binomial.html#section-8.3.2"><i class="fa fa-check"></i><b>8.3.2</b> 描述性分析</a></li>
+<li class="chapter" data-level="8.3.3" data-path="binomial.html"><a href="binomial.html#section-8.3.3"><i class="fa fa-check"></i><b>8.3.3</b> 模型建立与选择</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>8.4</b> 代码</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="final.html"><a href="final.html"><i class="fa fa-check"></i><b>9</b> Fianl Project</a><ul>
+<li class="chapter" data-level="9.1" data-path="final.html"><a href="final.html#slides"><i class="fa fa-check"></i><b>9.1</b> 作品Slides</a></li>
+<li class="chapter" data-level="9.2" data-path="code.html"><a href="code.html#-2"><i class="fa fa-check"></i><b>9.2</b> 代码</a></li>
+</ul></li>
+<li class="appendix"><span><b>附录</b></span></li>
+<li class="chapter" data-level="A" data-path="sound.html"><a href="sound.html"><i class="fa fa-check"></i><b>A</b> 附录</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="blank">本书由 bookdown 强力驱动</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">狗熊会人才计划第三期——My Case</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="final" class="section level1">
+<h1><span class="header-section-number">第 9 章</span> Fianl Project</h1>
+<div id="slides" class="section level2">
+<h2><span class="header-section-number">9.1</span> 作品Slides</h2>
+<iframe seamless scrolling="no" style="width:100%;border-width:1px;border-style:solid;border-color:RGB(238, 238, 244)" frameborde="0" id="slide_one" src="E:/renyimeng/bookdown/bookdown-chinese-master/fina-project/fina-project.html">
+</iframe>
+<script>
+window.onload = function () {
+  var node = document.getElementById('slide_one')
+  node.style.height = parseInt(node.offsetWidth * 0.75) + 'px'
+};
+</script>
+</div>
+<div id="-2" class="section level2">
+<h2><span class="header-section-number">9.2</span> 代码</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#第一次打开#</span>
+<span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())
+<span class="kw">setwd</span>(<span class="st">&quot;D:/Melody_Ren/onedrive/Rworkspace/bearclub/final&quot;</span>) 
+dat0 &lt;-<span class="st"> </span>final_data  <span class="co">#没有去重的数据</span>
+
+<span class="co">#第二次打开#</span>
+<span class="kw">load</span>(<span class="st">&quot;D:/Melody_Ren/onedrive/Rworkspace/bearclub/final/.RData&quot;</span>) <span class="co">#加载工作环境</span>
+
+<span class="co">#背景描述#</span>
+song &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">type =</span> <span class="kw">c</span>(<span class="st">&quot;古典&quot;</span>,<span class="st">&quot;舞曲&quot;</span>,<span class="st">&quot;电音&quot;</span>,<span class="st">&quot;民谣&quot;</span>,<span class="st">&quot;爵士&quot;</span>,<span class="st">&quot;其他&quot;</span>,<span class="st">&quot;摇滚&quot;</span>,<span class="st">&quot;说唱&quot;</span>,<span class="st">&quot;R&amp;B&quot;</span>,<span class="st">&quot;流行&quot;</span>),
+                   <span class="dt">like =</span> <span class="kw">c</span>(<span class="fl">0.74</span>,<span class="fl">5.67</span>,<span class="fl">20.44</span>,<span class="fl">14.19</span>,<span class="fl">1.26</span>,<span class="fl">11.55</span>,<span class="fl">7.24</span>,<span class="fl">3.05</span>,<span class="fl">5.72</span>,<span class="fl">30.14</span>))
+
+<span class="kw">ggplot</span>(song, <span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">reorder</span>(type, <span class="op">-</span><span class="st"> </span>like), <span class="dt">y =</span> like))<span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;orange2&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;音乐风格&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;用户偏好比例（%）&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+###提取歌曲id###
+<span class="kw">library</span>(data.table)
+url_part2 &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(dat0<span class="op">$</span>song_url, <span class="st">&quot;https://y.qq.com/n/yqq/song/&quot;</span>))
+<span class="kw">colnames</span>(url_part2) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;none&quot;</span>,<span class="st">&quot;part_2&quot;</span>)
+song_id &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(url_part2<span class="op">$</span>part_<span class="dv">2</span>, <span class="st">&quot;.html&quot;</span>))
+<span class="kw">names</span>(song_id) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;song_id&quot;</span>) <span class="co">#从歌曲链接中提取歌曲id</span>
+dat0 &lt;-<span class="st"> </span><span class="kw">cbind</span>(dat0, song_id)
+song_index &lt;-<span class="st"> </span><span class="kw">duplicated</span>(dat0[,<span class="st">&quot;song_id&quot;</span>])
+dat1 &lt;-<span class="st"> </span>dat0[<span class="op">!</span>song_index,]     <span class="co">#去重后的歌曲</span>
+wrong_language &lt;-<span class="st"> </span><span class="kw">grep</span>(<span class="st">&quot;^语种&quot;</span>,dat1<span class="op">$</span>album,<span class="dt">value=</span>T)
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>album <span class="op">%in%</span><span class="st"> </span>wrong_language),<span class="st">&quot;language&quot;</span>] &lt;-<span class="st"> </span>dat1[<span class="kw">which</span>(dat1<span class="op">$</span>album <span class="op">%in%</span><span class="st"> </span>wrong_language),<span class="st">&quot;album&quot;</span>] 
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>album <span class="op">%in%</span><span class="st"> </span>wrong_language),<span class="st">&quot;album&quot;</span>] &lt;-<span class="st"> </span><span class="ot">NA</span>
+
+<span class="co">#神秘薛之谦#</span>
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>singer <span class="op">==</span><span class="st"> &quot;薛之谦&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;list_name&quot;</span>,<span class="st">&quot;list_url&quot;</span>)]
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>singer <span class="op">==</span><span class="st"> &quot;杨坤/郭采洁&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;list_name&quot;</span>,<span class="st">&quot;list_url&quot;</span>)]
+singer &lt;-<span class="st"> </span><span class="kw">unique</span>(onlysong_no_outlier<span class="op">$</span>singer) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">as.data.frame</span>()
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>singer <span class="op">==</span><span class="st"> &quot;李荣浩&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;list_name&quot;</span>,<span class="st">&quot;list_url&quot;</span>)]
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>singer <span class="op">==</span><span class="st"> &quot;莫文蔚&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;list_name&quot;</span>,<span class="st">&quot;list_url&quot;</span>)]
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>singer <span class="op">==</span><span class="st"> &quot;苏打绿&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;list_name&quot;</span>,<span class="st">&quot;list_url&quot;</span>)]
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>singer <span class="op">==</span><span class="st"> &quot;杨宗纬&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;list_name&quot;</span>,<span class="st">&quot;list_url&quot;</span>)]
+wrong_singer &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;周笔畅&quot;</span>,<span class="st">&quot;陈小春&quot;</span>,<span class="st">&quot;GAI&quot;</span>,<span class="st">&quot;G.E.M. 邓紫棋&quot;</span>,<span class="st">&quot;杨宗纬&quot;</span>,<span class="st">&quot;苏打绿&quot;</span>,<span class="st">&quot;莫文蔚&quot;</span>,<span class="st">&quot;李荣浩&quot;</span>,<span class="st">&quot;杨坤/郭采洁&quot;</span>,<span class="st">&quot;薛之谦&quot;</span>,<span class="st">&quot;陈奕迅&quot;</span>,<span class="st">&quot;许嵩&quot;</span>,<span class="st">&quot;五月天&quot;</span>, <span class="st">&quot;容祖儿&quot;</span>, <span class="st">&quot;王源&quot;</span>,<span class="st">&quot;孙燕姿&quot;</span>,<span class="st">&quot;陈小春&quot;</span>,<span class="st">&quot;梁静茹&quot;</span>,<span class="st">&quot;张惠妹&quot;</span>,<span class="st">&quot;汪苏泷&quot;</span>,<span class="st">&quot;徐良/汪苏泷&quot;</span>,<span class="st">&quot;林俊杰&quot;</span>,<span class="st">&quot;周杰伦&quot;</span>,<span class="st">&quot;范玮琪&quot;</span>,<span class="st">&quot;张杰&quot;</span>,<span class="st">&quot;范晓萱&quot;</span>,<span class="st">&quot;蔡健雅&quot;</span>,<span class="st">&quot;张杰&quot;</span>)
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>singer <span class="op">==</span><span class="st"> &quot;G.E.M. 邓紫棋&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;list_name&quot;</span>,<span class="st">&quot;list_url&quot;</span>)]
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>singer <span class="op">==</span><span class="st"> &quot;GAI&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;list_name&quot;</span>,<span class="st">&quot;list_url&quot;</span>,<span class="st">&quot;song_name&quot;</span>)]
+dat1[<span class="kw">which</span>(dat1<span class="op">$</span>singer <span class="op">==</span><span class="st"> &quot;陈小春&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;list_name&quot;</span>,<span class="st">&quot;list_url&quot;</span>,<span class="st">&quot;song_name&quot;</span>)]
+
+dat1 &lt;-<span class="st"> </span>dat1[<span class="op">!</span>dat1<span class="op">$</span>singer <span class="op">%in%</span><span class="st"> </span>wrong_singer, ] <span class="co">#删除错误歌手之后的数据</span>
+
+
+onlysong &lt;-<span class="st"> </span>dat1[,<span class="kw">c</span>(<span class="dv">4</span>,<span class="dv">6</span><span class="op">:</span><span class="dv">12</span>,<span class="dv">14</span>)] <span class="co">#只有歌曲信息，没有歌单信息</span>
+onlysong &lt;-<span class="st"> </span>onlysong[<span class="kw">complete.cases</span>(onlysong[,<span class="st">&quot;comment&quot;</span>]),] <span class="co">#删除空值</span>
+<span class="kw">library</span>(magrittr)
+onlysong<span class="op">$</span>comment &lt;-<span class="st"> </span><span class="kw">gsub</span>(<span class="st">&quot;</span><span class="ch">\\</span><span class="st">)&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="kw">gsub</span>(<span class="st">&quot;.*</span><span class="ch">\\</span><span class="st">(&quot;</span>,<span class="st">&quot;&quot;</span>,onlysong<span class="op">$</span>comment)) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">as.numeric</span>()
+album &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(onlysong<span class="op">$</span>album, <span class="st">&quot;专辑：&quot;</span>))
+album &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">album =</span> album[,<span class="dv">2</span>])
+onlysong &lt;-<span class="st"> </span><span class="kw">cbind</span>(onlysong,album)
+language &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(onlysong<span class="op">$</span>language, <span class="st">&quot;语种：&quot;</span>))
+language &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">language =</span> language[,<span class="dv">2</span>])
+onlysong &lt;-<span class="st"> </span>onlysong[,<span class="op">-</span><span class="dv">4</span>]
+onlysong &lt;-<span class="st"> </span><span class="kw">cbind</span>(onlysong,language)
+genre &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(onlysong<span class="op">$</span>genre, <span class="st">&quot;流派：&quot;</span>))
+genre &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">genre =</span> genre[,<span class="dv">2</span>])
+onlysong &lt;-<span class="st"> </span>onlysong[,<span class="op">-</span><span class="dv">4</span>]
+onlysong &lt;-<span class="st"> </span><span class="kw">cbind</span>(onlysong,genre)
+launch_time &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(onlysong<span class="op">$</span>launch_time, <span class="st">&quot;：&quot;</span>))
+<span class="kw">colnames</span>(launch_time) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;time_type&quot;</span>,<span class="st">&quot;time&quot;</span>)
+onlysong &lt;-<span class="st"> </span>onlysong[,<span class="op">-</span><span class="dv">4</span>]
+onlysong &lt;-<span class="st"> </span><span class="kw">cbind</span>(onlysong,launch_time)
+onlysong &lt;-<span class="st"> </span>onlysong[,<span class="op">-</span><span class="dv">4</span>]
+
+time &lt;-<span class="st"> </span><span class="kw">as.Date</span>(<span class="kw">as.character</span>(onlysong<span class="op">$</span>time))
+onlysong &lt;-<span class="st"> </span>onlysong[,<span class="op">-</span><span class="dv">10</span>]
+onlysong &lt;-<span class="st"> </span><span class="kw">cbind</span>(onlysong,time)
+
+<span class="kw">summary</span>(onlysong<span class="op">$</span>comment)
+onlysong_no_outlier &lt;-<span class="st"> </span>onlysong
+onlysong_no_outlier &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">complete.cases</span>(onlysong_no_outlier[,<span class="st">&quot;comment&quot;</span>]),] <span class="co">#删除5个空值</span>
+<span class="co">#q1&lt;-quantile(onlysong_no_outlier$comment, 0.001)        #取得时1%时的变量值</span>
+q99&lt;-<span class="kw">quantile</span>(onlysong_no_outlier<span class="op">$</span>comment, <span class="fl">0.99</span>)       <span class="co">#99%</span>
+<span class="co">#onlysong_no_outlier[onlysong_no_outlier$comment &lt;= q1,]$comment&lt;-q1</span>
+onlysong_no_outlier[onlysong_no_outlier<span class="op">$</span>comment <span class="op">&gt;</span><span class="st"> </span>q99,]<span class="op">$</span>comment&lt;-<span class="st"> </span><span class="ot">NA</span>
+onlysong_no_outlier &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">complete.cases</span>(onlysong_no_outlier[,<span class="st">&quot;comment&quot;</span>]),]
+
+my_ggtheme &lt;-<span class="st"> </span><span class="cf">function</span>(){
+  <span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span><span class="dv">18</span>)) <span class="op">+</span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span><span class="dv">18</span>)) <span class="op">+</span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span><span class="dv">20</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span><span class="dv">20</span>)) <span class="op">+</span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>)) <span class="op">+</span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>)) <span class="op">+</span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span><span class="kw">element_blank</span>(), <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>(),<span class="dt">panel.background =</span> <span class="kw">element_blank</span>(),<span class="dt">axis.line =</span> <span class="kw">element_line</span>(<span class="dt">colour =</span> <span class="st">&quot;black&quot;</span>))
+}
+
+onlysong_no_outlier[onlysong_no_outlier<span class="op">$</span>comment <span class="op">==</span><span class="st"> </span><span class="kw">max</span>(onlysong_no_outlier<span class="op">$</span>comment),]
+
+
+<span class="co">#评论数量分布直方图#</span>
+<span class="kw">library</span>(ggplot2)
+<span class="kw">library</span>(ggthemr)
+<span class="kw">ggthemr_reset</span>()
+<span class="kw">ggthemr</span>(<span class="st">&quot;dust&quot;</span>)
+<span class="kw">ggthemr</span>(<span class="st">&quot;earth&quot;</span>)
+
+plotcomment &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">table</span>(onlysong_no_outlier<span class="op">$</span>comment))
+<span class="kw">summary</span>(plotcomment<span class="op">$</span>Freq)
+<span class="kw">summary</span>(onlysong_no_outlier<span class="op">$</span>comment)
+
+want_language &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;国语&quot;</span>,<span class="st">&quot; 纯音乐&quot;</span>,<span class="st">&quot; 粤语&quot;</span>,<span class="st">&quot; 其他&quot;</span>,<span class="st">&quot; 潮汕语&quot;</span>,<span class="st">&quot; 台语&quot;</span> ) <span class="co">#筛选语言不符合要求的</span>
+onlysong_no_outlier &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>language <span class="op">%in%</span><span class="st"> </span>want_language),]
+
+
+<span class="kw">ggplot</span>(onlysong_no_outlier,<span class="kw">aes</span>(<span class="dt">x =</span> comment)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">20</span>, <span class="dt">fill =</span> <span class="st">&quot;orange2&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;orange2&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">ylim</span>(<span class="dv">0</span>,<span class="dv">30</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">xlim</span>(<span class="dv">0</span>,<span class="dv">40000</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;评论数量&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;频数&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+<span class="co">#把奇怪的删掉</span>
+no_strange &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="op">-</span><span class="st"> </span><span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>song_name <span class="op">==</span><span class="st"> &quot;最后我们没在一起&quot;</span>),]
+no_strange &lt;-<span class="st"> </span>no_strange[<span class="op">-</span><span class="st"> </span><span class="kw">which</span>(no_strange<span class="op">$</span>song_name <span class="op">==</span><span class="st"> &quot;最后我们没在一起&quot;</span>),]
+
+<span class="co">#评论量TOP3介绍</span>
+top_song_<span class="dv">3</span> &lt;-<span class="st"> </span>no_strange[<span class="kw">order</span>(no_strange<span class="op">$</span>comment, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>),][<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>,]
+
+
+<span class="co">#发行年份箱线图#</span>
+<span class="kw">library</span>(ggridges) 
+<span class="kw">library</span>(lubridate)
+<span class="kw">library</span>(viridis)
+<span class="kw">library</span>(ggplot2)
+
+onlysong_no_outlier<span class="op">$</span>year &lt;-<span class="st"> </span><span class="kw">year</span>(onlysong_no_outlier<span class="op">$</span>time)
+plotridge &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">complete.cases</span>(onlysong_no_outlier[,<span class="st">&quot;year&quot;</span>]),]
+plotridge &lt;-<span class="st"> </span>plotridge[<span class="kw">which</span>(plotridge<span class="op">$</span>time_type <span class="op">==</span><span class="st"> &#39;发行时间&#39;</span>),]
+plotridge[<span class="kw">which</span>((plotridge<span class="op">$</span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">1976</span>)<span class="op">&amp;</span>(plotridge<span class="op">$</span>year <span class="op">&lt;</span><span class="st"> </span><span class="dv">1990</span>)),<span class="st">&quot;year_flag&quot;</span>] &lt;-<span class="st"> &quot;1990年以前&quot;</span>
+plotridge[<span class="kw">which</span>((plotridge<span class="op">$</span>year <span class="op">&gt;=</span><span class="st"> </span><span class="dv">1990</span>)<span class="op">&amp;</span>(plotridge<span class="op">$</span>year <span class="op">&lt;</span><span class="st"> </span><span class="dv">1995</span>)),<span class="st">&quot;year_flag&quot;</span>] &lt;-<span class="st"> &quot;1990-1995年&quot;</span>
+<span class="st">plotridge[which((plotridge$year &gt;= 1995)&amp;(plotridge$year &lt; 2000)),&quot;</span>year_flag<span class="st">&quot;] &lt;- &quot;</span><span class="dv">1995</span><span class="op">-</span><span class="dv">2000</span>年<span class="st">&quot;</span>
+<span class="st">plotridge[which((plotridge$year &gt;= 2000)&amp;(plotridge$year &lt; 2005)),&quot;</span>year_flag<span class="st">&quot;] &lt;- &quot;</span><span class="dv">2000</span><span class="op">-</span><span class="dv">2005</span>年<span class="st">&quot;</span>
+<span class="st">plotridge[which((plotridge$year &gt;= 2005)&amp;(plotridge$year &lt; 2010)),&quot;</span>year_flag<span class="st">&quot;] &lt;- &quot;</span><span class="dv">2005</span><span class="op">-</span><span class="dv">2010</span>年<span class="st">&quot;</span>
+<span class="st">plotridge[which((plotridge$year &gt;= 2010)&amp;(plotridge$year &lt; 2015)),&quot;</span>year_flag<span class="st">&quot;] &lt;- &quot;</span><span class="dv">2010</span><span class="op">-</span><span class="dv">2015</span>年<span class="st">&quot;</span>
+<span class="st">plotridge[which(plotridge$year &gt;= 2015),&quot;</span>year_flag<span class="st">&quot;] &lt;- &quot;</span><span class="dv">2015</span><span class="op">-</span><span class="dv">2018</span>年<span class="st">&quot;</span>
+<span class="st">plotridge &lt;- plotridge[complete.cases(plotridge[,&quot;</span>year_flag<span class="st">&quot;]),]</span>
+
+<span class="st">#给每个发行年份分组添加中位数标签</span>
+<span class="st">year_flag_median &lt;- aggregate(comment~year_flag,data=plotridge,median)  %&gt;%</span>
+<span class="st">  as.data.frame() </span>
+
+<span class="st">for (i in 1:nrow(plotridge)){</span>
+<span class="st">  plotridge$median_flag[i] &lt;- year_flag_median[which(year_flag_median$year_flag == plotridge$year_flag[i]),&quot;</span>comment<span class="st">&quot;]</span>
+<span class="st">}</span>
+
+<span class="st">ggplot(plotridge, aes(x = reorder(factor(year_flag, levels = c(&quot;</span><span class="dv">1990</span>年以前<span class="st">&quot;,&quot;</span><span class="dv">1990</span><span class="op">-</span><span class="dv">1995</span>年<span class="st">&quot;,&quot;</span><span class="dv">1995</span><span class="op">-</span><span class="dv">2000</span>年<span class="st">&quot;,&quot;</span><span class="dv">2000</span><span class="op">-</span><span class="dv">2005</span>年<span class="st">&quot;,&quot;</span><span class="dv">2005</span><span class="op">-</span><span class="dv">2010</span>年<span class="st">&quot;,&quot;</span><span class="dv">2010</span><span class="op">-</span><span class="dv">2015</span>年<span class="st">&quot;,&quot;</span><span class="dv">2015</span><span class="op">-</span><span class="dv">2018</span>年<span class="st">&quot;)), median_flag), y = log(comment)))+</span>
+<span class="st">  geom_boxplot(varwidth=TRUE,fill = &quot;</span>orange2<span class="st">&quot;, color = &quot;</span>chocolate4<span class="st">&quot;)+</span>
+<span class="st">  labs(x = &quot;&quot;,y = &quot;</span>对数评论数<span class="st">&quot;) +</span>
+<span class="st">  my_ggtheme() +</span>
+<span class="st">  theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5)) </span>
+
+
+<span class="st">#发行年份典型示例#</span>
+<span class="st">max(plotridge[which(plotridge$year_flag == &quot;</span><span class="dv">2015</span><span class="op">-</span><span class="dv">2018</span>年<span class="st">&quot;), c(&quot;</span>song_name<span class="st">&quot;,&quot;</span>comment<span class="st">&quot;)]$comment)</span>
+<span class="st">plotridge &lt;- plotridge[!plotridge$singer %in% c(&quot;</span>周笔畅<span class="st">&quot;), ]</span>
+<span class="st">plotridge[which((plotridge$year_flag == &quot;</span><span class="dv">2015</span><span class="op">-</span><span class="dv">2018</span>年<span class="st">&quot;)&amp;(plotridge$comment == 26354)), c(&quot;</span>song_name<span class="st">&quot;,&quot;</span>comment<span class="st">&quot;)]</span>
+
+<span class="st">plotridge1 &lt;- plotridge[which(plotridge$year_flag %in% c(&quot;</span><span class="dv">1990</span>年以前<span class="st">&quot;,&quot;</span><span class="dv">1990</span><span class="op">-</span><span class="dv">1995</span>年<span class="st">&quot;,&quot;</span><span class="dv">1995</span><span class="op">-</span><span class="dv">2000</span>年<span class="st">&quot;,&quot;</span><span class="dv">2000</span><span class="op">-</span><span class="dv">2005</span>年<span class="st">&quot;)),]</span>
+<span class="st">plotridge2 &lt;- plotridge[which(plotridge$year_flag %in% c(&quot;</span><span class="dv">2005</span><span class="op">-</span><span class="dv">2010</span>年<span class="st">&quot;,&quot;</span><span class="dv">2010</span><span class="op">-</span><span class="dv">2015</span>年<span class="st">&quot;)),]</span>
+<span class="st">plotridge3 &lt;- plotridge[which(plotridge$year_flag %in% c(&quot;</span><span class="dv">2015</span><span class="op">-</span><span class="dv">2018</span>年<span class="st">&quot;)),]</span>
+
+
+<span class="st">#民谣歌手热度TOP15#</span>
+<span class="st">onlysong_no_outlier &lt;- onlysong_no_outlier[!onlysong_no_outlier$singer %in% wrong_singer, ] #删除错误歌手之后的数据</span>
+
+<span class="st">top_singer &lt;- aggregate(comment~singer,data=onlysong_no_outlier,sum)  %&gt;%</span>
+<span class="st">  as.data.frame() </span>
+
+<span class="st">top_singer_mean &lt;- aggregate(comment~singer,data=onlysong_no_outlier,mean)  %&gt;%</span>
+<span class="st">  as.data.frame() </span>
+<span class="st">top_singer_mean_20 &lt;- top_singer_mean[order(top_singer_mean$comment, decreasing = TRUE),][1:20,]</span>
+
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$singer == &quot;</span>Jam<span class="st">&quot;),c(&quot;</span>comment<span class="st">&quot;,&quot;</span>song_name<span class="st">&quot;)]</span>
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$singer == &quot;</span>杨凯莉<span class="st">&quot;),c(&quot;</span>comment<span class="st">&quot;,&quot;</span>song_name<span class="st">&quot;)]</span>
+
+<span class="st">#这两个歌手是什么鬼</span>
+<span class="st">onlysong_no_outlier &lt;- onlysong_no_outlier[c(-which(onlysong_no_outlier$singer == &quot;</span>街道办GDC \r\n\t\t\t\t\r\n\t\t\t\t <span class="op">/</span>\r\n\t\t\t\t 欧阳耀莹<span class="st">&quot;)),]</span>
+<span class="st">onlysong_no_outlier &lt;- onlysong_no_outlier[c(-which(onlysong_no_outlier$singer == &quot;</span>GALA<span class="st">&quot;)),]</span>
+<span class="st">onlysong_no_outlier &lt;- onlysong_no_outlier[c(-which(onlysong_no_outlier$singer == &quot;</span>杨凯莉<span class="st">&quot;)),]</span>
+
+
+<span class="st">top_singer_15 &lt;- top_singer[order(top_singer$comment, decreasing = TRUE),][1:15,]</span>
+<span class="st">ggplot(top_singer_15, aes(x = reorder(singer, - comment), y = comment)) +</span>
+<span class="st">  geom_bar(stat = &quot;</span>identity<span class="st">&quot;,fill = &quot;</span>orange2<span class="st">&quot;) +</span>
+<span class="st">  labs(x = &quot;</span>歌手<span class="st">&quot;, y = &quot;</span>总评论数量<span class="st">&quot;) +</span>
+<span class="st">  my_ggtheme()</span>
+
+<span class="st">top_singer_10 &lt;- top_singer[order(top_singer$comment, decreasing = TRUE),][1:10,]</span>
+<span class="st">ggplot(top_singer_10, aes(x = reorder(singer, - comment), y = comment)) +</span>
+<span class="st">  geom_bar(stat = &quot;</span>identity<span class="st">&quot;,fill = &quot;</span>orange2<span class="st">&quot;) +</span>
+<span class="st">  labs(x = &quot;</span>歌手<span class="st">&quot;, y = &quot;</span>总评论数量<span class="st">&quot;) +</span>
+<span class="st">  my_ggtheme()</span>
+
+<span class="st">#查一下谢春花</span>
+<span class="st">colnames(onlysong_no_outlier)</span>
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$singer == &quot;</span>谢春花<span class="st">&quot;),&quot;</span>comment<span class="st">&quot;]</span>
+
+<span class="st">outlier_singer &lt;- onlysong_no_outlier[which(onlysong_no_outlier$singer == &quot;</span>薛之谦<span class="st">&quot;),c(&quot;</span>song_name<span class="st">&quot;,&quot;</span>comment<span class="st">&quot;)]</span>
+<span class="st">#华晨宇</span>
+<span class="st">onlysong_no_outlier &lt;- onlysong_no_outlier[c(-which(onlysong_no_outlier$singer == &#39;华晨宇&#39;)),]</span>
+
+
+<span class="st">#歌曲流派箱线图#</span>
+<span class="st">plotgenre &lt;- onlysong_no_outlier[complete.cases(onlysong_no_outlier[,&quot;</span>genre<span class="st">&quot;]),]</span>
+
+<span class="st">unique(plotgenre$genre)</span>
+<span class="st">table(plotgenre$genre)</span>
+<span class="st">nrow(onlysong_no_outlier[which(onlysong_no_outlier$genre == &quot;</span>Folk<span class="st">&quot;),])/nrow(onlysong_no_outlier)</span>
+<span class="st">nrow(onlysong_no_outlier[which(onlysong_no_outlier$genre == &quot;</span>Pop<span class="st">&quot;),])/nrow(onlysong_no_outlier)</span>
+<span class="st">nrow(onlysong_no_outlier[which(onlysong_no_outlier$genre == &quot;</span>Rock<span class="st">&quot;),])/nrow(onlysong_no_outlier)</span>
+
+
+<span class="st">plotgenre_new &lt;- plotgenre[c(which(plotgenre$genre %in% c(&quot;</span>Alternative<span class="st">&quot;,&quot;</span>Folk<span class="st">&quot;,&quot;</span>Pop<span class="st">&quot;,&quot;</span>Rock<span class="st">&quot;,&quot;</span>Soundtrack<span class="st">&quot;))),]</span>
+<span class="st">plotgenre_new$genre &lt;- as.character(plotgenre_new$genre)</span>
+<span class="st">#给每个流派添加中位数标签</span>
+<span class="st">plotgenre_new &lt;- plotgenre_new[complete.cases(plotgenre_new[,&quot;</span>genre<span class="st">&quot;]),]</span>
+
+<span class="st">genre_flag_median &lt;- aggregate(comment~genre,data=plotgenre_new,median)  %&gt;%</span>
+<span class="st">  as.data.frame() </span>
+<span class="st">plotgenre_new &lt;- plotgenre_new[complete.cases(plotgenre_new[,&quot;</span>genre<span class="st">&quot;]),]</span>
+
+
+<span class="st">for (i in 1:nrow(plotgenre_new)){</span>
+<span class="st">  plotgenre_new$median_genre[i] &lt;- genre_flag_median[which(genre_flag_median$genre == plotgenre_new$genre[i]),&quot;</span>comment<span class="st">&quot;]</span>
+<span class="st">}</span>
+
+
+<span class="st">  plotgenre_new[which(plotgenre$genre == &quot;</span>Alternative<span class="st">&quot;),&quot;</span>chinese<span class="st">&quot;] &lt;- &quot;</span>其他<span class="st">&quot;</span>
+<span class="st">  plotgenre_new[which(plotgenre$genre == &quot;</span>Folk<span class="st">&quot;),&quot;</span>chinese<span class="st">&quot;] &lt;- &quot;</span>民谣<span class="st">&quot;</span>
+<span class="st">  plotgenre_new[which(plotgenre$genre == &quot;</span>Rock<span class="st">&quot;),&quot;</span>chinese<span class="st">&quot;] &lt;- &quot;</span>摇滚<span class="st">&quot;</span>
+<span class="st">  plotgenre_new[which(plotgenre$genre == &quot;</span>Pop<span class="st">&quot;),&quot;</span>chinese<span class="st">&quot;] &lt;- &quot;</span>流行<span class="st">&quot;</span>
+<span class="st">  plotgenre_new[which(plotgenre$genre == &quot;</span>Soundtrack<span class="st">&quot;),&quot;</span>chinese<span class="st">&quot;] &lt;- &quot;</span>原声音乐<span class="st">&quot;</span>
+
+<span class="st">  summary(plotgenre_new$chinese)</span>
+<span class="st">  plotgenre_new &lt;- plotgenre_new[complete.cases(plotgenre_new[,&quot;</span>chinese<span class="st">&quot;]),]</span>
+<span class="st">  </span>
+<span class="st">ggplot(plotgenre_new, aes(x = reorder(chinese, median_genre), y = log(comment))) +</span>
+<span class="st">  geom_boxplot(varwidth=TRUE, fill = &quot;</span>orange2<span class="st">&quot;, color = &quot;</span>chocolate4<span class="st">&quot;) +</span>
+<span class="st">  labs(x = &quot;</span>流派<span class="st">&quot;, y = &quot;</span>对数评论数<span class="st">&quot;) +</span>
+<span class="st">  my_ggtheme() </span>
+<span class="st"> # scale_fill_brewer(palette=&quot;</span>orange2<span class="st">&quot;)</span>
+
+<span class="st">plotgenre[which(plotgenre$genre == &quot;</span>Soundtrack<span class="st">&quot;),c(&quot;</span>song_name<span class="st">&quot;,&quot;</span>comment<span class="st">&quot;)]</span>
+
+<span class="st">#语言类型#</span>
+<span class="st">unique(onlysong_no_outlier$language)</span>
+<span class="st">table(onlysong_no_outlier$language)</span>
+<span class="st">onlysong_no_outlier$language &lt;- as.character(onlysong_no_outlier$language)</span>
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$language == &quot;</span> 英语<span class="st">&quot;),]</span>
+<span class="st">nrow(onlysong_no_outlier[which(onlysong_no_outlier$language == &quot;</span>国语<span class="st">&quot;),])/nrow(onlysong_no_outlier)</span>
+
+<span class="st">#歌词词语#</span>
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$comment == 25347),]</span>
+<span class="st">onlysong_no_outlier$lyrics[1182]</span>
+<span class="st">gsub(&quot;</span><span class="op">/</span>r<span class="op">/</span>n<span class="op">/</span>r<span class="op">/</span>n<span class="op">*</span><span class="st">&quot;,&quot;&quot;,onlysong_no_outlier$lyrics[1])</span>
+<span class="st">a &lt;- strsplit(onlysong_no_outlier$lyrics[1182], &#39;</span><span class="ch">\r\n\r\n</span><span class="st">&#39;)[[1]][1] #选出字符中歌词之外的部分</span>
+<span class="st">b &lt;- onlysong_no_outlier$lyrics[1182]</span>
+<span class="st">b &lt;- gsub(a,&quot;&quot;,b,fixed=T)  #正则表达式变成普通字符</span>
+<span class="st">gsub(&quot;</span>你好<span class="st">&quot;,&quot;&quot;,&quot;</span>你好坏<span class="st">&quot;)</span>
+<span class="st">gsub(&quot;</span>\\[展开\\]<span class="st">&quot;,&quot;&quot;,b)</span>
+<span class="st">nchar(b)</span>
+<span class="st">nchar(a)</span>
+<span class="st">substring(b, nchar(a)+1, nchar(b))</span>
+
+
+<span class="st">#去除作词作曲那些和最后的[展开]#</span>
+<span class="st">for (i in 1:nrow(onlysong_no_outlier)){</span>
+<span class="st">  a &lt;- strsplit(onlysong_no_outlier$lyrics[i], &#39;</span><span class="ch">\r\n\r\n</span><span class="st">&#39;)[[1]][1]</span>
+<span class="st">  b &lt;- onlysong_no_outlier$lyrics[i]</span>
+<span class="st">  onlysong_no_outlier$lyrics_no_singer[i] &lt;- gsub(&quot;</span>\\[展开\\]<span class="st">&quot;,&quot;&quot;,substring(b, nchar(a)+1, nchar(b)))</span>
+<span class="st">}</span>
+
+<span class="st">lyrics_to_jiebaR &lt;- onlysong_no_outlier$lyrics_no_singer</span>
+<span class="st">#names(lyrics_to_jiebaR) &lt;- c(&quot;</span>lyrics<span class="st">&quot;)</span>
+<span class="st">lyrics_to_jiebaR &lt;- as.character(lyrics_to_jiebaR)</span>
+<span class="st">write.csv(lyrics_to_jiebaR,&quot;</span>D<span class="op">:</span><span class="er">/</span>data<span class="op">/</span>lyrics_new.csv<span class="st">&quot;)</span>
+<span class="st">#分词#</span>
+<span class="st">library(jiebaR)</span>
+<span class="st"># f &lt;- scan(&#39;D:/data/lyrics.txt&#39;,sep=&#39;</span><span class="ch">\n</span><span class="st">&#39;,what=&#39;&#39;,encoding=&quot;</span>UTF<span class="op">-</span><span class="dv">8</span><span class="st">&quot;)</span>
+<span class="st">lyrics_to_jiebaR &lt;- onlysong_no_outlier$lyrics_no_singer</span>
+<span class="st">seg &lt;- qseg[lyrics_to_jiebaR] #使用qseg类型分词，并把结果保存到对象seg中</span>
+<span class="st">seg &lt;- seg[nchar(seg)&gt;1] #去除字符长度小于2的词语</span>
+
+<span class="st">seg &lt;- table(seg) #统计词频</span>
+
+<span class="st">seg &lt;- seg[!grepl(&#39;[0-9]+&#39;,names(seg))] #去除数字</span>
+<span class="st">length(seg) #查看处理完后剩余的词数</span>
+<span class="st">seg &lt;- sort(seg, decreasing = TRUE)[1:100] #降序排序，并提取出现次数最多的前100个词语</span>
+<span class="st">seg #查看100个词频最高的 </span>
+<span class="st">library(wordcloud2)</span>
+<span class="st">wordcloud2(seg) </span>
+
+
+
+<span class="st">#################停用词用这个！</span>
+<span class="st"># stop &lt;- read.table(file = file.choose(), stringsAsFactors = FALSE) #stopword.txt</span>
+<span class="st"># stopwords &lt;- c(NULL) #定义一个空对象stopwords，并赋值为“空”</span>
+<span class="st"># for(i in 1:length(stop)){ #for循环，length（f）求得停止词库词条个数。</span>
+<span class="st">#   stopwords[i] &lt;- stop[i] #遍历停止词库，将第【i】个停止词赋值给stopwords</span>
+<span class="st"># }</span>
+<span class="st">engine_stop &lt;- worker(stop_word = &quot;</span>D<span class="op">:</span><span class="er">/</span>data<span class="op">/</span>stopword.txt<span class="st">&quot;)</span>
+<span class="st">lyrics_to_jiebaR_100 &lt;- onlysong_no_outlier[order(onlysong_no_outlier$comment, decreasing = TRUE),][1:100]$lyrics_no_singer</span>
+<span class="st">seg_manual_stop &lt;- segment(lyrics_to_jiebaR,engine_stop)</span>
+<span class="st">seg_manual_stop &lt;- seg_manual_stop[nchar(seg_manual_stop)&gt;1] #去除字符长度小于2的词语</span>
+<span class="st">seg_vec &lt;- seg_manual_stop</span>
+
+<span class="st">seg_manual_stop &lt;- table(seg_manual_stop) #统计词频</span>
+<span class="st">seg_vec &lt;- table(seg_vec) #统计词频</span>
+
+<span class="st">seg_vec &lt;- seg_vec[!grepl(&#39;[0-9]+&#39;,names(seg_vec))] #去除数字</span>
+<span class="st">seg_vec &lt;- seg_vec[!grepl(&#39;[a-z]+&#39;,names(seg_vec))] #去除字母</span>
+
+<span class="st">###热门歌曲聚类用词</span>
+<span class="st">##最热门的100首歌</span>
+<span class="st">seg_manual_stop_100 &lt;- segment(lyrics_to_jiebaR_100,engine_stop)</span>
+<span class="st">seg_manual_stop_100 &lt;- seg_manual_stop_100[nchar(seg_manual_stop_100)&gt;1] #去除字符长度小于2的词语</span>
+<span class="st">seg_vec_top &lt;- seg_manual_stop_100</span>
+
+<span class="st">seg_vec_top &lt;- table(seg_vec_top) #统计词频</span>
+
+<span class="st">seg_vec_top &lt;- seg_vec_top[!grepl(&#39;[0-9]+&#39;,names(seg_vec_top))] #去除数字</span>
+<span class="st">seg_vec_top &lt;- seg_vec_top[!grepl(&#39;[a-z]+&#39;,names(seg_vec_top))] #去除字母</span>
+<span class="st">seg_vec_top &lt;- seg_vec_top[!grepl(&#39;[A-Z]+&#39;,names(seg_vec_top))] #去除字母</span>
+
+<span class="st">seg_vec_top_100 &lt;- sort(seg_vec_top, decreasing = TRUE)[1:50]</span>
+<span class="st">##########################</span>
+
+<span class="st">vec_word &lt;- as.character(rownames(seg_vec))</span>
+
+<span class="st">seg_manual_stop &lt;- seg_manual_stop[!grepl(&#39;[0-9]+&#39;,names(seg_manual_stop))] #去除数字</span>
+<span class="st">seg_manual_stop &lt;- seg_manual_stop[!grepl(&#39;[a-z]+&#39;,names(seg_manual_stop))] #去除字母</span>
+
+<span class="st">length(seg_manual_stop) #查看处理完后剩余的词数</span>
+<span class="st">seg_manual_stop_150 &lt;- sort(seg_manual_stop, decreasing = TRUE)[1:150] #降序排序，并提取出现次数最多的前100个词语</span>
+<span class="st">seg_manual_stop_100 &lt;- sort(seg_manual_stop, decreasing = TRUE)[1:100]</span>
+<span class="st">seg_manual_stop_50 &lt;- sort(seg_manual_stop, decreasing = TRUE)[1:50]</span>
+<span class="st">seg_manual_stop_150 #查看100个词频最高的 </span>
+<span class="st">library(wordcloud2)</span>
+<span class="st">mycolor &lt;- c()</span>
+<span class="st">wordcloud2(seg_manual_stop_150,size = 0.45, color = mycolor,minRotation = -pi/2, maxRotation = -pi/2, fontFamily = &quot;</span>微软雅黑<span class="st">&quot;, figPath = system.file(&quot;</span>examples<span class="op">/</span>music.png<span class="st">&quot;,package = &quot;</span>wordcloud2<span class="st">&quot;)) </span>
+
+<span class="st">#tdidf计算</span>
+<span class="st"># 取TF-IDF的前5的关键词</span>
+<span class="st">wk = worker()</span>
+<span class="st">segment&lt;-wk[&quot;</span>R的极客理想系列文章，涵盖了R的思想，使用，工具，创新等的一系列要点，以我个人的学习和体验去诠释R的强大。<span class="st">&quot;]</span>
+
+<span class="st">keys = worker(&quot;</span>keywords<span class="st">&quot;,topn=12)</span>
+
+<span class="st"># 计算关键词</span>
+<span class="st">keyword &lt;- as.data.frame(vector_keywords(seg_manual_stop,keys))</span>
+<span class="st">keyword$weight &lt;- rownames(keyword) %&gt;% as.numeric()</span>
+<span class="st">colnames(keyword) &lt;- c(&quot;</span>word<span class="st">&quot;,&quot;</span>weight<span class="st">&quot;)</span>
+<span class="st">keyword$word &lt;- as.character(keyword$word)</span>
+<span class="st">keyword &lt;- keyword[-c(9,10),]</span>
+<span class="st">ggplot(keyword, aes(x = reorder(word, - weight), y = weight)) +</span>
+<span class="st">  geom_bar(stat = &quot;</span>identity<span class="st">&quot;,fill = &quot;</span>orange2<span class="st">&quot;) +</span>
+<span class="st">  labs(x = &quot;</span>关键词<span class="st">&quot;, y = &quot;</span>TF<span class="op">-</span>IDF值<span class="st">&quot;) +</span>
+<span class="st">  my_ggtheme()</span>
+
+<span class="st">#词语热度对歌曲热度的影响#</span>
+<span class="st">seg_no_number &lt;- gsub(&quot;</span>\\d<span class="st">&quot;,&quot;&quot;,seg_manual_stop)</span>
+<span class="st">seg_no_number &lt;- as.data.frame(seg_no_number)</span>
+<span class="st">seg_no_number$seg_no_number &lt;- as.character(seg_no_number$seg_no_number)</span>
+<span class="st">summary(seg_no_number$seg_no_number)</span>
+
+<span class="st">seg_manual_top_20 &lt;- sort(seg_manual_stop, decreasing = TRUE)[1:20] #降序排序，并提取出现次数最多的前100个词语</span>
+<span class="st">seg_manual_bottom_20 &lt;- sort(seg_manual_stop, decreasing = FALSE)[1:20] #降序排序，并提取出现次数最多的前100个词语</span>
+<span class="st">seg_manual_top_20 &lt;- as.data.frame(seg_manual_top_20)</span>
+<span class="st">seg_manual_bottom_20 &lt;- as.data.frame(seg_manual_bottom_20)</span>
+
+
+<span class="st">#线上词云#</span>
+<span class="st">write.table (seg_manual_stop_150, file =&quot;</span>D<span class="op">:</span><span class="er">/</span>data<span class="op">/</span>jiebalyrics.txt<span class="st">&quot;, sep =&quot;&quot;, row.names =FALSE, col.names =TRUE, quote =TRUE)</span>
+
+<span class="st">#不同年份关键词#</span>
+<span class="st">no_na_year &lt;- onlysong_no_outlier[complete.cases(onlysong_no_outlier[,&quot;</span>year<span class="st">&quot;]),]</span>
+<span class="st">summary(no_na_year$year)</span>
+
+<span class="st">no_na_year[which((no_na_year$year &gt;= 1976)&amp;(no_na_year$year &lt;= 2005)),&quot;</span>year_flag<span class="st">&quot;] &lt;- &quot;</span><span class="dv">1990</span><span class="op">-</span><span class="dv">2005</span><span class="st">&quot;</span>
+<span class="st">no_na_year[which((no_na_year$year &gt; 2005)&amp;(no_na_year$year &lt;= 2015)),&quot;</span>year_flag<span class="st">&quot;] &lt;- &quot;</span><span class="dv">2005</span><span class="op">-</span><span class="dv">2015</span><span class="st">&quot;</span>
+<span class="st">no_na_year[which((no_na_year$year &gt;= 2015)&amp;(no_na_year$year &lt;= 2018)),&quot;</span>year_flag<span class="st">&quot;] &lt;- &quot;</span><span class="dv">2015</span><span class="op">-</span><span class="dv">2018</span><span class="st">&quot;</span>
+
+<span class="st">year1 &lt;- no_na_year[which(no_na_year$year_flag == &quot;</span><span class="dv">1990</span><span class="op">-</span><span class="dv">2005</span><span class="st">&quot;),]</span>
+<span class="st">year2 &lt;- no_na_year[which(no_na_year$year_flag == &quot;</span><span class="dv">2005</span><span class="op">-</span><span class="dv">2015</span><span class="st">&quot;),]</span>
+<span class="st">year3 &lt;- no_na_year[which(no_na_year$year_flag == &quot;</span><span class="dv">2015</span><span class="op">-</span><span class="dv">2018</span><span class="st">&quot;),]</span>
+
+<span class="st">yearbefore &lt;- no_na_year[which((no_na_year$year &gt;= 1976)&amp;(no_na_year$year &lt;= 2013)),]</span>
+<span class="st">yearafter &lt;- no_na_year[which(no_na_year$year &gt; 2013),]</span>
+
+<span class="st">jieba1 &lt;- year1$lyrics_no_singer</span>
+<span class="st">jieba2 &lt;- year2$lyrics_no_singer</span>
+<span class="st">jieba3 &lt;- year3$lyrics_no_singer</span>
+<span class="st">jiebabefore &lt;- yearbefore$lyrics_no_singer</span>
+<span class="st">jiebaafter &lt;- yearafter$lyrics_no_singer</span>
+
+<span class="st">seg1 &lt;- segment(jieba1,engine_stop)</span>
+<span class="st">seg2 &lt;- segment(jieba2,engine_stop)</span>
+<span class="st">seg3 &lt;- segment(jieba3,engine_stop)</span>
+<span class="st">segbefore &lt;- segment(jiebabefore,engine_stop)</span>
+<span class="st">segafter &lt;- segment(jiebaafter,engine_stop)</span>
+
+<span class="st">seg1 &lt;- seg1[nchar(seg1)&gt;1] #去除字符长度小于2的词语</span>
+<span class="st">seg2 &lt;- seg2[nchar(seg2)&gt;1] #去除字符长度小于2的词语</span>
+<span class="st">seg3 &lt;- seg3[nchar(seg3)&gt;1] #去除字符长度小于2的词语</span>
+<span class="st">segbefore &lt;- segbefore[nchar(segbefore)&gt;1] #去除字符长度小于2的词语</span>
+<span class="st">segafter &lt;- segafter[nchar(segafter)&gt;1] #去除字符长度小于2的词语</span>
+
+<span class="st">##############################</span>
+<span class="st">segbefore &lt;- table(segbefore) #统计词频</span>
+
+<span class="st">segbefore &lt;- segbefore[!grepl(&#39;[0-9]+&#39;,names(segbefore))] #去除数字</span>
+<span class="st">segbefore &lt;- segbefore[!grepl(&#39;[a-z]+&#39;,names(segbefore))] #去除字母</span>
+
+<span class="st">length(segbefore) #查看处理完后剩余的词数</span>
+<span class="st">seg_before_150 &lt;- sort(segbefore, decreasing = TRUE)[1:150] #降序排序，并提取出现次数最多的前100个词语</span>
+<span class="st">seg_before_150 #查看100个词频最高的 </span>
+<span class="st">##</span>
+<span class="st">seg1 &lt;- table(seg1) #统计词频</span>
+
+<span class="st">seg1 &lt;- seg1[!grepl(&#39;[0-9]+&#39;,names(seg1))] #去除数字</span>
+<span class="st">seg1 &lt;- seg1[!grepl(&#39;[a-z]+&#39;,names(seg1))] #去除字母</span>
+
+<span class="st">length(seg1) #查看处理完后剩余的词数</span>
+<span class="st">seg_1_150 &lt;- sort(seg1, decreasing = TRUE)[1:150] #降序排序，并提取出现次数最多的前100个词语</span>
+<span class="st">seg_1_150 #查看100个词频最高的</span>
+<span class="st">##</span>
+<span class="st">seg2 &lt;- table(seg2) #统计词频</span>
+
+<span class="st">seg2 &lt;- seg2[!grepl(&#39;[0-9]+&#39;,names(seg2))] #去除数字</span>
+<span class="st">seg2 &lt;- seg2[!grepl(&#39;[a-z]+&#39;,names(seg2))] #去除字母</span>
+
+<span class="st">length(seg2) #查看处理完后剩余的词数</span>
+<span class="st">seg_2_150 &lt;- sort(seg2, decreasing = TRUE)[1:150] #降序排序，并提取出现次数最多的前100个词语</span>
+<span class="st">seg_2_150 #查看100个词频最高的</span>
+<span class="st">##</span>
+<span class="st">seg3 &lt;- table(seg3) #统计词频</span>
+
+<span class="st">seg3 &lt;- seg3[!grepl(&#39;[0-9]+&#39;,names(seg3))] #去除数字</span>
+<span class="st">seg3 &lt;- seg3[!grepl(&#39;[a-z]+&#39;,names(seg3))] #去除字母</span>
+
+<span class="st">length(seg3) #查看处理完后剩余的词数</span>
+<span class="st">seg_3_150 &lt;- sort(seg3, decreasing = TRUE)[1:150] #降序排序，并提取出现次数最多的前100个词语</span>
+<span class="st">seg_3_150 #查看100个词频最高的</span>
+
+<span class="st">write.table (seg_1_150, file =&quot;</span>D<span class="op">:</span><span class="er">/</span>data<span class="op">/</span>seg1.txt<span class="st">&quot;, sep =&quot;&quot;, row.names =FALSE, col.names =TRUE, quote =TRUE)</span>
+<span class="st">write.table (seg_2_150, file =&quot;</span>D<span class="op">:</span><span class="er">/</span>data<span class="op">/</span>seg2.txt<span class="st">&quot;, sep =&quot;&quot;, row.names =FALSE, col.names =TRUE, quote =TRUE)</span>
+<span class="st">write.table (seg_2_150, file =&quot;</span>D<span class="op">:</span><span class="er">/</span>data<span class="op">/</span>seg3.txt<span class="st">&quot;, sep =&quot;&quot;, row.names =FALSE, col.names =TRUE, quote =TRUE)</span>
+
+
+<span class="st">#########################</span>
+
+<span class="st">wk = worker()</span>
+<span class="st">keys = worker(&quot;</span>keywords<span class="st">&quot;,topn=13)</span>
+<span class="st">keyword1 &lt;- as.data.frame(vector_keywords(seg1,keys))</span>
+<span class="st">keyword1$weight &lt;- rownames(keyword1) %&gt;% as.numeric()</span>
+<span class="st">colnames(keyword1) &lt;- c(&quot;</span>word<span class="st">&quot;,&quot;</span>weight<span class="st">&quot;)</span>
+<span class="st">keyword1$word &lt;- as.character(keyword1$word)</span>
+<span class="st">keyword1 &lt;- keyword1[-1,]</span>
+<span class="st">library(ggplot2)</span>
+<span class="st">ggplot(keyword1[1:10,], aes(x = reorder(word, - weight), y = weight)) +</span>
+<span class="st">  geom_bar(stat = &quot;</span>identity<span class="st">&quot;,fill = &quot;</span>orange2<span class="st">&quot;) +</span>
+<span class="st">  labs(x = &quot;</span>关键词<span class="st">&quot;, y = &quot;</span>TF<span class="op">-</span>IDF值<span class="st">&quot;) +</span>
+<span class="st">  my_ggtheme()</span>
+
+<span class="st">keywordbefore &lt;- as.data.frame(vector_keywords(segbefore,keys))</span>
+<span class="st">keywordbefore$weight &lt;- rownames(keywordbefore) %&gt;% as.numeric()</span>
+<span class="st">colnames(keywordbefore) &lt;- c(&quot;</span>word<span class="st">&quot;,&quot;</span>weight<span class="st">&quot;)</span>
+<span class="st">keywordbefore$word &lt;- as.character(keywordbefore$word)</span>
+<span class="st">keywordbefore &lt;- keywordbefore[c(-2,-8),]</span>
+<span class="st">ggplot(keywordbefore[1:10,], aes(x = reorder(word, - weight), y = weight)) +</span>
+<span class="st">  geom_bar(stat = &quot;</span>identity<span class="st">&quot;,fill = &quot;</span>orange2<span class="st">&quot;) +</span>
+<span class="st">  labs(x = &quot;</span>关键词<span class="st">&quot;, y = &quot;</span>TF<span class="op">-</span>IDF值<span class="st">&quot;) +</span>
+<span class="st">  my_ggtheme()</span>
+
+<span class="st">keywordafter &lt;- as.data.frame(vector_keywords(segafter,keys))</span>
+<span class="st">keywordafter$weight &lt;- rownames(keywordafter) %&gt;% as.numeric()</span>
+<span class="st">colnames(keywordafter) &lt;- c(&quot;</span>word<span class="st">&quot;,&quot;</span>weight<span class="st">&quot;)</span>
+<span class="st">keywordafter$word &lt;- as.character(keywordafter$word)</span>
+<span class="st">keywordafter &lt;- keywordafter[c(-2,-8),]</span>
+<span class="st">ggplot(keywordafter[1:10,], aes(x = reorder(word, - weight), y = weight)) +</span>
+<span class="st">  geom_bar(stat = &quot;</span>identity<span class="st">&quot;,fill = &quot;</span>orange2<span class="st">&quot;) +</span>
+<span class="st">  labs(x = &quot;</span>关键词<span class="st">&quot;, y = &quot;</span>TF<span class="op">-</span>IDF值<span class="st">&quot;) +</span>
+<span class="st">  my_ggtheme()</span>
+
+<span class="st">#除去所有的符号，用于计数</span>
+<span class="st">b &lt;- onlysong_no_outlier$lyrics_no_singer[j]</span>
+<span class="st">b &lt;- gsub(pattern=&quot;</span>\r\n\r\n<span class="st">&quot;, replacement=&quot;</span> <span class="st">&quot;, b,fixed=T) %&gt;%</span>
+<span class="st">  gsub(pattern=&quot;</span>\r\n<span class="st">&quot;, replacement=&quot;</span> <span class="st">&quot;, b,fixed=T) %&gt;%</span>
+<span class="st">  gsub(pattern=&quot;</span>\t<span class="st">&quot;, replacement=&quot;&quot;, b,fixed=T)</span>
+<span class="st">b &lt;- gsub(&quot;</span>[展开]<span class="st">&quot;,&quot;&quot;,b,fixed = T)</span>
+<span class="st">#分成一句一句地的</span>
+<span class="st">library(stringr)</span>
+
+<span class="st">b &lt;- onlysong_no_outlier$lyrics_no_singer[j] #取出每一行的歌词</span>
+<span class="st">b &lt;- gsub(pattern=&quot;</span>\r\n\r\n<span class="st">&quot;, replacement=&quot;</span> <span class="st">&quot;, b,fixed=T) %&gt;%</span>
+<span class="st">  gsub(pattern=&quot;</span>\r\n<span class="st">&quot;, replacement=&quot;</span> <span class="st">&quot;, b,fixed=T) %&gt;%</span>
+<span class="st">  gsub(pattern=&quot;</span>\t<span class="st">&quot;, replacement=&quot;&quot;, b,fixed=T) #去掉所有的空格换行</span>
+<span class="st">no_na_lyrics &lt;- strsplit(b, &#39; &#39;)[[1]][-which(strsplit(b, &#39; &#39;)[[1]] == &quot;&quot;)]  #分成一句一句的</span>
+
+
+<span class="st">length(no_na_lyrics) #句子数量</span>
+<span class="st">duplicated(no_na_lyrics) #该句是否重复</span>
+
+
+<span class="st">str_length(no_na_lyrics) %&gt;% </span>
+<span class="st">  mean() #每首歌平均句长</span>
+
+<span class="st">#除去没有歌词的</span>
+<span class="st">onlysong_no_outlier &lt;- onlysong_no_outlier[- which(onlysong_no_outlier$lyrics_no_singer == &quot;&quot;),]</span>
+<span class="st">onlysong_no_outlier_copy &lt;- onlysong_no_outlier</span>
+<span class="st">j &lt;- 1</span>
+<span class="st">for(j in 1:nrow(onlysong_no_outlier)){</span>
+<span class="st">  count_sentence &lt;- 0</span>
+<span class="st">  b &lt;- onlysong_no_outlier$lyrics_no_singer[j] #取出每一行的歌词</span>
+<span class="st">  b &lt;- gsub(pattern=&quot;</span>\r\n\r\n<span class="st">&quot;, replacement=&quot;</span> <span class="st">&quot;, b,fixed=T) %&gt;%</span>
+<span class="st">    gsub(pattern=&quot;</span>\r\n<span class="st">&quot;, replacement=&quot;</span> <span class="st">&quot;, b,fixed=T) %&gt;%</span>
+<span class="st">    gsub(pattern=&quot;</span>\t<span class="st">&quot;, replacement=&quot;&quot;, b,fixed=T) #去掉所有的空格换行</span>
+<span class="st">  no_na_lyrics &lt;- strsplit(b, &#39; &#39;)[[1]][-which(strsplit(b, &#39; &#39;)[[1]] == &quot;&quot;)]  #分成一句一句的</span>
+<span class="st">  no_na_lyrics &lt;- no_na_lyrics[!grepl(&#39;[a-z]+&#39;,no_na_lyrics)] #去除字母</span>
+<span class="st">  onlysong_no_outlier$sentence_num[j] &lt;- length(no_na_lyrics) #句子数量</span>
+<span class="st">  onlysong_no_outlier$sentence_length[j] &lt;- str_length(no_na_lyrics) %&gt;% mean()#每首歌平均句长</span>
+<span class="st">  </span>
+<span class="st">  for (i in (1:(length(no_na_lyrics)-1))){</span>
+<span class="st">    if (no_na_lyrics[i] == no_na_lyrics[i+1]){</span>
+<span class="st">      count_sentence &lt;- count_sentence + 1</span>
+<span class="st">    }</span>
+<span class="st">  }</span>
+<span class="st">  onlysong_no_outlier$repeat_lyrics[j] &lt;- count_sentence</span>
+<span class="st">}</span>
+<span class="st">onlysong_no_outlier &lt;- onlysong_no_outlier[c(-917),]</span>
+<span class="st">summary(onlysong_no_outlier$repeat_lyrics)</span>
+<span class="st">summary(onlysong_no_outlier$sentence_num)</span>
+<span class="st">summary(onlysong_no_outlier$sentence_length)</span>
+
+<span class="st">#查看异常情况</span>
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$repeat_lyrics == 40),]</span>
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$sentence_num == 131),]</span>
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$sentence_length &gt; 15),]</span>
+<span class="st">#onlysong_no_outlier &lt;- onlysong_no_outlier[which(onlysong_no_outlier$sentence_num == 192),]</span>
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$comment == max(onlysong_no_outlier$comment)),&quot;</span>sentence_num<span class="st">&quot;]</span>
+<span class="st">onlysong_no_outlier[which(onlysong_no_outlier$comment == max(onlysong_no_outlier$comment)),&quot;</span>sentence_length<span class="st">&quot;]</span>
+
+<span class="st">ggplot(onlysong_no_outlier, aes(x = sentence_num, y = comment)) +</span>
+<span class="st">  # geom_bar(stat = &quot;</span>identity<span class="st">&quot;,fill = &quot;</span>orange2<span class="st">&quot;, width = 2) +</span>
+<span class="st">  # geom_line() +</span>
+<span class="st">  geom_point(size = 4, color = &quot;</span>orange2<span class="st">&quot;, alpha = 0.7) +</span>
+<span class="st">  # geom_smooth(method=&#39;lm&#39;) +</span>
+<span class="st">  # xlim(0,135) +</span>
+<span class="st">  labs(x = &quot;</span>句子数量<span class="st">&quot;, y = &quot;</span>评论数<span class="st">&quot;) +</span>
+<span class="st">  geom_vline(aes(xintercept = 25), colour=&quot;</span><span class="co">#990000&quot;, linetype=&quot;dashed&quot;, size = 1.5) +</span>
+  <span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="dv">55</span>), <span class="dt">colour=</span><span class="st">&quot;#990000&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+<span class="kw">ggplot</span>(onlysong_no_outlier, <span class="kw">aes</span>(<span class="dt">x =</span> sentence_length, <span class="dt">y =</span> comment)) <span class="op">+</span>
+<span class="st">  </span><span class="co"># geom_bar(stat = &quot;identity&quot;,fill = &quot;orange2&quot;,width = 0.2) +</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">color =</span> <span class="st">&quot;orange2&quot;</span>, <span class="dt">alpha =</span> <span class="fl">0.7</span>) <span class="op">+</span>
+<span class="st">  </span><span class="co"># geom_smooth() +</span>
+<span class="st">  </span><span class="co"># xlim(0,135) +</span>
+<span class="st">  </span><span class="co"># ylim(0,10000) +</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;平均句子长度/字&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;评论数&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="dv">6</span>), <span class="dt">colour=</span><span class="st">&quot;#990000&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="dv">9</span>), <span class="dt">colour=</span><span class="st">&quot;#990000&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+<span class="co">#不同词性#</span>
+
+qseg[seg_manual_stop]
+qseg &lt;-<span class="st"> </span>seg_manual_stop
+word_type &lt;-<span class="st"> </span>qseg <span class="co">#备份</span>
+qseg_frame &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(qseg)
+<span class="kw">rownames</span>(qseg_frame)
+word_type_frame &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">word =</span> qseg_frame[,<span class="dv">1</span>], <span class="dt">type =</span> <span class="kw">rownames</span>(qseg_frame))
+word_type_frame<span class="op">$</span>word &lt;-<span class="st"> </span><span class="kw">as.character</span>(word_type_frame<span class="op">$</span>word)
+word_type_frame<span class="op">$</span>type &lt;-<span class="st"> </span><span class="kw">as.character</span>(word_type_frame<span class="op">$</span>type)
+
+<span class="co">#top100热门歌词性</span>
+engine_stop &lt;-<span class="st"> </span><span class="kw">worker</span>(<span class="dt">type =</span> <span class="st">&quot;tag&quot;</span>,<span class="dt">stop_word =</span> <span class="st">&quot;D:/data/stopword.txt&quot;</span>)
+lyrics_to_jiebaR_<span class="dv">100</span> &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">order</span>(onlysong_no_outlier<span class="op">$</span>comment, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>),][<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>]<span class="op">$</span>lyrics_no_singer
+seg_manual_stop_<span class="dv">100</span> &lt;-<span class="st"> </span><span class="kw">segment</span>(lyrics_to_jiebaR_<span class="dv">100</span>,engine_stop)
+seg_manual_stop_<span class="dv">100</span> &lt;-<span class="st"> </span>seg_manual_stop_<span class="dv">100</span>[<span class="kw">nchar</span>(seg_manual_stop_<span class="dv">100</span>)<span class="op">&gt;</span><span class="dv">1</span>] <span class="co">#去掉长度小于2的词语</span>
+<span class="co"># qseg[seg_manual_stop_100]</span>
+<span class="co"># qseg &lt;- seg_manual_stop_100</span>
+word_type_top &lt;-<span class="st"> </span>seg_manual_stop_<span class="dv">100</span> <span class="co">#备份</span>
+seg_manual_stop_<span class="dv">100</span> &lt;-<span class="st"> </span>word_type_top <span class="co">#取备份</span>
+
+qseg_top_frame &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(seg_manual_stop_<span class="dv">100</span>)
+<span class="co">#rownames(qseg_top_frame)</span>
+word_type_top_frame &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">word =</span> qseg_top_frame[,<span class="dv">1</span>], <span class="dt">type =</span> <span class="kw">rownames</span>(qseg_top_frame))
+word_type_top_frame<span class="op">$</span>word &lt;-<span class="st"> </span><span class="kw">as.character</span>(word_type_top_frame<span class="op">$</span>word)
+word_type_top_frame<span class="op">$</span>type &lt;-<span class="st"> </span><span class="kw">as.character</span>(word_type_top_frame<span class="op">$</span>type)
+<span class="co">#用词比例</span>
+<span class="kw">table</span>(word_type_top_frame<span class="op">$</span>type)
+word_type_top_frame &lt;-<span class="st"> </span>word_type_top_frame[<span class="kw">c</span>(<span class="op">-</span><span class="st"> </span><span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &#39;eng&#39;</span>)),] <span class="co">#删除英文词</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;a&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;形容词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;ad&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;副形词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;an&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;名形词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;b&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;区别词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;c&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;连词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;d&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;副词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;e&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;叹词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;f&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;方位词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;i&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;成语&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;j&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;简称略语&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;l&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;习用语&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;m&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;数词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;mq&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;数量词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;n&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;名词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nr&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;人名&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nrfg&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;未知&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nrt&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;未知&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;ns&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;地名&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nt&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;机构团体&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nz&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;其他专名&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;o&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;拟声词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;p&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;介词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;q&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;量词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;r&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;代词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;s&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;处所词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;t&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;时间词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;v&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;动词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;vn&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;名动词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;vq&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;未知&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;x&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;非语素字&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;y&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;语气词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;z&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;状态词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;rr&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;人称代词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;rz&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;指示代词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;u&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;助词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;vd&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;副动词&quot;</span>
+
+<span class="kw">summary</span>(word_type_top_frame<span class="op">$</span>chi_type)
+word_type_top_frame_data &lt;-<span class="st"> </span>word_type_top_frame
+word_type_top_frame &lt;-<span class="st"> </span><span class="kw">table</span>(word_type_top_frame<span class="op">$</span>chi_type)
+word_type_top_<span class="dv">10</span> &lt;-<span class="st"> </span><span class="kw">sort</span>(word_type_top_frame, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>)[<span class="dv">1</span><span class="op">:</span><span class="dv">11</span>]
+top_10_type_top &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(word_type_top_<span class="dv">10</span>)  <span class="co">#前十名的词性类别</span>
+top_10_type_top<span class="op">$</span>Var1 &lt;-<span class="st"> </span><span class="kw">as.character</span>(top_10_type_top<span class="op">$</span>Var1)
+top_10_type_top &lt;-<span class="st"> </span>top_10_type_top[<span class="kw">c</span>( <span class="op">-</span><span class="kw">which</span>(top_10_type_top<span class="op">$</span>Var1 <span class="op">==</span><span class="st"> &#39;非语素字&#39;</span>)),]
+top_10_type_top
+
+<span class="kw">library</span>(ggplot2)
+top_10_type_top<span class="op">$</span>por &lt;-<span class="st"> </span>top_10_type_top<span class="op">$</span>Freq <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(top_10_type_top<span class="op">$</span>Freq)
+top_word_type &lt;-<span class="st"> </span>top_10_type_top
+<span class="kw">ggplot</span>(top_word_type,<span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">reorder</span>(Var1,<span class="op">-</span>por), <span class="dt">y =</span> por)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;orange2&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;词性&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;占比&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+<span class="co">#BOTTOM 101:N词性分类</span>
+engine_stop &lt;-<span class="st"> </span><span class="kw">worker</span>(<span class="dt">type =</span> <span class="st">&quot;tag&quot;</span>,<span class="dt">stop_word =</span> <span class="st">&quot;D:/data/stopword.txt&quot;</span>)
+lyrics_to_jiebaR_100_bottom &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">order</span>(onlysong_no_outlier<span class="op">$</span>comment, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>),][<span class="dv">101</span><span class="op">:</span><span class="kw">nrow</span>(onlysong_no_outlier)]<span class="op">$</span>lyrics_no_singer
+seg_manual_stop_100_bottom &lt;-<span class="st"> </span><span class="kw">segment</span>(lyrics_to_jiebaR_100_bottom,engine_stop)
+seg_manual_stop_100_bottom &lt;-<span class="st"> </span>seg_manual_stop_100_bottom[<span class="kw">nchar</span>(seg_manual_stop_100_bottom)<span class="op">&gt;</span><span class="dv">1</span>] <span class="co">#去掉长度小于2的词语</span>
+<span class="co"># qseg[seg_manual_stop_100]</span>
+<span class="co"># qseg &lt;- seg_manual_stop_100</span>
+word_type_bottom &lt;-<span class="st"> </span>seg_manual_stop_100_bottom <span class="co">#备份</span>
+
+qseg_bottom_frame &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(seg_manual_stop_100_bottom)
+<span class="co">#rownames(qseg_top_frame)</span>
+<span class="co">#词性命令行太多了，数据框名称仍然用TOP100的歌曲的</span>
+word_type_top_frame &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">word =</span> qseg_bottom_frame[,<span class="dv">1</span>], <span class="dt">type =</span> <span class="kw">rownames</span>(qseg_bottom_frame))
+word_type_top_frame<span class="op">$</span>word &lt;-<span class="st"> </span><span class="kw">as.character</span>(word_type_top_frame<span class="op">$</span>word)
+word_type_top_frame<span class="op">$</span>type &lt;-<span class="st"> </span><span class="kw">as.character</span>(word_type_top_frame<span class="op">$</span>type)
+<span class="co">#用词比例</span>
+<span class="kw">table</span>(word_type_top_frame<span class="op">$</span>type)
+word_type_top_frame &lt;-<span class="st"> </span>word_type_top_frame[<span class="kw">c</span>(<span class="op">-</span><span class="st"> </span><span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &#39;eng&#39;</span>)),] <span class="co">#删除英文词</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;a&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;形容词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;ad&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;副形词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;an&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;名形词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;b&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;区别词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;c&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;连词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;d&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;副词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;e&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;叹词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;f&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;方位词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;i&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;成语&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;j&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;简称略语&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;l&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;习用语&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;m&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;数词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;mq&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;数量词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;n&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;名词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nr&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;人名&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nrfg&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;未知&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nrt&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;未知&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;ns&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;地名&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nt&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;机构团体&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;nz&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;其他专名&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;o&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;拟声词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;p&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;介词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;q&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;量词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;r&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;代词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;s&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;处所词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;t&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;时间词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;v&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;动词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;vn&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;名动词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;vq&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;未知&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;x&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;非语素字&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;y&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;语气词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;z&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;状态词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;rr&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;人称代词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;rz&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;指示代词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;u&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;助词&quot;</span>
+word_type_top_frame[<span class="kw">which</span>(word_type_top_frame<span class="op">$</span>type <span class="op">==</span><span class="st"> &quot;vd&quot;</span>),<span class="st">&quot;chi_type&quot;</span>] &lt;-<span class="st"> &quot;副动词&quot;</span>
+
+<span class="kw">summary</span>(word_type_top_frame<span class="op">$</span>chi_type)
+word_type_top_frame_data &lt;-<span class="st"> </span>word_type_top_frame
+word_type_top_frame &lt;-<span class="st"> </span><span class="kw">table</span>(word_type_top_frame<span class="op">$</span>chi_type)
+word_type_top_<span class="dv">10</span> &lt;-<span class="st"> </span><span class="kw">sort</span>(word_type_top_frame, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>)[<span class="dv">1</span><span class="op">:</span><span class="dv">11</span>]
+top_10_type_top &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(word_type_top_<span class="dv">10</span>)  <span class="co">#前十名的词性类别</span>
+top_10_type_top<span class="op">$</span>Var1 &lt;-<span class="st"> </span><span class="kw">as.character</span>(top_10_type_top<span class="op">$</span>Var1)
+top_10_type_top &lt;-<span class="st"> </span>top_10_type_top[<span class="kw">c</span>( <span class="op">-</span><span class="kw">which</span>(top_10_type_top<span class="op">$</span>Var1 <span class="op">==</span><span class="st"> &#39;非语素字&#39;</span>)),]
+top_10_type_top
+
+
+<span class="kw">library</span>(ggplot2)
+top_10_type_top<span class="op">$</span>por &lt;-<span class="st"> </span>top_10_type_top<span class="op">$</span>Freq <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(top_10_type_top<span class="op">$</span>Freq)
+bottom_word_type &lt;-<span class="st"> </span>top_10_type_top
+<span class="kw">ggplot</span>(bottom_word_type,<span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">reorder</span>(Var1,<span class="op">-</span>por), <span class="dt">y =</span> por)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;orange2&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;词性&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;占比&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+<span class="co">#对比两个比例</span>
+total_word_type &lt;-<span class="st"> </span><span class="kw">merge</span>(top_word_type, bottom_word_type, <span class="st">&quot;Var1&quot;</span>)
+total_word_type &lt;-<span class="st"> </span>total_word_type[,<span class="kw">c</span>(<span class="st">&quot;Var1&quot;</span>,<span class="st">&quot;por.x&quot;</span>,<span class="st">&quot;por.y&quot;</span>)]
+total_word_type_melt &lt;-<span class="st"> </span><span class="kw">melt</span>(total_word_type, <span class="dt">var.id =</span> <span class="st">&quot;Var1&quot;</span>)
+
+<span class="kw">ggplot</span>(total_word_type_melt,<span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">reorder</span>(Var1,<span class="op">-</span>value), <span class="dt">y =</span> value, <span class="dt">fill =</span> variable)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position=</span><span class="st">&quot;dodge&quot;</span>,<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;词性&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;占比&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;歌曲类别&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>() <span class="op">+</span>
+<span class="st">  </span><span class="co">#scale_fill_discrete(label = c(&quot;TOP500&quot;,&quot;其他&quot;)) +</span>
+<span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;TOP100&quot;</span>,<span class="st">&quot;其他&quot;</span>), <span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&#39;orange2&#39;</span>, <span class="st">&#39;chocolate4&#39;</span>))
+
+<span class="kw">library</span>(reshape2)
+
+
+<span class="co">#名词</span>
+noun &lt;-<span class="st"> </span>word_type_top_frame_data[<span class="kw">which</span>(word_type_top_frame_data<span class="op">$</span>chi_type <span class="op">==</span><span class="st"> &#39;名词&#39;</span>),]
+noun_freq &lt;-<span class="st"> </span><span class="kw">table</span>(noun[,<span class="dv">1</span>])
+<span class="kw">write.table</span> (noun_freq, <span class="dt">file =</span><span class="st">&quot;D:/data/new/noun.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+<span class="co">#动词</span>
+verb &lt;-<span class="st"> </span>word_type_top_frame_data[<span class="kw">which</span>(word_type_top_frame_data<span class="op">$</span>chi_type <span class="op">==</span><span class="st"> &#39;动词&#39;</span>),]
+verb_freq &lt;-<span class="st"> </span><span class="kw">table</span>(verb[,<span class="dv">1</span>])
+<span class="kw">write.table</span> (verb_freq, <span class="dt">file =</span><span class="st">&quot;D:/data/new/verb.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+<span class="co">#形容词</span>
+adj &lt;-<span class="st"> </span>word_type_top_frame_data[<span class="kw">which</span>(word_type_top_frame_data<span class="op">$</span>chi_type <span class="op">==</span><span class="st"> &#39;形容词&#39;</span>),]
+adj_freq &lt;-<span class="st"> </span><span class="kw">table</span>(adj[,<span class="dv">1</span>])
+<span class="kw">write.table</span> (adj_freq, <span class="dt">file =</span><span class="st">&quot;D:/data/new/adj.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+<span class="co">#副词</span>
+adv &lt;-<span class="st"> </span>word_type_top_frame_data[<span class="kw">which</span>(word_type_top_frame_data<span class="op">$</span>chi_type <span class="op">==</span><span class="st"> &#39;副词&#39;</span>),]
+adv_freq &lt;-<span class="st"> </span><span class="kw">table</span>(adv[,<span class="dv">1</span>])
+<span class="kw">write.table</span> (adv_freq, <span class="dt">file =</span><span class="st">&quot;D:/data/new/adv.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+<span class="co">#时间词</span>
+time &lt;-<span class="st"> </span>word_type_top_frame_data[<span class="kw">which</span>(word_type_top_frame_data<span class="op">$</span>chi_type <span class="op">==</span><span class="st"> &#39;时间词&#39;</span>),]
+time_freq &lt;-<span class="st"> </span><span class="kw">table</span>(time[,<span class="dv">1</span>])
+<span class="kw">write.table</span> (time_freq, <span class="dt">file =</span><span class="st">&quot;D:/data/new/time.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+<span class="co">#地名</span>
+place &lt;-<span class="st"> </span>word_type_top_frame_data[<span class="kw">which</span>(word_type_top_frame_data<span class="op">$</span>chi_type <span class="op">==</span><span class="st"> &#39;地名&#39;</span>),]
+place_freq &lt;-<span class="st"> </span><span class="kw">table</span>(place[,<span class="dv">1</span>])
+<span class="kw">write.table</span> (place_freq, <span class="dt">file =</span><span class="st">&quot;D:/data/new/place.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+<span class="co">#处所词</span>
+place_<span class="dv">1</span> &lt;-<span class="st"> </span>word_type_top_frame_data[<span class="kw">which</span>(word_type_top_frame_data<span class="op">$</span>chi_type <span class="op">==</span><span class="st"> &#39;处所词&#39;</span>),]
+place_1_freq &lt;-<span class="st"> </span><span class="kw">table</span>(place_<span class="dv">1</span>[,<span class="dv">1</span>])
+<span class="kw">write.table</span> (place_1_freq, <span class="dt">file =</span><span class="st">&quot;D:/data/new/place_1.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+<span class="co">#处所词</span>
+phrase &lt;-<span class="st"> </span>word_type_top_frame_data[<span class="kw">which</span>(word_type_top_frame_data<span class="op">$</span>chi_type <span class="op">==</span><span class="st"> &#39;成语&#39;</span>),]
+phrase_seq &lt;-<span class="st"> </span><span class="kw">table</span>(phrase[,<span class="dv">1</span>])
+<span class="kw">write.table</span> (phrase_seq, <span class="dt">file =</span><span class="st">&quot;D:/data/new/phrase.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+<span class="co">#处所词</span>
+people &lt;-<span class="st"> </span>word_type_top_frame_data[<span class="kw">which</span>(word_type_top_frame_data<span class="op">$</span>chi_type <span class="op">==</span><span class="st"> &#39;代词&#39;</span>),]
+people_freq &lt;-<span class="st"> </span><span class="kw">table</span>(people[,<span class="dv">1</span>])
+<span class="kw">write.table</span> (people_freq, <span class="dt">file =</span><span class="st">&quot;D:/data/new/people.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+###训练词向量###
+<span class="kw">install.packages</span>(<span class="st">&quot;text2vec&quot;</span>)
+<span class="kw">library</span>(text2vec)
+<span class="kw">library</span>(data.table)
+<span class="co"># data(&quot;movie_review&quot;)</span>
+<span class="kw">setDT</span>(onlysong_no_outlier)
+<span class="kw">setkey</span>(onlysong_no_outlier, song_id)
+index &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">2</span>,<span class="kw">nrow</span>(onlysong_no_outlier),<span class="dt">replace=</span><span class="ot">TRUE</span>,<span class="dt">prob=</span><span class="kw">c</span>(<span class="fl">0.7</span>,<span class="fl">0.3</span>)) <span class="co">#对数据分成两部分，70%训练数据，30%检测数据nrow(training)行数</span>
+train_set &lt;-<span class="st"> </span>onlysong_no_outlier[index <span class="op">==</span><span class="st"> </span><span class="dv">1</span>,]  <span class="co">#训练集</span>
+test_set &lt;-<span class="st"> </span>onlysong_no_outlier[index <span class="op">==</span><span class="st"> </span><span class="dv">2</span>,]   <span class="co">#测试集</span>
+
+prep_fun &lt;-<span class="st"> </span>tolower
+tok_fun &lt;-<span class="st"> </span>word_tokenizer
+
+it_train &lt;-<span class="st"> </span><span class="kw">itoken</span>(train_set<span class="op">$</span>lyrics_no_singer, 
+                  <span class="dt">preprocessor =</span> prep_fun, 
+                  <span class="dt">tokenizer =</span> tok_fun, 
+                  <span class="dt">ids =</span> train_set<span class="op">$</span>song_id, 
+                  <span class="dt">progressbar =</span> <span class="ot">FALSE</span>)
+vocab &lt;-<span class="st"> </span><span class="kw">create_vocabulary</span>(it_train)
+
+vectorizer &lt;-<span class="st"> </span><span class="kw">vocab_vectorizer</span>(vocab)
+dtm_train &lt;-<span class="st"> </span><span class="kw">create_dtm</span>(it_train, vectorizer)
+
+<span class="co">#匹配id</span>
+train_set<span class="op">$</span>song_id &lt;-<span class="st"> </span><span class="kw">as.character</span>(train_set<span class="op">$</span>song_id)
+<span class="kw">rownames</span>(dtm_train) &lt;-<span class="st"> </span><span class="kw">c</span>(train_set<span class="op">$</span>song_id)
+<span class="kw">identical</span>(<span class="kw">rownames</span>(dtm_train), train_set<span class="op">$</span>song_id)
+<span class="co">#停用词，低频词</span>
+vocab &lt;-<span class="st"> </span><span class="kw">create_vocabulary</span>(it_train, <span class="dt">stopwords =</span> <span class="st">&quot;D:/data/stopword.txt&quot;</span>)
+pruned_vocab &lt;-<span class="st"> </span><span class="kw">prune_vocabulary</span>(vocab, 
+                                <span class="dt">term_count_min =</span> <span class="dv">5</span>, 
+                                <span class="dt">doc_proportion_max =</span> <span class="fl">0.5</span>,
+                                <span class="dt">doc_proportion_min =</span> <span class="fl">0.001</span>)
+vectorizer &lt;-<span class="st"> </span><span class="kw">vocab_vectorizer</span>(pruned_vocab)
+dtm_train &lt;-<span class="st"> </span><span class="kw">create_dtm</span>(it_train, vectorizer)
+
+<span class="co">#用word2vec#</span>
+<span class="kw">install.packages</span>(<span class="st">&quot;tmcn&quot;</span>)
+<span class="kw">library</span>(tmcn)
+?word2vec
+??word2vec
+<span class="kw">install.packages</span>(<span class="st">&quot;tmcn.word2vec&quot;</span>, <span class="dt">repos=</span><span class="st">&quot;http://R-Forge.R-project.org&quot;</span>)
+<span class="kw">library</span>(tmcn.word2vec)
+
+word2vec &lt;-<span class="st"> </span><span class="cf">function</span> (train_file, output_file, 
+                      <span class="dt">binary=</span><span class="dv">1</span>,                                <span class="co"># output format, 1-binary, 0-txt</span>
+                      <span class="dt">cbow=</span><span class="dv">0</span>,                                  <span class="co"># skip-gram (0) or continuous bag of words (1) </span>
+                      <span class="dt">num_threads =</span> <span class="dv">1</span>,                         <span class="co"># num of workers </span>
+                      <span class="dt">num_features =</span> <span class="dv">300</span>,                      <span class="co"># word vector dimensionality </span>
+                      <span class="dt">window =</span> <span class="dv">10</span>,                             <span class="co"># context / window size </span>
+                      <span class="dt">min_count =</span> <span class="dv">40</span>,                          <span class="co"># minimum word count </span>
+                      <span class="dt">sample =</span> <span class="fl">1e-3</span>,                           <span class="co"># downsampling of frequent words</span>
+                      <span class="dt">classes =</span> <span class="dv">0</span>
+) 
+  
+  <span class="co"># The parameters: </span>
+  <span class="co">#                binary       - output format of the model; </span>
+  <span class="co">#</span>
+  <span class="co">#                cbow         - which algorithm to use for training or skip-gram bag of words (cbow). </span>
+  <span class="co">#                               Skip-gram is slower but produces a better result on the rare words; </span>
+  <span class="co">#</span>
+  <span class="co">#                num_threads  - Processor number of threads involved in the construction of the model;</span>
+  <span class="co">#</span>
+  <span class="co">#                num_features - the dimension of words (or a vector for each word), it is recommended from tens to hundreds; </span>
+  <span class="co">#</span>
+<span class="co">#                window       - as many words from the context of the training algorithm should be taken into account; </span>
+<span class="co">#</span>
+<span class="co">#                min_count    - limits the size of a boost word dictionary. </span>
+<span class="co">#                               Words that are not found in the text more than the specified number are ignored. </span>
+<span class="co">#                               Recommended value - from ten to one hundred; </span>
+<span class="co">#</span>
+<span class="co">#                sample       - the lower limit of the frequency of occurrence of words in the text, </span>
+<span class="co">#                               it is recommended from .00001 to .01.</span>
+
+
+
+TrainingFile &lt;-<span class="st"> </span>onlysong_no_outlier<span class="op">$</span>lyrics_no_singer
+ModelFile &lt;-<span class="st"> </span><span class="kw">file.path</span>(<span class="kw">tempdir</span>(), <span class="st">&quot;output&quot;</span>, <span class="st">&quot;model2.bin&quot;</span>)
+
+<span class="kw">word2vec</span>(TrainingFile2, ModelFile2)
+
+<span class="co">#自编译函数#</span>
+<span class="kw">require</span>(tmcn.word2vec)
+TrainingFile &lt;-<span class="st"> </span><span class="kw">system.file</span>()
+<span class="kw">word2vec</span>(<span class="st">&quot;D:/data/lyrics.txt&quot;</span>,<span class="st">&quot;D:/data/vec.txt&quot;</span>,<span class="dt">binary =</span> <span class="dv">0</span>,<span class="dt">sample =</span> <span class="fl">0.001</span>, <span class="dt">min_count =</span> <span class="dv">10</span>, <span class="dt">classes =</span> <span class="dv">3</span>)
+
+<span class="co">#重新整理歌词</span>
+
+b &lt;-<span class="st"> </span>onlysong_no_outlier<span class="op">$</span>lyrics_no_singer
+b &lt;-<span class="st"> </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\r\n\r\n</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot; &quot;</span>, b,<span class="dt">fixed=</span>T) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\r\n</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot; &quot;</span>, b,<span class="dt">fixed=</span>T) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot;&quot;</span>, b,<span class="dt">fixed=</span>T) <span class="co">#去掉所有的空格换行</span>
+
+
+b
+<span class="co">#word_for_vec &lt;- strsplit(b, &#39; &#39;)[[1]][-which(strsplit(b, &#39; &#39;)[[1]] == &quot;&quot;)]  #分成一句一句的</span>
+word_for_vec &lt;-<span class="st"> </span>b[<span class="op">!</span><span class="kw">grepl</span>(<span class="st">&#39;[a-z]+&#39;</span>,b)] <span class="co">#去除字母</span>
+word_for_vec &lt;-<span class="st"> </span>b[<span class="op">!</span><span class="kw">grepl</span>(<span class="st">&#39;[0-9]+&#39;</span>,b)] <span class="co">#去除数字</span>
+
+<span class="kw">write.table</span>(seg_manual_stop,<span class="st">&quot;D:/data/word_to_vec.txt&quot;</span>, <span class="dt">sep =</span><span class="st">&quot;&quot;</span>, <span class="dt">row.names =</span><span class="ot">FALSE</span>, <span class="dt">col.names =</span><span class="ot">TRUE</span>, <span class="dt">quote =</span><span class="ot">TRUE</span>)
+
+<span class="kw">word2vec</span>(<span class="st">&quot;D:/data/word_to_vec.txt&quot;</span>,<span class="st">&quot;D:/data/vec_new.txt&quot;</span>,<span class="dt">binary =</span> <span class="dv">0</span>,<span class="dt">sample =</span> <span class="fl">0.001</span>, <span class="dt">min_count =</span> <span class="dv">10</span>, <span class="dt">classes =</span> <span class="dv">3</span>)
+
+<span class="co">#聚类建模</span>
+<span class="co">#默认的最大迭代次数为10</span>
+
+<span class="kw">dim</span>(vec_new_nohaed)
+<span class="kw">head</span>(seg_vec_top_<span class="dv">100</span>)
+<span class="kw">names</span>(seg_vec_top_<span class="dv">100</span>)
+vec_<span class="dv">100</span> &lt;-<span class="st"> </span>vec_new_nohaed[<span class="kw">which</span>(vec_new_nohaed<span class="op">$</span>V1 <span class="op">%in%</span><span class="st"> </span><span class="kw">names</span>(seg_manual_stop_<span class="dv">100</span>)),]
+
+vec_<span class="dv">50</span> &lt;-<span class="st"> </span>vec_new_nohaed[<span class="kw">which</span>(vec_new_nohaed<span class="op">$</span>V1 <span class="op">%in%</span><span class="st"> </span><span class="kw">names</span>(seg_manual_stop_<span class="dv">50</span>)),]
+
+vec_top_<span class="dv">100</span> &lt;-<span class="st"> </span>vec_new_nohaed[<span class="kw">which</span>(vec_new_nohaed<span class="op">$</span>V1 <span class="op">%in%</span><span class="st"> </span><span class="kw">names</span>(seg_vec_top_<span class="dv">100</span>)),]
+
+
+<span class="co">#原始数据标准化</span>
+vec_100_<span class="dv">1</span> &lt;-<span class="st"> </span>vec_<span class="dv">100</span>[,<span class="op">-</span><span class="dv">1</span>]
+vec_cluster &lt;-<span class="st"> </span><span class="kw">scale</span>(vec_100_<span class="dv">1</span>)
+
+vec_50_<span class="dv">1</span> &lt;-<span class="st"> </span>vec_<span class="dv">50</span>[,<span class="op">-</span><span class="dv">1</span>]
+vec_cluster_<span class="dv">50</span> &lt;-<span class="st"> </span><span class="kw">scale</span>(vec_50_<span class="dv">1</span>)
+
+vec_top_100_<span class="dv">1</span> &lt;-<span class="st"> </span>vec_top_<span class="dv">100</span>[,<span class="op">-</span><span class="dv">1</span>]
+vec_cluster_top &lt;-<span class="st"> </span><span class="kw">scale</span>(vec_top_100_<span class="dv">1</span>)
+
+
+<span class="kw">install.packages</span>(<span class="st">&quot;factoextra&quot;</span>)
+<span class="kw">library</span>(factoextra) 
+<span class="co">#设置随机数种子</span>
+<span class="kw">set.seed</span>(<span class="dv">1000</span>)  
+<span class="co">#确定最佳聚类个数，使用组内平方误差和法  </span>
+<span class="kw">fviz_nbclust</span>(vec_cluster_top, kmeans, <span class="dt">method=</span><span class="st">&quot;wss&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept=</span><span class="dv">4</span>,<span class="dt">linetype=</span><span class="dv">2</span>) 
+
+<span class="co">#根据最佳聚类个数，进行kmeans聚类</span>
+res_top &lt;-<span class="st"> </span><span class="kw">kmeans</span>(vec_cluster_top,<span class="dv">4</span>)
+<span class="co">#将分类结果放入原数据集中</span>
+recombine_vec_top &lt;-<span class="st"> </span><span class="kw">cbind</span>(vec_top_<span class="dv">100</span>,res_top<span class="op">$</span>cluster)
+<span class="co">#导出最终结果</span>
+<span class="kw">write.csv</span>(res,<span class="dt">file=</span><span class="st">&#39;res1.csv&#39;</span>)
+<span class="co">#查看最终聚类图形</span>
+<span class="kw">fviz_cluster</span>(res_top, <span class="dt">data =</span> vec_top_100_<span class="dv">1</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">fill =</span> <span class="st">&quot;类别&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;类别&quot;</span>, <span class="dt">shape =</span><span class="st">&quot;类别&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+cluster_<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">as.character</span>(recombine_vec_top[<span class="kw">which</span>(recombine_vec_top<span class="op">$</span><span class="st">`</span><span class="dt">res_top$cluster</span><span class="st">`</span> <span class="op">==</span><span class="st"> </span><span class="dv">1</span>),<span class="st">&quot;V1&quot;</span>])
+cluster_<span class="dv">2</span> &lt;-<span class="st"> </span><span class="kw">as.character</span>(recombine_vec_top[<span class="kw">which</span>(recombine_vec_top<span class="op">$</span><span class="st">`</span><span class="dt">res_top$cluster</span><span class="st">`</span> <span class="op">==</span><span class="st"> </span><span class="dv">2</span>),<span class="st">&quot;V1&quot;</span>])
+cluster_<span class="dv">3</span> &lt;-<span class="st"> </span><span class="kw">as.character</span>(recombine_vec_top[<span class="kw">which</span>(recombine_vec_top<span class="op">$</span><span class="st">`</span><span class="dt">res_top$cluster</span><span class="st">`</span> <span class="op">==</span><span class="st"> </span><span class="dv">3</span>),<span class="st">&quot;V1&quot;</span>])
+cluster_<span class="dv">4</span> &lt;-<span class="st"> </span><span class="kw">as.character</span>(recombine_vec_top[<span class="kw">which</span>(recombine_vec_top<span class="op">$</span><span class="st">`</span><span class="dt">res_top$cluster</span><span class="st">`</span> <span class="op">==</span><span class="st"> </span><span class="dv">4</span>),<span class="st">&quot;V1&quot;</span>])
+
+<span class="co">#确定最优K</span>
+<span class="co"># k取2到8，评估K</span>
+<span class="kw">install.packages</span>(<span class="st">&quot;fpc&quot;</span>)
+<span class="kw">library</span>(fpc) 
+K &lt;-<span class="st"> </span><span class="dv">2</span><span class="op">:</span><span class="dv">8</span>
+round &lt;-<span class="st"> </span><span class="dv">10</span> <span class="co"># 每次迭代10次，避免局部最优</span>
+rst &lt;-<span class="st"> </span><span class="kw">sapply</span>(K, <span class="cf">function</span>(i){
+  <span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;K=&quot;</span>,i))
+  <span class="kw">mean</span>(<span class="kw">sapply</span>(<span class="dv">1</span><span class="op">:</span>round,<span class="cf">function</span>(r){
+    <span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;Round&quot;</span>,r))
+    result &lt;-<span class="st"> </span><span class="kw">My_kmeans</span>(cluster_data, i)
+    stats &lt;-<span class="st"> </span><span class="kw">cluster.stats</span>(<span class="kw">dist</span>(cluster_data), result<span class="op">$</span>cluster)
+    stats<span class="op">$</span>avg.silwidth
+  }))
+})
+
+inner1 &lt;-<span class="st"> </span><span class="cf">function</span>(r){
+  <span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;Round&quot;</span>,r))
+  result &lt;-<span class="st"> </span><span class="kw">My_kmeans</span>(cluster_data, i)
+  stats &lt;-<span class="st"> </span><span class="kw">cluster.stats</span>(<span class="kw">dist</span>(cluster_data), result<span class="op">$</span>cluster)
+  stats<span class="op">$</span>avg.silwidth
+}
+
+<span class="kw">inner1</span>(<span class="dv">1</span>)
+
+<span class="co"># 可以看到如下的示意图</span>
+<span class="kw">plot</span>(K,rst,<span class="dt">type=</span><span class="st">&#39;l&#39;</span>,<span class="dt">main=</span><span class="st">&#39;轮廓系数与K的关系&#39;</span>, <span class="dt">ylab=</span><span class="st">&#39;轮廓系数&#39;</span>)    <span class="co">#轮廓系数越大越好</span>
+
+<span class="co">#重复手法</span>
+<span class="kw">summary</span>(onlysong_no_outlier<span class="op">$</span>repeat_lyrics)
+onlysong_no_outlier[<span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>repeat_lyrics <span class="op">==</span><span class="st"> </span><span class="dv">40</span>),<span class="kw">c</span>(<span class="st">&quot;song_name&quot;</span>,<span class="st">&quot;lyrics_no_singer&quot;</span>)]
+<span class="kw">ggplot</span>(onlysong_no_outlier,<span class="kw">aes</span>(<span class="dt">x =</span> repeat_lyrics, <span class="dt">y =</span> comment)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;orange2&quot;</span>, <span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">alpha =</span> <span class="fl">0.7</span>) <span class="op">+</span>
+<span class="st">  </span><span class="co">#geom_bar(stat = &quot;identity&quot;,fill = &quot;orange2&quot;, width = 1) +</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;歌词重复数&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;评论数&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+onlysong_no_outlier[<span class="kw">order</span>(repeat_lyrics,<span class="op">-</span>comment),<span class="st">&quot;song_name&quot;</span>]
+onlysong_no_outlier[<span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>repeat_lyrics <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span><span class="op">:</span><span class="dv">15</span>)),<span class="kw">c</span>(<span class="st">&quot;song_name&quot;</span>,<span class="st">&quot;comment&quot;</span>,<span class="st">&quot;repeat_lyrics&quot;</span>)]
+onlysong_no_outlier[<span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>repeat_lyrics <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="dv">8</span><span class="op">:</span><span class="dv">10</span>)),<span class="kw">c</span>(<span class="st">&quot;song_name&quot;</span>,<span class="st">&quot;comment&quot;</span>,<span class="st">&quot;repeat_lyrics&quot;</span>)]
+
+<span class="co">#工整句式</span>
+<span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(onlysong_no_outlier)){
+  <span class="co"># count_sentence &lt;- 0</span>
+  b &lt;-<span class="st"> </span>onlysong_no_outlier<span class="op">$</span>lyrics_no_singer[j] <span class="co">#取出每一行的歌词</span>
+  b &lt;-<span class="st"> </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\r\n\r\n</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot; &quot;</span>, b,<span class="dt">fixed=</span>T) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\r\n</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot; &quot;</span>, b,<span class="dt">fixed=</span>T) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot;&quot;</span>, b,<span class="dt">fixed=</span>T) <span class="co">#去掉所有的空格换行</span>
+  no_na_lyrics &lt;-<span class="st"> </span><span class="kw">strsplit</span>(b, <span class="st">&#39; &#39;</span>)[[<span class="dv">1</span>]][<span class="op">-</span><span class="kw">which</span>(<span class="kw">strsplit</span>(b, <span class="st">&#39; &#39;</span>)[[<span class="dv">1</span>]] <span class="op">==</span><span class="st"> &quot;&quot;</span>)]  <span class="co">#分成一句一句的</span>
+  no_na_lyrics &lt;-<span class="st"> </span>no_na_lyrics[<span class="op">!</span><span class="kw">grepl</span>(<span class="st">&#39;[a-z]+&#39;</span>,no_na_lyrics)] <span class="co">#去除字母</span>
+  
+  <span class="co"># onlysong_no_outlier$sentence_num[j] &lt;- length(no_na_lyrics) #句子数量</span>
+  <span class="co"># onlysong_no_outlier$sentence_length[j] &lt;- str_length(no_na_lyrics) %&gt;% mean()#每首歌平均句长</span>
+  onlysong_no_outlier<span class="op">$</span>sentence_tidy[j] &lt;-<span class="st"> </span><span class="kw">str_length</span>(no_na_lyrics) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">table</span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">max</span>() <span class="co">#句子长度一样的最多数量</span>
+  
+  <span class="co"># for (i in (1:(length(no_na_lyrics)-1))){</span>
+  <span class="co">#   if (no_na_lyrics[i] == no_na_lyrics[i+1]){</span>
+  <span class="co">#     count_sentence &lt;- count_sentence + 1</span>
+  <span class="co">#   }</span>
+  <span class="co"># }</span>
+  <span class="co"># onlysong_no_outlier$repeat_lyrics[j] &lt;- count_sentence</span>
+}
+<span class="kw">summary</span>(onlysong_no_outlier<span class="op">$</span>sentence_tidy)
+onlysong_no_outlier[<span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>comment <span class="op">==</span><span class="st"> </span><span class="kw">max</span>(onlysong_no_outlier<span class="op">$</span>comment)),<span class="kw">c</span>(<span class="st">&quot;song_name&quot;</span>,<span class="st">&quot;sentence_tidy&quot;</span>)]
+j &lt;-<span class="st"> </span><span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>sentence_tidy <span class="op">==</span><span class="st"> </span><span class="dv">84</span>)
+
+<span class="kw">ggplot</span>(onlysong_no_outlier, <span class="kw">aes</span>(<span class="dt">x =</span> sentence_tidy, <span class="dt">y =</span> comment)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">color =</span> <span class="st">&quot;orange2&quot;</span>, <span class="dt">alpha =</span> <span class="fl">0.7</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;句子工整程度&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;评论数&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="dv">10</span>), <span class="dt">colour=</span><span class="st">&quot;#990000&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="dv">17</span>), <span class="dt">colour=</span><span class="st">&quot;#990000&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+<span class="co">#提取歌名</span>
+onlysong_no_outlier<span class="op">$</span>main_name &lt;-<span class="st"> </span><span class="kw">gsub</span>(<span class="st">&quot;</span><span class="ch">\\</span><span class="st">(.*</span><span class="ch">\\</span><span class="st">)&quot;</span>,<span class="st">&quot;&quot;</span>,onlysong_no_outlier<span class="op">$</span>song_name)
+onlysong_no_outlier<span class="op">$</span>main_name &lt;-<span class="st"> </span><span class="kw">gsub</span>(<span class="st">&quot;（.*）&quot;</span>,<span class="st">&quot;&quot;</span>,onlysong_no_outlier<span class="op">$</span>main_name)
+
+<span class="kw">str_length</span>(onlysong_no_outlier<span class="op">$</span>main_name) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">summary</span>()
+onlysong_no_outlier[<span class="kw">which</span>(<span class="kw">str_length</span>(onlysong_no_outlier<span class="op">$</span>main_name) <span class="op">==</span><span class="st"> </span><span class="dv">110</span>),<span class="st">&quot;main_name&quot;</span>]
+onlysong_no_outlier &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">c</span>(<span class="op">-</span><span class="kw">which</span>(<span class="kw">str_length</span>(onlysong_no_outlier<span class="op">$</span>song_name) <span class="op">==</span><span class="st"> </span><span class="dv">110</span>)),]
+onlysong_no_outlier<span class="op">$</span>name_length &lt;-<span class="st"> </span><span class="kw">str_length</span>(onlysong_no_outlier<span class="op">$</span>main_name)
+<span class="kw">summary</span>(onlysong_no_outlier<span class="op">$</span>name_length)
+onlysong_no_outlier[<span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>name_length <span class="op">==</span><span class="st"> </span><span class="dv">18</span>),<span class="st">&quot;song_name&quot;</span>]
+<span class="co">#onlysong_no_outlier[which(onlysong_no_outlier$),&quot;main_name&quot;]</span>
+
+
+<span class="co">#歌名匹配歌词</span>
+onlysong_no_outlier &lt;-<span class="st"> </span>onlysong_no_outlier_copy
+onlysong_no_outlier &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">c</span>(<span class="op">-</span><span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>main_name <span class="op">==</span><span class="st"> &quot;长大是一种**&quot;</span>)),]
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(onlysong_no_outlier)){
+onlysong_no_outlier<span class="op">$</span>name_in_song[i] &lt;-<span class="st"> </span><span class="kw">grepl</span>(onlysong_no_outlier<span class="op">$</span>main_name[i],onlysong_no_outlier<span class="op">$</span>lyrics_no_singer[i])
+}
+<span class="kw">table</span>(onlysong_no_outlier<span class="op">$</span>name_in_song)
+onlysong_no_outlier[onlysong_no_outlier<span class="op">$</span>name_in_song <span class="op">==</span><span class="st"> </span><span class="ot">TRUE</span>,<span class="st">&quot;song_name&quot;</span>]
+<span class="kw">ggplot</span>(onlysong_no_outlier, <span class="kw">aes</span>(<span class="dt">x =</span> name_in_song, <span class="dt">y =</span> <span class="kw">log</span>(comment))) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">varwidth=</span><span class="ot">TRUE</span>,<span class="dt">fill =</span> <span class="st">&quot;orange2&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;chocolate4&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;歌词是否包含歌名&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;对数评论数&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_x_discrete</span>(<span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;不包含&quot;</span>, <span class="st">&quot;包含&quot;</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+<span class="kw">ggplot</span>(onlysong_no_outlier, <span class="kw">aes</span>(<span class="dt">x =</span> name_length, <span class="dt">y =</span> comment)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">color =</span> <span class="st">&quot;orange2&quot;</span>, <span class="dt">alpha =</span> <span class="fl">0.7</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="fl">8.5</span>), <span class="dt">colour=</span><span class="st">&quot;#990000&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="fl">1.5</span>), <span class="dt">colour=</span><span class="st">&quot;#990000&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;歌名长度&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;评论数&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+<span class="co">#提取拼音</span>
+<span class="co">#tmcn包</span>
+<span class="kw">library</span>(tmcn)
+<span class="co"># library(Rcpp)</span>
+<span class="co"># sourceCpp(&quot;D:/data/pinyin.cpp&quot;)</span>
+<span class="co"># getLetter(onlysong_no_outlier$lyrics_no_singer[1])</span>
+lastword &lt;-<span class="st"> </span><span class="kw">c</span>()
+last_pinyin &lt;-<span class="st"> </span><span class="kw">c</span>()
+last_yunmu &lt;-<span class="st"> </span><span class="kw">c</span>()
+yunmu &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;a&quot;</span>,<span class="st">&quot;e&quot;</span>,<span class="st">&quot;i&quot;</span>,<span class="st">&quot;o&quot;</span>,<span class="st">&quot;u&quot;</span>,<span class="st">&quot;v&quot;</span>)
+b &lt;-<span class="st"> </span>onlysong_no_outlier<span class="op">$</span>lyrics_no_singer[<span class="dv">1</span>]
+b &lt;-<span class="st"> </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\r\n\r\n</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot; &quot;</span>, b,<span class="dt">fixed=</span>T) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\r\n</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot; &quot;</span>, b,<span class="dt">fixed=</span>T) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot;&quot;</span>, b,<span class="dt">fixed=</span>T)
+no_na_lyrics &lt;-<span class="st"> </span><span class="kw">strsplit</span>(b, <span class="st">&#39; &#39;</span>)[[<span class="dv">1</span>]][<span class="op">-</span><span class="kw">which</span>(<span class="kw">strsplit</span>(b, <span class="st">&#39; &#39;</span>)[[<span class="dv">1</span>]] <span class="op">==</span><span class="st"> &quot;&quot;</span>)]
+
+
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(no_na_lyrics)){
+lastword[i] &lt;-<span class="st"> </span><span class="kw">substring</span>(no_na_lyrics[i], <span class="kw">str_length</span>(no_na_lyrics[i]), <span class="kw">str_length</span>(no_na_lyrics[i]))
+last_pinyin[i] &lt;-<span class="st"> </span><span class="kw">toPinyin</span>(lastword[i])
+}
+
+
+<span class="co">#押韵程度和最多押韵韵脚</span>
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(onlysong_no_outlier)){
+  b &lt;-<span class="st"> </span>onlysong_no_outlier<span class="op">$</span>lyrics_no_singer[i]
+  b &lt;-<span class="st"> </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\r\n\r\n</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot; &quot;</span>, b,<span class="dt">fixed=</span>T) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\r\n</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot; &quot;</span>, b,<span class="dt">fixed=</span>T) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">gsub</span>(<span class="dt">pattern=</span><span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>, <span class="dt">replacement=</span><span class="st">&quot;&quot;</span>, b,<span class="dt">fixed=</span>T)
+  no_na_lyrics &lt;-<span class="st"> </span><span class="kw">strsplit</span>(b, <span class="st">&#39; &#39;</span>)[[<span class="dv">1</span>]][<span class="op">-</span><span class="kw">which</span>(<span class="kw">strsplit</span>(b, <span class="st">&#39; &#39;</span>)[[<span class="dv">1</span>]] <span class="op">==</span><span class="st"> &quot;&quot;</span>)] <span class="co">#提出每首歌歌词（一句一句地）</span>
+  <span class="co">#一首歌每句歌词的最后一个完整拼音</span>
+  last_pinyin &lt;-<span class="st"> </span><span class="kw">vector</span>(<span class="dt">length =</span> <span class="kw">length</span>(no_na_lyrics))
+  lastword &lt;-<span class="st"> </span><span class="kw">vector</span>(<span class="dt">length =</span> <span class="kw">length</span>(no_na_lyrics))
+  <span class="cf">for</span> (m <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(no_na_lyrics)){
+    lastword[m] &lt;-<span class="st"> </span><span class="kw">substring</span>(no_na_lyrics[m], <span class="kw">str_length</span>(no_na_lyrics[m]), <span class="kw">str_length</span>(no_na_lyrics[m]))
+    lastword &lt;-<span class="st"> </span>lastword[<span class="op">!</span><span class="kw">grepl</span>(<span class="st">&#39;[0-9]+&#39;</span>,lastword)]
+    lastword &lt;-<span class="st"> </span>lastword[<span class="op">!</span><span class="kw">grepl</span>(<span class="st">&#39;[a-z]+&#39;</span>,lastword)]
+    lastword &lt;-<span class="st"> </span>lastword[<span class="op">!</span><span class="kw">grepl</span>(<span class="st">&#39;[A-Z]+&#39;</span>,lastword)]
+    last_pinyin[m] &lt;-<span class="st"> </span><span class="kw">toPinyin</span>(lastword[m])
+  }
+  last_pinyin &lt;-<span class="st"> </span>last_pinyin[<span class="op">!</span><span class="kw">grepl</span>(<span class="st">&#39;NA&#39;</span>,last_pinyin)]
+  <span class="co">#last_pinyin &lt;- last_pinyin[!grepl(NA,last_pinyin)]</span>
+  <span class="co">#last_pinyin &lt;- last_pinyin[1:length(no_na_lyrics)]</span>
+  
+  <span class="co">#一首歌每句歌词最后一个字的韵母</span>
+  last_yunmu &lt;-<span class="st"> </span><span class="kw">vector</span>(<span class="dt">length =</span> <span class="kw">length</span>(last_pinyin))
+  <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(last_pinyin)){
+    <span class="co">#last_yunmu &lt;- last_yunmu[1:length(last_pinyin)]</span>
+  <span class="co">#pinyin_length &lt;- str_length(last_pinyin[j])</span>
+  <span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">str_length</span>(last_pinyin[j])){ <span class="co">#else表示到韵母了</span>
+    <span class="cf">if</span>(<span class="op">!</span><span class="kw">substring</span>(last_pinyin[j], k, k) <span class="op">%in%</span><span class="st"> </span>yunmu){
+      temp &lt;-<span class="st"> </span><span class="kw">substring</span>(last_pinyin[j], k<span class="op">+</span><span class="dv">1</span>, <span class="kw">str_length</span>(last_pinyin[j]))
+    } <span class="cf">else</span>  last_yunmu[j] &lt;-<span class="st"> </span>temp
+  }
+  }
+  last_yunmu &lt;-<span class="st"> </span>last_yunmu[<span class="op">!</span><span class="kw">grepl</span>(<span class="st">&#39;NA&#39;</span>,last_yunmu)]
+onlysong_no_outlier<span class="op">$</span>yayun_scale[i] &lt;-<span class="st"> </span><span class="kw">table</span>(last_yunmu) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">max</span>()
+onlysong_no_outlier<span class="op">$</span>yunjiao[i] &lt;-<span class="st"> </span><span class="kw">rownames</span>(<span class="kw">table</span>(last_yunmu))[<span class="kw">which.max</span>(<span class="kw">table</span>(last_yunmu))]
+}
+
+<span class="kw">ggplot</span>(onlysong_no_outlier, <span class="kw">aes</span>(<span class="dt">x =</span> yayun_scale, <span class="dt">y =</span> comment)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">color =</span> <span class="st">&quot;orange2&quot;</span>, <span class="dt">alpha =</span> <span class="fl">0.7</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="dv">29</span>), <span class="dt">colour=</span><span class="st">&quot;#990000&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="dv">8</span>), <span class="dt">colour=</span><span class="st">&quot;#990000&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;押韵程度&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;评论数&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+yunjiao_table &lt;-<span class="st"> </span><span class="kw">table</span>(onlysong_no_outlier<span class="op">$</span>yunjiao)
+yunjiao_table &lt;-<span class="st"> </span><span class="kw">sort</span>(yunjiao_table, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>)[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>] <span class="co">#热门韵脚</span>
+yunjiao_frame &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(yunjiao_table)
+
+<span class="kw">ggplot</span>(yunjiao_frame, <span class="kw">aes</span>(<span class="dt">x =</span> Var1, <span class="dt">y =</span> Freq)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;orange2&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;韵脚&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;频数&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+yunjiao_box[<span class="kw">which</span>(yunjiao_box<span class="op">$</span>yunjiao <span class="op">==</span><span class="st"> &quot;i&quot;</span>),<span class="st">&quot;song_name&quot;</span>][<span class="dv">1</span><span class="op">:</span><span class="dv">20</span>]
+
+yunjiao_box &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>yunjiao <span class="op">%in%</span><span class="st"> </span>yunjiao_frame<span class="op">$</span>Var1),]
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(yunjiao_box)) {
+  yunjiao_box<span class="op">$</span>median_yunjiao[i] &lt;-<span class="st"> </span><span class="kw">median</span>(yunjiao_box<span class="op">$</span>comment[<span class="kw">which</span>(yunjiao_box<span class="op">$</span>yunjiao <span class="op">==</span><span class="st"> </span>yunjiao_box<span class="op">$</span>yunjiao[i])])
+}
+
+<span class="kw">ggplot</span>(yunjiao_box,<span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">reorder</span>(yunjiao, median_yunjiao), <span class="dt">y =</span> <span class="kw">log</span>(comment))) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">varwidth=</span><span class="ot">TRUE</span>,<span class="dt">fill =</span> <span class="st">&quot;orange2&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;chocolate4&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;韵脚&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;对数评论数&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
+
+
+<span class="kw">summary</span>(onlysong_no_outlier<span class="op">$</span>yayun_scale)
+onlysong_no_outlier[<span class="kw">order</span>(yayun_scale),<span class="kw">c</span>(<span class="st">&quot;song_name&quot;</span>,<span class="st">&quot;comment&quot;</span>,<span class="st">&quot;yayun_scale&quot;</span>,<span class="st">&quot;singer&quot;</span>)][<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>,]
+<span class="kw">summary</span>(onlysong_no_outlier<span class="op">$</span>yunjiao)
+onlysong_no_outlier[<span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>yayun_scale <span class="op">==</span><span class="st"> </span><span class="dv">55</span>), <span class="kw">c</span>(<span class="st">&quot;song_name&quot;</span>,<span class="st">&quot;lyrics_no_singer&quot;</span>)]
+
+i &lt;-<span class="st"> </span><span class="kw">which</span>(onlysong_no_outlier<span class="op">$</span>yayun_scale <span class="op">==</span><span class="st"> </span><span class="dv">55</span>)
+i &lt;-<span class="st"> </span><span class="dv">50</span>
+onlysong_no_outlier &lt;-<span class="st"> </span>onlysong_no_outlier[<span class="kw">c</span>(<span class="op">-</span><span class="dv">1730</span>),]  <span class="co">#这一行是英文歌！！！</span>
+
+
+<span class="co">#回归建模</span>
+model_data &lt;-<span class="st"> </span>onlysong_no_outlier[,<span class="kw">c</span>(<span class="st">&quot;comment&quot;</span>,<span class="st">&quot;genre&quot;</span>,<span class="st">&quot;repeat_lyrics&quot;</span>,<span class="st">&quot;sentence_tidy&quot;</span>,<span class="st">&quot;yayun_scale&quot;</span>,<span class="st">&quot;sentence_num&quot;</span>,<span class="st">&quot;name_length&quot;</span>,<span class="st">&quot;name_in_song&quot;</span>,<span class="st">&quot;language&quot;</span>,<span class="st">&quot;sentence_length&quot;</span>)]
+<span class="kw">summary</span>(model_data<span class="op">$</span>genre)
+<span class="kw">table</span>(model_data<span class="op">$</span>genre)
+model_data &lt;-<span class="st"> </span>model_data[<span class="kw">complete.cases</span>(model_data[,<span class="st">&quot;genre&quot;</span>]),] <span class="co">#删除genre空值</span>
+model_data &lt;-<span class="st"> </span>model_data[<span class="kw">c</span>(<span class="op">-</span><span class="kw">which</span>(model_data<span class="op">$</span>genre <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Easy Listening&quot;</span>,<span class="st">&quot; Rap/Hip Hop&quot;</span>,<span class="st">&quot;Dance&quot;</span>,<span class="st">&quot;Electronica&quot;</span>,<span class="st">&quot;J-Pop&quot;</span>,<span class="st">&quot;R&amp;B&quot;</span>,<span class="st">&quot;Singer Songwriter&quot;</span>,<span class="st">&quot;World Music&quot;</span>,<span class="st">&quot;Rap/Hip Hop&quot;</span>))),]
+model_data<span class="op">$</span>genre &lt;-<span class="st"> </span><span class="kw">as.character</span>(model_data<span class="op">$</span>genre)
+model_data &lt;-<span class="st"> </span>model_data[<span class="kw">c</span>(<span class="op">-</span><span class="kw">which</span>(model_data<span class="op">$</span>genre <span class="op">==</span><span class="st"> &quot; Rap/Hip Hop&quot;</span>)),]
+
+<span class="kw">which</span>(model_data<span class="op">$</span>name_in_song <span class="op">==</span><span class="st"> </span><span class="ot">TRUE</span>)
+model_data<span class="op">$</span>name_in_song &lt;-<span class="st"> </span><span class="kw">as.character</span>(model_data<span class="op">$</span>name_in_song)
+model_data[<span class="kw">which</span>(model_data<span class="op">$</span>name_in_song <span class="op">==</span><span class="st"> &quot;TRUE&quot;</span>),<span class="st">&quot;name_in_song&quot;</span>] &lt;-<span class="st"> </span><span class="dv">1</span>
+model_data[<span class="kw">which</span>(model_data<span class="op">$</span>name_in_song <span class="op">==</span><span class="st"> &quot;FALSE&quot;</span>),<span class="st">&quot;name_in_song&quot;</span>] &lt;-<span class="st"> </span><span class="dv">0</span>
+model_data<span class="op">$</span>name_in_song &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(model_data<span class="op">$</span>name_in_song)
+
+<span class="kw">summary</span>(model_data<span class="op">$</span>language)
+model_data<span class="op">$</span>language &lt;-<span class="st"> </span><span class="kw">as.character</span>(model_data<span class="op">$</span>language)
+model_data &lt;-<span class="st"> </span>model_data[<span class="kw">which</span>(model_data<span class="op">$</span>language <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;潮汕语&quot;</span>,<span class="st">&quot;其他&quot;</span>,<span class="st">&quot;台语&quot;</span>,<span class="st">&quot;粤语&quot;</span>,<span class="st">&quot;国语&quot;</span>)),]
+
+model_data<span class="op">$</span>genre &lt;-<span class="st"> </span><span class="kw">as.character</span>(model_data<span class="op">$</span>genre)
+model_data<span class="op">$</span>language &lt;-<span class="st"> </span><span class="kw">as.character</span>(model_data<span class="op">$</span>language)
+<span class="kw">table</span>(model_data<span class="op">$</span>genre)
+<span class="kw">table</span>(model_data<span class="op">$</span>language)
+model_data &lt;-<span class="st"> </span>model_data[,<span class="op">-</span><span class="dv">9</span>] <span class="co">#全都是国语，删除语言变量</span>
+
+<span class="kw">summary</span>(model_data<span class="op">$</span>sentence_tidy)
+<span class="kw">summary</span>(model_data<span class="op">$</span>yayun_scale)
+
+lm.full &lt;-<span class="st"> </span><span class="kw">lm</span>(<span class="kw">log</span>(comment) <span class="op">~</span><span class="st"> </span>., <span class="dt">data=</span>model_data)           <span class="co">#建立全模型，因变量为对数评论数，自变量为其他所有变量</span>
+lm.null &lt;-<span class="st"> </span><span class="kw">lm</span>(<span class="kw">log</span>(comment) <span class="op">~</span><span class="st"> </span><span class="dv">1</span>,<span class="dt">data=</span>model_data)            <span class="co">#建立空模型，因变量为对数评论数，不包括任何自变量</span>
+
+<span class="kw">summary</span>(lm.full)
+
+lm.bic &lt;-<span class="st"> </span><span class="kw">step</span>(lm.full,<span class="dt">k=</span><span class="kw">log</span>(<span class="kw">nrow</span>(model_data)),<span class="dt">trace=</span>F)                  <span class="co">#使用BIC准则选择模型</span>
+<span class="kw">summary</span>(lm.bic)                                           <span class="co">#观察最终得到的回归系数</span></code></pre></div>
+
+
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="binomial.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sound.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook/js/app.min.js"></script>
+<script src="libs/gitbook/js/lunr.js"></script>
+<script src="libs/gitbook/js/plugin-search.js"></script>
+<script src="libs/gitbook/js/plugin-sharing.js"></script>
+<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/yihui/bookdown-chinese/edit/master/09-final-task.Rmd",
+"text": "缂栬緫"
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

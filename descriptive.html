@@ -25,7 +25,7 @@
 <meta name="author" content="yimeng">
 
 
-<meta name="date" content="2018-09-08">
+<meta name="date" content="2018-09-11">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -160,6 +160,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.2" data-path="linear-model.html"><a href="linear-model.html#section-7.2"><i class="fa fa-check"></i><b>7.2</b> 短租房热度案例</a><ul>
 <li class="chapter" data-level="7.2.1" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>7.2.1</b> 准备工作</a></li>
 <li class="chapter" data-level="7.2.2" data-path="linear-model.html"><a href="linear-model.html#--1"><i class="fa fa-check"></i><b>7.2.2</b> 分析报告 &amp; 代码</a></li>
+<li class="chapter" data-level="7.2.3" data-path="linear-model.html"><a href="linear-model.html#section-7.2.3"><i class="fa fa-check"></i><b>7.2.3</b> 标准答案代码</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="binomial.html"><a href="binomial.html"><i class="fa fa-check"></i><b>8</b> TASK 6 分类问题</a><ul>
@@ -236,22 +237,22 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>某银行的董事长兼CEO老王发现最近消费金融的发展如火如荼，于是也计划在自己的公司开展提供消费贷款的服务，以吸引更多的客户，提高本公司收益规模。但是提供什么样的贷款才能吸引更多的申请客户呢？老王为此十分着急。就在此时，得力助手小张获取了1046家消费金融公司所发放的，贷款金额为10万元、还款期限为12月的消费贷款明细，包括审批时间、担保方式等7个借贷变量，月供、还款总费用等4个还贷变量，以及贷款申请人数变量。老王在对数据进行深入了解后，凭借大学掌握的统计学知识开展了描述性分析，看看什么因素对贷款的申请人数有影响。</p>
 <div id="section-6.3.1" class="section level3">
 <h3><span class="header-section-number">6.3.1</span> 对申请人数（因变量）进行描述</h3>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
 <p>由直方图（图1）可以看出，申请人数呈现明显的右偏分布。具体而言，申请人数的均值为1201人，中位数为33人，最大值为62898人，最小值为0人。由于均值容易受异常值影响，因此均值与中位数相差较大是由于有几个申请人数非常多的贷款产品存在。这在老王的预料范围之内——相当出色的贷款产品是少数，也存在很多没有申请人数的贷款产品。因此老王推测，在形形色色的贷款产品中，大多数人都会选择市面上口碑较好、贷款人数较多的，从而导致有少数极端热门贷款和部分无人申请贷款的局面出现。鉴于数据明显右偏，后续的直方图分类比较中，老王做了取对数的处理，从而使得对比结果更直观。</p>
 </div>
 <div id="section-6.3.2" class="section level3">
 <h3><span class="header-section-number">6.3.2</span> 对借贷变量（自变量）进行描述</h3>
 <p>老王的公司具有全国各地分公司，但是应该在哪一家分公司发行消费贷款产品呢？他对不同城市贷款产品的申请人数绘制了直方图。 由图2看出，济南的申请人数平均水平（中位数）最低，重庆的最高，除了这两个城市之外，其他10个城市平均水平（中位数）和波动范围的差异比较不明显。其中上海和深圳的平均水平较高，贷款规模较大的数量也比较多，老王认为这是两所城市消费水平较高所导致的；对于北京的贷款规模平平，老王查阅资料后发现消费金融是不能经营“车贷”和“房贷”的，而北京市民更多负担房贷，消费金融水平自然就不高了；成都、重庆、杭州和西安四所城市的贷款规模较高，他推测这四所新一线城市的经济快速增长带来了消费金融的繁荣。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
 <p>从借入贷款的角度考虑，贷款人提出申请到发放贷款之间等待的总时长是否会影响贷款规模呢？通过条形图（图3），老王发现间隔时间为3-4天的贷款产品申请人数最多，随着等待时间的增加，申请人数整体呈现降低趋势。他猜想，间隔时间太短，可能会给客户留下审批程序不严格的不良印象，而时间太长又会引起客户的不耐烦，因此等待时长3-4天为最佳。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
 <p>担保方式不同的贷款产品会不会对客户的申请借款意愿产生影响呢？老王通过箱线图发现，“担保贷”竟然是一条直线！原来是因为“担保贷”的数据中申请人数非零的只有一条。其他三种担保方式中，信用贷的申请人数平均水平（中位数）明显高于“抵押贷”和“自由选”，说明凭借借款人信誉，无需提供抵押品或第三方担保的贷款更受客户青睐。</p>
 </div>
 <div id="section-6.3.3" class="section level3">
 <h3><span class="header-section-number">6.3.3</span> 对还贷变量（自变量）进行描述</h3>
 <p>从还款过程来看，月管理费（图5）收取的是每个月的利息，而“一次性收费”的贷款产品申请人数全为0，因此老王没有将这一种放在比较范围内。箱线图显示，“参考月利率”方式的平均申请人数高于“月管理费”方式，说明客户更喜欢申请按照贷款余额的一定比例计算利息，老王推测，由于贷款余额是可调整的，客户会更偏好按照不同时期个人经济状况来调整月管理费水平。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-27-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-34-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-34-2.png" width="672" /></p>
 <p>三种还款方式中（图6），老王发现分期还款的贷款产品申请人数最多，他推测进行消费借贷的客户一般是经济状况不够好的，而到期还款和随借随还的还贷压力较大，分期还款更适合这一类贷款人。</p>
 </div>
 <div id="section-6.3.4" class="section level3">
@@ -261,131 +262,92 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="section-6.4" class="section level2">
 <h2><span class="header-section-number">6.4</span> 代码</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###读入数据文件###
-task_3_data &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;D:/data/task_3_data.xlsx&quot;</span>)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###加载需要的程序包###
+<span class="kw">library</span>(ggplot2)
+<span class="kw">library</span>(data.table)
+<span class="kw">library</span>(readxl)
+
+###读入数据文件###
+task_3_data &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;task_3_data.xlsx&quot;</span>)
 
 ###更改列名###
 <span class="kw">colnames</span>(task_3_data) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;company&quot;</span>,<span class="st">&quot;city&quot;</span>,<span class="st">&quot;loan&quot;</span>,<span class="st">&quot;deadline&quot;</span>,<span class="st">&quot;monthly_pay&quot;</span>,<span class="st">&quot;total_fee&quot;</span>,<span class="st">&quot;monthly_fee&quot;</span>,<span class="st">&quot;ddl_lower&quot;</span>,<span class="st">&quot;ddl_upper&quot;</span>,<span class="st">&quot;way_to_pay&quot;</span>,<span class="st">&quot;get_money&quot;</span>,<span class="st">&quot;get_permmsion&quot;</span>,<span class="st">&quot;way_to_insure&quot;</span>,<span class="st">&quot;apply&quot;</span>,<span class="st">&quot;condition&quot;</span>)
 
+###绘图theme函数###
+my_ggtheme &lt;-<span class="st"> </span><span class="cf">function</span>(){  
+  <span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))
+}
+
 ###因变量分布###
-<span class="kw">library</span>(ggplot2)
 <span class="kw">ggplot</span>(task_3_data, <span class="kw">aes</span>(<span class="dt">x=</span>apply)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>(<span class="dt">stat=</span><span class="st">&quot;bin&quot;</span>, <span class="dt">fill=</span><span class="st">&quot;steelblue4&quot;</span> ) <span class="op">+</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;申请人数&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;频数&quot;</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
 
-<span class="kw">summary</span>(task_3_data<span class="op">$</span>apply)
-
-
-###将管理费类型和费率分开###
-<span class="kw">library</span>(data.table)
-split_fee &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(task_3_data<span class="op">$</span>monthly_fee, <span class="st">&quot; &quot;</span>))
-<span class="kw">colnames</span>(split_fee) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;fee_type&quot;</span>,<span class="st">&quot;fee_rate&quot;</span>)
-task_3_data &lt;-<span class="st"> </span><span class="kw">cbind</span>(task_3_data, split_fee)
+###将管理费类型和费率分别解析出来###
+split_fee &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(task_3_data<span class="op">$</span>monthly_fee, <span class="st">&quot; &quot;</span>))   <span class="co">#根据中间的空格拆分两列信息，设置为数据框split_fee</span>
+<span class="kw">colnames</span>(split_fee) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;fee_type&quot;</span>,<span class="st">&quot;fee_rate&quot;</span>)                       <span class="co">#重新给列起名</span>
+task_3_data &lt;-<span class="st"> </span><span class="kw">cbind</span>(task_3_data, split_fee)                          <span class="co">#和原数据框合并</span>
 
 ###城市分类箱线图###
-<span class="co">#计算每个城市申请人数的中位数</span>
-data_no_zero &lt;-<span class="st"> </span>task_3_data[<span class="op">-</span><span class="kw">which</span>(task_3_data<span class="op">$</span>apply <span class="op">==</span><span class="st"> </span><span class="dv">0</span>),]
-city_box &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">aggregate</span>(<span class="kw">log</span>(data_no_zero<span class="op">$</span>apply),<span class="kw">list</span>(data_no_zero<span class="op">$</span>city),median)) 
-<span class="kw">colnames</span>(city_box) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;city&quot;</span>,<span class="st">&quot;med_apply&quot;</span>)
-
-<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">651</span>){
-  data_no_zero<span class="op">$</span>med_apply[i] &lt;-<span class="st"> </span>city_box[<span class="kw">which</span>(city_box<span class="op">$</span>city <span class="op">==</span><span class="st"> </span><span class="kw">as.character</span>(data_no_zero[i,<span class="dv">2</span>])),<span class="dv">2</span>]
-}
-<span class="co">#绘制箱线图</span>
-<span class="co">#用于比较，取对数，因此不考虑申请人数为0的</span>
-<span class="kw">ggplot</span>(data_no_zero, <span class="kw">aes</span>(<span class="dt">x =</span> city,<span class="dt">y=</span><span class="kw">log</span>(apply)))<span class="op">+</span>
+data_no_zero &lt;-<span class="st"> </span>task_3_data[<span class="op">-</span><span class="kw">which</span>(task_3_data<span class="op">$</span>apply <span class="op">==</span><span class="st"> </span><span class="dv">0</span>),]          <span class="co">#箱线图取对数画，去掉apply为0的</span>
+data_no_zero &lt;-<span class="st"> </span><span class="kw">data.table</span>(data_no_zero)
+data_no_zero[,med_apply <span class="op">:</span><span class="er">=</span><span class="st"> </span><span class="kw">median</span>(apply), by =<span class="st"> &quot;city&quot;</span>]                <span class="co">#计算每个城市申请人数的中位数</span>
+<span class="kw">ggplot</span>(data_no_zero, <span class="kw">aes</span>(<span class="dt">x =</span> city,<span class="dt">y=</span><span class="kw">log</span>(apply)))<span class="op">+</span><span class="st">                     </span><span class="co">#绘制箱线图</span>
 <span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>city))<span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>data_no_zero,<span class="kw">aes</span>(<span class="dt">x=</span><span class="kw">factor</span>(city),<span class="dt">y=</span>med_apply),<span class="dt">shape=</span><span class="dv">15</span>,<span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data=</span>data_no_zero,<span class="kw">aes</span>(<span class="dt">x=</span>city,<span class="dt">y=</span>med_apply,<span class="dt">group =</span> <span class="dv">1</span>),<span class="dt">color =</span> <span class="st">&quot;black&quot;</span>,<span class="dt">size=</span><span class="dv">1</span>,<span class="dt">linetype =</span> <span class="dv">1</span>)<span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>data_no_zero,<span class="kw">aes</span>(<span class="dt">x=</span><span class="kw">factor</span>(city),<span class="dt">y=</span><span class="kw">log</span>(med_apply)),<span class="dt">shape=</span><span class="dv">15</span>,<span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data=</span>data_no_zero,<span class="kw">aes</span>(<span class="dt">x=</span>city,<span class="dt">y=</span><span class="kw">log</span>(med_apply),<span class="dt">group =</span> <span class="dv">1</span>),<span class="dt">color =</span> <span class="st">&quot;black&quot;</span>,<span class="dt">size=</span><span class="dv">1</span>,<span class="dt">linetype =</span> <span class="dv">1</span>)<span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;城市&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;申请人数&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;城市&quot;</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
 
 
 ###绘制担保方式分类箱线图###
-<span class="co">#用于比较，取对数，因此不考虑申请人数为0的</span>
 <span class="kw">ggplot</span>(data_no_zero, <span class="kw">aes</span>(<span class="dt">x =</span> way_to_insure,<span class="dt">y=</span><span class="kw">log</span>(apply)))<span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>way_to_insure))<span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;担保方式&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;申请人数&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;担保方式&quot;</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))
-
-<span class="co">#&quot;担保贷&quot;方式的申请人数为一条直线</span>
-sub_way_<span class="dv">1</span> &lt;-<span class="st"> </span>data_no_zero[<span class="kw">which</span>(data_no_zero<span class="op">$</span>way_to_insure <span class="op">==</span><span class="st"> &quot;担保贷&quot;</span>),]
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
 
 ###还款方式箱线图###
-<span class="co">#用于比较，取对数，因此不考虑申请人数为0的</span>
 <span class="kw">ggplot</span>(data_no_zero, <span class="kw">aes</span>(<span class="dt">x =</span> way_to_pay,<span class="dt">y=</span><span class="kw">log</span>(apply)))<span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>way_to_pay))<span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;还款方式&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;申请人数&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;还款方式&quot;</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
 
-countEducation &lt;-<span class="st"> </span><span class="kw">table</span>(data_no_zero<span class="op">$</span>way_to_pay, data_no_zero<span class="op">$</span>apply)
-<span class="kw">spineplot</span>(countEducation, <span class="dt">main=</span><span class="st">&quot;还款方式&quot;</span>, <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;gold&quot;</span>,<span class="st">&quot;grey&quot;</span>),<span class="dt">xaxlabels=</span><span class="kw">c</span>(<span class="st">&quot;到期还款&quot;</span>,<span class="st">&quot;分期还款&quot;</span>,<span class="st">&quot;随借随还&quot;</span>),<span class="dt">yaxlabels=</span><span class="kw">c</span>(<span class="st">&quot;非违约&quot;</span>,<span class="st">&quot;违约&quot;</span>))
-
-
-###日期散点图###
-<span class="kw">unique</span>(task_3_data<span class="op">$</span>get_money)
+###日期条形图###
+<span class="kw">unique</span>(task_3_data<span class="op">$</span>get_money)                                                         <span class="co">#查看等待时长都有哪些情况</span>
 task_3_data[<span class="kw">which</span>(task_3_data<span class="op">$</span>get_money <span class="op">==</span><span class="st"> &quot;审批后当日（审批为3&quot;</span>),<span class="st">&quot;get_money&quot;</span>] &lt;-<span class="st"> </span><span class="dv">0</span>   <span class="co">#将文字改为意思相同的数字</span>
-task_3_data<span class="op">$</span>get_money &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(task_3_data<span class="op">$</span>get_money)
-time_before &lt;-<span class="st"> </span><span class="kw">c</span>()
-<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">1046</span>){
-  time_before[i] &lt;-<span class="st"> </span>task_3_data<span class="op">$</span>get_money[i] <span class="op">+</span><span class="st"> </span>task_3_data<span class="op">$</span>get_permmsion[i]
-}
+task_3_data<span class="op">$</span>get_money &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(task_3_data<span class="op">$</span>get_money)                            <span class="co">#转化为数值型</span>
+task_3_data &lt;-<span class="st"> </span><span class="kw">data.table</span>(task_3_data)                                                <span class="co">#转化为data.table</span>
+task_3_data<span class="op">$</span>time_before &lt;-<span class="st"> </span>task_3_data<span class="op">$</span>get_money <span class="op">+</span><span class="st"> </span>task_3_data<span class="op">$</span>get_permmsion          <span class="co">#计算拿到贷款前的等待时间总长</span>
 
-task_3_data<span class="op">$</span>time_before &lt;-<span class="st"> </span>time_before
+<span class="kw">ggplot</span>(task_3_data) <span class="op">+</span><span class="st">                                                                 </span><span class="co">#绘制条形图</span>
+<span class="st">    </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">x=</span>time_before, <span class="dt">y=</span>apply<span class="op">/</span><span class="dv">10000</span>),<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>)<span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;审批时间+放款时间&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;总申请人数/万人&quot;</span>)<span class="op">+</span>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()
 
-<span class="kw">ggplot</span>(task_3_data) <span class="op">+</span>
-<span class="st">    </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">x=</span>time_before, <span class="dt">y=</span>apply),<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;审批时间+放款时间&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;申请人数&quot;</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))
-
+#########################根据图来看，这两个变量和申请人数似乎没有相关关系
 ###月供散点图###
 <span class="kw">ggplot</span>(data_no_zero, <span class="kw">aes</span>(<span class="dt">x =</span> monthly_pay,<span class="dt">y =</span> <span class="kw">log</span>(apply),<span class="dt">color =</span> <span class="kw">log</span>(apply)))<span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="dv">3</span>)<span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&#39;lm&#39;</span>)<span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;月供/元&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;申请人数(取对数)&quot;</span>,<span class="dt">color =</span> <span class="st">&quot;申请人数&quot;</span>)
 
-
 ###还款总费用散点图###
 <span class="kw">ggplot</span>(data_no_zero, <span class="kw">aes</span>(<span class="dt">x =</span> total_fee,<span class="dt">y =</span> <span class="kw">log</span>(apply),<span class="dt">color =</span> <span class="kw">log</span>(apply)))<span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="dv">3</span>)<span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&#39;lm&#39;</span>)<span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;还款总费用/万元&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;申请人数(取对数)&quot;</span>,<span class="dt">color =</span> <span class="st">&quot;申请人数&quot;</span>)
-
+#########################
 
 ###月管理费###
-
 <span class="co">#绘制费用类型箱线图</span>
-<span class="co">#一次性收费类型申请人数全是0</span>
+<span class="co">#注：一次性收费类型申请人数全是0</span>
 <span class="kw">ggplot</span>(data_no_zero, <span class="kw">aes</span>(<span class="dt">x =</span> fee_type,<span class="dt">y=</span><span class="kw">log</span>(apply)))<span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>fee_type))<span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;月管理费类型&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;申请人数&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;月管理费类型&quot;</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))
-
-<span class="co">#费率数据类型转换</span>
-trans &lt;-<span class="st"> </span><span class="kw">c</span>()
-<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">1046</span>){ 
-trans[i] &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">as.character</span>(<span class="kw">unlist</span>(task_3_data<span class="op">$</span>fee_rate[i])))
-}
- <span class="kw">as.numeric</span>(<span class="kw">levels</span>(task_3_data<span class="op">$</span>fee_rate)[task_3_data<span class="op">$</span>fee_rate])
- <span class="kw">as.numeric</span>(<span class="kw">as.character</span>(<span class="kw">unlist</span>(task_3_data<span class="op">$</span>fee_rate)))</code></pre></div>
+<span class="st">  </span><span class="kw">my_ggtheme</span>()</code></pre></div>
 
 </div>
 </div>

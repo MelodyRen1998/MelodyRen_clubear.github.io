@@ -25,7 +25,7 @@
 <meta name="author" content="yimeng">
 
 
-<meta name="date" content="2018-09-08">
+<meta name="date" content="2018-09-11">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -160,6 +160,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.2" data-path="linear-model.html"><a href="linear-model.html#section-7.2"><i class="fa fa-check"></i><b>7.2</b> 短租房热度案例</a><ul>
 <li class="chapter" data-level="7.2.1" data-path="data.html"><a href="data.html#-1"><i class="fa fa-check"></i><b>7.2.1</b> 准备工作</a></li>
 <li class="chapter" data-level="7.2.2" data-path="linear-model.html"><a href="linear-model.html#--1"><i class="fa fa-check"></i><b>7.2.2</b> 分析报告 &amp; 代码</a></li>
+<li class="chapter" data-level="7.2.3" data-path="linear-model.html"><a href="linear-model.html#section-7.2.3"><i class="fa fa-check"></i><b>7.2.3</b> 标准答案代码</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="binomial.html"><a href="binomial.html"><i class="fa fa-check"></i><b>8</b> TASK 6 分类问题</a><ul>
@@ -249,13 +250,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="section-8.3.2" class="section level3">
 <h3><span class="header-section-number">8.3.2</span> 描述性分析</h3>
 <p>借贷变量包括城市、审批时间、放款日期、担保方式、期限最高与最低范围和申请条件。首先将城市变量分为两类：北上广深四个一线城市和其他非一线城市。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-46-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-46-2.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-52-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-52-2.png" width="672" /></p>
 <p>由图1可以看出一线城市的贷款产品有效性更高，因此初步判定城市会对消费金融产品的有效性产生影响。由图2可以看出，信用贷的担保方式有效性更高，由于其他三种担保方式的样本量远小于信用贷，可以得出初步结论：担保方式可能对贷款产品有效性有影响，然而，这种影响也可能是由于数据本身的样本量差异形成的。</p>
 <p><img src="bookdown_files/figure-html/message==FALSE-1.png" width="672" /><img src="bookdown_files/figure-html/message==FALSE-2.png" width="672" /></p>
 <p>审批时间和放款日期的总和表示从申请人发出申请至发放贷款的总时长，将二者的和定义为等待时间。由图3则可以看出，有效的贷款产品在申请人发出申请后的平均等待时间（中位数）要明显高于无效的贷款产品，说明客户更青睐具有严格的审批流程与放贷规则的产品，因此，初步认为等待时间对贷款产品有效性有影响。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-47-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-47-2.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-53-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-53-2.png" width="672" /></p>
 <p>还贷变量包括月供、还款总费用、月管理费和还款方式。由图4可以看出，有效和无效贷款产品的月供平均水平（中位数）差异并不明显；图5和图6显示，其不同月管理费率和不同总费用的贷款有效性差异也十分微小，初步结论为：月供、月管理费费率和还款总费用可能不影响贷款产品有效性，但是还需要借助后续建模结果进行定量判断。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-48-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-48-2.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-54-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-54-2.png" width="672" /></p>
 <p>由图7可以看出，月管理费类型中收取月管理费的产品有效性更高，但是其样本量大于参考月利率收费类型的样本量，并且远大于一次性收费类型的样本量，因此月管理费类型对与贷款的有效性影响也可能是由于数据本身的样本量差异形成的。由图8则可以看出，分期还款的产品有效性最高，但是到期还款和随借随还的产品样本量远小于分期还款的产品，因此，这种影响也可能是由于数据量的差异形成的。</p>
 <p>通过对数据的描述性分析，本案例认为贷款产品的借贷变量（包括城市、等待时间和担保方式）和还贷变量（包括月供、还款总费用、月管理费类型、月管理费费率和还款方式）都可能会影响贷款产品的有效与否。为了深入挖掘影响贷款产品有效性的显著因素，本案例将建立影响有效性因素的逻辑回归模型（使用AIC标准选择模型）和决策树模型，并综合模型的复杂程度和预测精度，选择最有利于预测贷款产品有效性的统计模型。</p>
 </div>
@@ -385,7 +386,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="section-8.3.3.2" class="section level4">
 <h4><span class="header-section-number">8.3.3.2</span> 决策树模型</h4>
 <p>图9展示了决策树模型的估计结果。从决策树的第一层节点（担保方式）来看，非信用贷类型的产品进入了图的左侧，而左侧的第二层节点告诉我们，在担保贷、抵押贷和自由选三种担保方式下，月供大于9791元的贷款产品是更有可能被人申请（有效的）的产品，这说明当提供要求的抵押物或由第三方提供担保时，每个月还款总额越高，才能越早赎回抵押物，解除第三方的担保风险，因此月供较高的产品更吸引潜在申请人。进一步看决策树的右侧，审批时间超过1.5天，并且月管理费费率小于0.66%的产品是大概率有效的，严格的审批流程和较低的费率当然是申请人较为青睐的。还款的期限范围会对人们的心理预期产生影响，中间的第三个节点表示，期限最高范围在2年之内的贷款是没有人申请的，而最高范围大于2年并且还款总费用小于5700元的产品很可能是有效的；同样地，期限最低范围大于3个月（第六个节点）也会大概率提高产品的有效性。这说明，当还款期限的最高、最低范围都较大时，人们对于自己的还款能力更有把握，从而更可能选择这样的贷款产品。此外，一个有趣的现象是，信用贷产品的月供金额在9016至10000元时更可能被申请，较为明确的月还款范围可能和10万元贷款申请人的平均收入水平有关。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-56-1.png" width="672" /></p>
 <p>同样地，选定样本的有效比例62%为阈值，用决策树模型预测产生的混淆矩阵如表3所示。据此计算出来的错分率、TPR和FPR分别是29.2%、78.4%、41.8%。</p>
 <pre><code>##     predict
 ## real   0   1
@@ -395,47 +396,47 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="section-8.3.3.3" class="section level4">
 <h4><span class="header-section-number">8.3.3.3</span> 模型的比较与选择</h4>
 <p>根据两个模型的评价指标，决策树模型的错分率和FPR更小，且TPR更大，说明其预测的精度比逻辑回归模型（AIC标准）更高。绘制两个模型的ROC曲线（图10和图11），得到AIC模型的AUC值为0.678，决策树模型的AUC值为0.732，说明决策树模型的预测能力更好。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-52-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-52-2.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-58-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-58-2.png" width="672" /></p>
 <p>因此，综合考虑模型的预测精度指标和整体预测能力，选择决策树模型来预测一种贷款产品的有效性（是否有人申请）更佳。</p>
 </div>
 </div>
 </div>
 <div id="-1" class="section level2">
 <h2><span class="header-section-number">8.4</span> 代码</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())
-<span class="kw">setwd</span>(<span class="st">&quot;D:/Melody_Ren/onedrive/Rworkspace/bearclub&quot;</span>) 
-dat0 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;task_3.csv&quot;</span>)                <span class="co">#读入数据，命名dat0</span>
-dat1 &lt;-<span class="st"> </span>dat0                                          <span class="co">#备份数据</span>
-dat1<span class="op">$</span>apply[<span class="kw">which</span>(dat1<span class="op">$</span>apply <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>)] &lt;-<span class="st"> </span><span class="dv">1</span>                <span class="co">#因变量设置为0-1</span>
-n &lt;-<span class="st"> </span><span class="kw">nrow</span>(dat1)                                       <span class="co">#数据量</span>
-
-###将管理费类型和费率分开###
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###加载需要的程序包###
 <span class="kw">library</span>(data.table)
-split_fee &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(dat1<span class="op">$</span>monthly_fee, <span class="st">&quot; &quot;</span>))
-<span class="kw">colnames</span>(split_fee) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;fee_type&quot;</span>,<span class="st">&quot;fee_rate&quot;</span>)
-dat1 &lt;-<span class="st"> </span><span class="kw">cbind</span>(dat1, split_fee)
+<span class="kw">library</span>(vcd)
+<span class="kw">library</span>(pROC)
+<span class="kw">library</span>(rpart)
+<span class="kw">library</span>(rattle)
+<span class="kw">library</span>(magrittr)
+<span class="kw">library</span>(dplyr)
 
-<span class="co">#转换费率类型#</span>
+<span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())                                       <span class="co">#清除工作环境</span>
+dat0 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;task_3.csv&quot;</span>)                        <span class="co">#读入数据，命名dat0</span>
+dat1 &lt;-<span class="st"> </span>dat0                                          <span class="co">#备份数据，命名dat1</span>
+dat1<span class="op">$</span>apply[<span class="kw">which</span>(dat1<span class="op">$</span>apply <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>)] &lt;-<span class="st"> </span><span class="dv">1</span>                <span class="co">#因变量设置为0-1</span>
+n &lt;-<span class="st"> </span><span class="kw">nrow</span>(dat1)                                       <span class="co">#数据量n</span>
+
+###将管理费类型和费率解析###
+split_fee &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">tstrsplit</span>(dat1<span class="op">$</span>monthly_fee, <span class="st">&quot; &quot;</span>))   <span class="co">#按照空格将费用类型和费率分别提取出来</span>
+<span class="kw">colnames</span>(split_fee) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;fee_type&quot;</span>,<span class="st">&quot;fee_rate&quot;</span>)                <span class="co">#数据框重命名</span>
+dat1 &lt;-<span class="st"> </span><span class="kw">cbind</span>(dat1, split_fee)                                 <span class="co">#合并数据框</span>
+
+<span class="co">#转换费率类型</span>
 trans &lt;-<span class="st"> </span><span class="kw">c</span>()
 trans &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">matrix</span>(<span class="kw">lapply</span>(split_fee[,<span class="st">&quot;fee_rate&quot;</span>], <span class="cf">function</span>(x) <span class="kw">as.numeric</span>(<span class="kw">sub</span>(<span class="st">&quot;%&quot;</span>, <span class="st">&quot;&quot;</span>, x))<span class="op">/</span><span class="dv">100</span>)))
-split_fee<span class="op">$</span>fee_rate &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(trans<span class="op">$</span>V1)
-dat1 &lt;-<span class="st"> </span>dat1 <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>monthly_fee)
-
-dat1 &lt;-<span class="st"> </span><span class="kw">cbind</span>(dat1, split_fee)
+split_fee<span class="op">$</span>fee_rate &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(trans<span class="op">$</span>V1)            <span class="co">#把管理费率从字符型百分数转化成数值型</span>
+dat1 &lt;-<span class="st"> </span>dat1 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="op">-</span>monthly_fee)                 <span class="co">#从原数据框删除解析前的一列</span>
+dat1 &lt;-<span class="st"> </span><span class="kw">cbind</span>(dat1, split_fee)                        <span class="co">#合并新的数据框</span>
 
 ###将城市划分为一线和非一线###
-<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n){
-  <span class="cf">if</span> (dat1<span class="op">$</span>city[i] <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;北京&quot;</span>,<span class="st">&quot;上海&quot;</span>,<span class="st">&quot;广州&quot;</span>,<span class="st">&quot;深圳&quot;</span>)){
-    dat1<span class="op">$</span>city_flag[i] &lt;-<span class="st"> &quot;一线&quot;</span>
-  } <span class="cf">else</span> dat1<span class="op">$</span>city_flag[i] &lt;-<span class="st"> &quot;非一线&quot;</span>
-}
+dat1<span class="op">$</span>city_flag &lt;-<span class="st"> &quot;非一线&quot;</span>
+dat1[city <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;北京&quot;</span>,<span class="st">&quot;上海&quot;</span>,<span class="st">&quot;广州&quot;</span>,<span class="st">&quot;深圳&quot;</span>), city_flag <span class="op">:</span><span class="er">=</span><span class="st"> &quot;一线&quot;</span>]
 
 ###棘状图###
-<span class="kw">library</span>(vcd)
 city_spine &lt;-<span class="st"> </span><span class="kw">table</span>(dat1<span class="op">$</span>city_flag, dat1<span class="op">$</span>apply)
 <span class="kw">spine</span>(city_spine, <span class="dt">main =</span> <span class="st">&quot;城市因素&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;是否申请&quot;</span>)
-<span class="co">#barplot(city_spine, main = &quot;城市因素&quot;, ylab = &quot;是否申请&quot;, col = c(&quot;lightblue&quot;,&quot;lightpink&quot;), legend = rownames(city_spine))</span>
 
 fee_type_spine &lt;-<span class="st"> </span><span class="kw">table</span>(dat1<span class="op">$</span>fee_type, dat1<span class="op">$</span>apply)
 <span class="kw">spine</span>(fee_type_spine, <span class="dt">main =</span> <span class="st">&quot;月管理费类型&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;是否申请&quot;</span>)
@@ -447,82 +448,54 @@ insure_way_spine &lt;-<span class="st"> </span><span class="kw">table</span>(dat
 pay_way_spine &lt;-<span class="st"> </span><span class="kw">table</span>(dat1<span class="op">$</span>way_to_pay, dat1<span class="op">$</span>apply)
 <span class="kw">spine</span>(pay_way_spine, <span class="dt">main =</span> <span class="st">&quot;还款方式&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;是否申请&quot;</span>)
 
-###
 dat1[<span class="kw">which</span>(dat1<span class="op">$</span>wait_for_money <span class="op">==</span><span class="st"> &quot;审批后当日（审批为3&quot;</span>),<span class="st">&quot;wait_for_money&quot;</span>] &lt;-<span class="st"> </span><span class="dv">0</span>   <span class="co">#将文字改为意思相同的数字</span>
-dat1<span class="op">$</span>wait_for_money &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">as.character</span>(dat1<span class="op">$</span>wait_for_money))
-<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n){
-  dat1<span class="op">$</span>total_wait_time[i] &lt;-<span class="st"> </span>dat1<span class="op">$</span>wait_for_money[i] <span class="op">+</span><span class="st"> </span>dat1<span class="op">$</span>wait_for_permssion[i]
-}
-
+dat1<span class="op">$</span>wait_for_money &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">as.character</span>(dat1<span class="op">$</span>wait_for_money))              <span class="co">#转化等待贷款时间的数据类型为数值型</span>
+dat1 &lt;-<span class="st"> </span><span class="kw">data.table</span>(dat1)                                                          <span class="co">#转化为data.table</span>
+dat1<span class="op">$</span>total_wait_time &lt;-<span class="st"> </span>dat1<span class="op">$</span>wait_for_money <span class="op">+</span><span class="st"> </span>dat1<span class="op">$</span>wait_for_permssion             <span class="co">#计算拿到贷款前的等待时间总长</span>
 <span class="co">#等待时间#</span>
 <span class="kw">boxplot</span>( <span class="kw">log</span>(total_wait_time) <span class="op">~</span><span class="st"> </span>apply, dat1,  <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>, <span class="st">&quot;lightpink&quot;</span>), <span class="dt">names =</span> <span class="kw">c</span>(<span class="st">&quot;未申请&quot;</span>, <span class="st">&quot;申请&quot;</span>), <span class="dt">ylab =</span> <span class="st">&quot;对数等待时间/天&quot;</span>)
-
 <span class="co">#月供#</span>
 <span class="kw">boxplot</span>( monthly_pay <span class="op">~</span><span class="st"> </span>apply, dat1,  <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>, <span class="st">&quot;lightpink&quot;</span>), <span class="dt">names =</span> <span class="kw">c</span>(<span class="st">&quot;未申请&quot;</span>, <span class="st">&quot;申请&quot;</span>), <span class="dt">ylab =</span> <span class="st">&quot;月供/元&quot;</span>)
-
 <span class="co">#还款总费用#</span>
 <span class="kw">boxplot</span>( total_fee <span class="op">~</span><span class="st"> </span>apply, dat1,  <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>, <span class="st">&quot;lightpink&quot;</span>), <span class="dt">names =</span> <span class="kw">c</span>(<span class="st">&quot;未申请&quot;</span>, <span class="st">&quot;申请&quot;</span>), <span class="dt">ylab =</span> <span class="st">&quot;还款总费用/万元&quot;</span>)
-
 <span class="co">#月管理费费率#</span>
-
 <span class="kw">boxplot</span>( fee_rate <span class="op">~</span><span class="st"> </span>apply, dat1,  <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>, <span class="st">&quot;lightpink&quot;</span>), <span class="dt">names =</span> <span class="kw">c</span>(<span class="st">&quot;未申请&quot;</span>, <span class="st">&quot;申请&quot;</span>), <span class="dt">ylab =</span> <span class="st">&quot;月管理费费率&quot;</span>)
 
-<span class="co">#最高最低期限#</span>
-
-<span class="co"># dat1$duration &lt;- dat1$ddl_up_limit/dat1$ddl_low_limit</span>
-
-
 ###建立模型###
-dat1 &lt;-<span class="st"> </span><span class="kw">na.omit</span>(dat1)
-n1 &lt;-<span class="st"> </span><span class="kw">nrow</span>(dat1)
-<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n1) {
-  <span class="cf">if</span>(dat1<span class="op">$</span>wait_for_money[i] <span class="op">&lt;=</span><span class="st"> </span><span class="dv">7</span>){
-    dat1<span class="op">$</span>wait_for_money_flag[i] &lt;-<span class="st"> &quot;7天内放款&quot;</span>
-  } <span class="cf">else</span> dat1<span class="op">$</span>wait_for_money_flag[i] &lt;-<span class="st"> &quot;7天后放款&quot;</span>
-}
+dat1 &lt;-<span class="st"> </span><span class="kw">na.omit</span>(dat1)                                     <span class="co">#去除空值</span>
+n1 &lt;-<span class="st"> </span><span class="kw">nrow</span>(dat1)                                          
 
-<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n1) {
-  <span class="cf">if</span>(dat1<span class="op">$</span>wait_for_permssion[i] <span class="op">&lt;=</span><span class="st"> </span><span class="dv">7</span>){
-    dat1<span class="op">$</span>wait_for_permssion_flag[i] &lt;-<span class="st"> &quot;7天内审批&quot;</span>
-  } <span class="cf">else</span> dat1<span class="op">$</span>wait_for_permssion_flag[i] &lt;-<span class="st"> &quot;7天后审批&quot;</span>
-}
+temp_data &lt;-<span class="st"> </span>dat1[,.(city_flag,monthly_pay,total_fee,way_to_pay,way_to_insure,fee_type,fee_rate,wait_for_money,wait_for_permssion,apply,ddl_low_limit,ddl_up_limit)]
 
-temp_data &lt;-<span class="st"> </span>dat1[,<span class="kw">c</span>(<span class="st">&quot;city_flag&quot;</span>,<span class="st">&quot;monthly_pay&quot;</span>,<span class="st">&quot;total_fee&quot;</span>,<span class="st">&quot;way_to_pay&quot;</span>,<span class="st">&quot;way_to_insure&quot;</span>,<span class="st">&quot;fee_type&quot;</span>,<span class="st">&quot;fee_rate&quot;</span>,<span class="st">&quot;wait_for_money&quot;</span>, <span class="st">&quot;wait_for_permssion&quot;</span>,<span class="st">&quot;apply&quot;</span>,<span class="st">&quot;ddl_low_limit&quot;</span>,<span class="st">&quot;ddl_up_limit&quot;</span>)]
-temp_data<span class="op">$</span>city_flag &lt;-<span class="st"> </span><span class="kw">factor</span>(temp_data<span class="op">$</span>city_flag) <span class="co">#城市转化为因子型</span>
+temp_data<span class="op">$</span>city_flag &lt;-<span class="st"> </span><span class="kw">factor</span>(temp_data<span class="op">$</span>city_flag)        <span class="co">#城市、贷款期限上下限转化为因子型</span>
 temp_data<span class="op">$</span>ddl_low_limit &lt;-<span class="st"> </span><span class="kw">factor</span>(temp_data<span class="op">$</span>ddl_low_limit)
 temp_data<span class="op">$</span>ddl_up_limit &lt;-<span class="st"> </span><span class="kw">factor</span>(temp_data<span class="op">$</span>ddl_up_limit)
-temp_data<span class="op">$</span>apply &lt;-<span class="st"> </span><span class="kw">as.factor</span>(temp_data<span class="op">$</span>apply)
+temp_data<span class="op">$</span>apply &lt;-<span class="st"> </span><span class="kw">as.factor</span>(temp_data<span class="op">$</span>apply)             <span class="co">#贷款申请人数转化为因子型</span>
 
-<span class="co">#logistic回归#</span>
-glm_full &lt;-<span class="st"> </span><span class="kw">glm</span>(apply <span class="op">~</span><span class="st"> </span>., <span class="dt">family =</span> <span class="kw">binomial</span>(<span class="dt">link =</span> <span class="st">&quot;logit&quot;</span>), <span class="dt">data =</span> temp_data)
-<span class="kw">summary</span>(glm_full)
-glm_AIC &lt;-<span class="st"> </span><span class="kw">step</span>(glm_full, <span class="dt">k =</span> <span class="dv">2</span>, <span class="dt">trace =</span> <span class="ot">FALSE</span>)
-<span class="kw">summary</span>(glm_AIC)
+<span class="co">#logistic回归模型#</span>
+glm_full &lt;-<span class="st"> </span><span class="kw">glm</span>(apply <span class="op">~</span><span class="st"> </span>., <span class="dt">family =</span> <span class="kw">binomial</span>(<span class="dt">link =</span> <span class="st">&quot;logit&quot;</span>), <span class="dt">data =</span> temp_data)   <span class="co">#全模型</span>
+glm_AIC &lt;-<span class="st"> </span><span class="kw">step</span>(glm_full, <span class="dt">k =</span> <span class="dv">2</span>, <span class="dt">trace =</span> <span class="ot">FALSE</span>)                                   <span class="co">#AIC标准筛选变量</span>
+<span class="co">#summary(glm_AIC)                                                                 #查看模型</span>
 
-<span class="co">#预测#</span>
-predict &lt;-<span class="st"> </span><span class="kw">predict</span>(glm_AIC,<span class="dt">type=</span><span class="st">&#39;response&#39;</span>, <span class="dt">newdata =</span> temp_data)
+predict &lt;-<span class="st"> </span><span class="kw">predict</span>(glm_AIC,<span class="dt">type=</span><span class="st">&#39;response&#39;</span>, <span class="dt">newdata =</span> temp_data)                  <span class="co">#预测新的数据</span>
 
 <span class="co">#混淆矩阵#</span>
-real &lt;-<span class="st"> </span>temp_data<span class="op">$</span>apply
-ratio_yes &lt;-<span class="st"> </span><span class="kw">nrow</span>(temp_data[<span class="kw">which</span>(temp_data<span class="op">$</span>apply <span class="op">==</span><span class="dv">1</span> ),])<span class="op">/</span><span class="kw">nrow</span>(temp_data)
-<span class="kw">table</span>(real,<span class="dt">predict =</span> <span class="kw">ifelse</span>(predict <span class="op">&gt;</span><span class="st"> </span>ratio_yes,<span class="dv">1</span>,<span class="dv">0</span>))
+real &lt;-<span class="st"> </span>temp_data<span class="op">$</span>apply                                                           <span class="co">#实际值</span>
+ratio_yes &lt;-<span class="st"> </span><span class="kw">nrow</span>(temp_data[<span class="kw">which</span>(temp_data<span class="op">$</span>apply <span class="op">==</span><span class="dv">1</span> ),])<span class="op">/</span><span class="kw">nrow</span>(temp_data)        <span class="co">#因变量取值为1的比例</span>
+<span class="kw">table</span>(real,<span class="dt">predict =</span> <span class="kw">ifelse</span>(predict <span class="op">&gt;</span><span class="st"> </span>ratio_yes,<span class="dv">1</span>,<span class="dv">0</span>))                             <span class="co">#混淆矩阵表</span>
 
 <span class="co">#ROC曲线#</span>
-<span class="kw">library</span>(pROC)
-modelroc &lt;-<span class="st"> </span><span class="kw">roc</span>(temp_data<span class="op">$</span>apply,predict)
-<span class="kw">plot</span>(modelroc, <span class="dt">print.auc =</span> <span class="ot">TRUE</span>, <span class="dt">print.thres =</span> <span class="ot">TRUE</span>, <span class="dt">xlab =</span> <span class="st">&quot;特异度&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;灵敏度&quot;</span>)
+modelroc &lt;-<span class="st"> </span><span class="kw">roc</span>(temp_data<span class="op">$</span>apply,predict)                                                 <span class="co">#根据预测值和实际值绘制ROC曲线</span>
+<span class="kw">plot</span>(modelroc, <span class="dt">print.auc =</span> <span class="ot">TRUE</span>, <span class="dt">print.thres =</span> <span class="ot">TRUE</span>, <span class="dt">xlab =</span> <span class="st">&quot;特异度&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;灵敏度&quot;</span>)   <span class="co">#绘制曲线</span>
 
-<span class="co">#决策树#</span>
-<span class="kw">library</span>(rpart)
-<span class="kw">library</span>(rattle)
+<span class="co">#决策树模型#</span>
+treelm &lt;-<span class="st"> </span><span class="kw">rpart</span>(apply <span class="op">~</span><span class="st"> </span>., <span class="dt">data =</span> temp_data)        <span class="co">#决策树模型</span>
+<span class="kw">fancyRpartPlot</span>(treelm, <span class="dt">sub =</span> <span class="st">&quot;&quot;</span>)                    <span class="co">#绘制决策树</span>
 
-treelm &lt;-<span class="st"> </span><span class="kw">rpart</span>(apply <span class="op">~</span><span class="st"> </span>., <span class="dt">data =</span> temp_data)
-<span class="kw">fancyRpartPlot</span>(treelm, <span class="dt">sub =</span> <span class="st">&quot;&quot;</span>)
-
-predict_tree &lt;-<span class="st"> </span><span class="kw">predict</span>(treelm,<span class="dt">type=</span><span class="st">&#39;prob&#39;</span>, <span class="dt">newdata =</span> temp_data)
-treeroc &lt;-<span class="st"> </span><span class="kw">roc</span>(temp_data<span class="op">$</span>apply, predict_tree[,<span class="dv">2</span>])
-<span class="kw">table</span>(real,<span class="dt">predict =</span> <span class="kw">ifelse</span>(predict_tree[,<span class="dv">2</span>] <span class="op">&gt;</span><span class="st"> </span>ratio_yes,<span class="dv">1</span>,<span class="dv">0</span>))
-<span class="kw">plot</span>(treeroc, <span class="dt">print.auc =</span> <span class="ot">TRUE</span>, <span class="dt">print.thres =</span> <span class="ot">TRUE</span>, <span class="dt">xlab =</span> <span class="st">&quot;特异度&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;灵敏度&quot;</span>)</code></pre></div>
+predict_tree &lt;-<span class="st"> </span><span class="kw">predict</span>(treelm,<span class="dt">type=</span><span class="st">&#39;prob&#39;</span>, <span class="dt">newdata =</span> temp_data)     <span class="co">#预测新的数据</span>
+<span class="kw">table</span>(real,<span class="dt">predict =</span> <span class="kw">ifelse</span>(predict_tree[,<span class="dv">2</span>] <span class="op">&gt;</span><span class="st"> </span>ratio_yes,<span class="dv">1</span>,<span class="dv">0</span>))       <span class="co">#混淆矩阵表</span>
+treeroc &lt;-<span class="st"> </span><span class="kw">roc</span>(temp_data<span class="op">$</span>apply, predict_tree[,<span class="dv">2</span>])                    <span class="co">#根据预测值和实际值绘制ROC曲线</span>
+<span class="kw">plot</span>(treeroc, <span class="dt">print.auc =</span> <span class="ot">TRUE</span>, <span class="dt">print.thres =</span> <span class="ot">TRUE</span>, <span class="dt">xlab =</span> <span class="st">&quot;特异度&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;灵敏度&quot;</span>)    <span class="co">#绘制曲线</span></code></pre></div>
 
 </div>
 </div>

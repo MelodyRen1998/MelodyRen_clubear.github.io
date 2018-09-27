@@ -25,7 +25,7 @@
 <meta name="author" content="yimeng">
 
 
-<meta name="date" content="2018-09-11">
+<meta name="date" content="2018-09-27">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -113,12 +113,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#section-1.3"><i class="fa fa-check"></i><b>1.3</b> 人才计划导师天团</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="wind.html"><a href="wind.html"><i class="fa fa-check"></i><b>2</b> 人才计划章程</a><ul>
-<li class="chapter" data-level="2.1" data-path="wind.html"><a href="wind.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 纪律</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="wind.html"><a href="wind.html#ddl"><i class="fa fa-check"></i><b>2.1.1</b> DDL</a></li>
-<li class="chapter" data-level="2.1.2" data-path="wind.html"><a href="wind.html#section-2.1.2"><i class="fa fa-check"></i><b>2.1.2</b> 礼貌</a></li>
-<li class="chapter" data-level="2.1.3" data-path="wind.html"><a href="wind.html#section-2.1.3"><i class="fa fa-check"></i><b>2.1.3</b> 作业</a></li>
-<li class="chapter" data-level="2.1.4" data-path="wind.html"><a href="wind.html#section-2.1.4"><i class="fa fa-check"></i><b>2.1.4</b> 退出</a></li>
-</ul></li>
+<li class="chapter" data-level="2.1" data-path="wind.html"><a href="wind.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 纪律</a></li>
 <li class="chapter" data-level="2.2" data-path="wind.html"><a href="wind.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 禁止抄袭</a></li>
 <li class="chapter" data-level="2.3" data-path="wind.html"><a href="wind.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 作业质量</a></li>
 <li class="chapter" data-level="2.4" data-path="wind.html"><a href="wind.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 自学</a></li>
@@ -484,146 +479,111 @@ devtools<span class="op">::</span><span class="kw">install_github</span>( <span 
 dat0 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data.csv&quot;</span>)                                      <span class="co">#读入文件中的数据并命名</span>
 dat1 &lt;-<span class="st"> </span>dat0                                                      <span class="co">#对原始数据备份，用于分析</span>
 <span class="kw">summary</span>(dat0)                                                     <span class="co">#查看数据记录的变量等情况</span></code></pre></div>
-<pre><code>##     house_id           vol_num          price      
-##  Min.   :1.10e+07   Min.   :  1.0   Min.   :   39  
-##  1st Qu.:2.92e+09   1st Qu.:  3.0   1st Qu.:  188  
-##  Median :6.32e+09   Median :  6.0   Median :  299  
-##  Mean   :7.72e+09   Mean   : 12.3   Mean   :  355  
-##  3rd Qu.:1.21e+10   3rd Qu.: 15.0   3rd Qu.:  428  
-##  Max.   :2.06e+10   Max.   :219.0   Max.   :10000  
-##     deposit          area          capacity    
-##  Min.   :   0   Min.   :  4.0   Min.   : 1.00  
-##  1st Qu.: 200   1st Qu.: 18.0   1st Qu.: 2.00  
-##  Median : 300   Median : 45.0   Median : 2.00  
-##  Mean   : 346   Mean   : 49.6   Mean   : 2.99  
-##  3rd Qu.: 500   3rd Qu.: 65.0   3rd Qu.: 4.00  
-##  Max.   :7000   Max.   :750.0   Max.   :10.00  
-##       bed             room           office    
-##  Min.   : 1.00   Min.   : 0.00   Min.   :0.00  
-##  1st Qu.: 1.00   1st Qu.: 1.00   1st Qu.:1.00  
-##  Median : 1.00   Median : 2.00   Median :1.00  
-##  Mean   : 1.72   Mean   : 2.09   Mean   :1.01  
-##  3rd Qu.: 2.00   3rd Qu.: 3.00   3rd Qu.:1.00  
-##  Max.   :18.00   Max.   :17.00   Max.   :6.00  
-##      toilet         kitchen          balcony     
-##  Min.   : 0.00   Min.   : 0.000   Min.   :0.000  
-##  1st Qu.: 1.00   1st Qu.: 1.000   1st Qu.:1.000  
-##  Median : 1.00   Median : 1.000   Median :1.000  
-##  Mean   : 1.21   Mean   : 0.951   Mean   :0.949  
-##  3rd Qu.: 1.00   3rd Qu.: 1.000   3rd Qu.:1.000  
-##  Max.   :17.00   Max.   :11.000   Max.   :6.000  
-##     history        book_type       latitude   
-##  Min.   : 1.0   床位出租: 115   Min.   :39.6  
-##  1st Qu.: 3.0   独立单间:1327   1st Qu.:39.9  
-##  Median : 7.0   沙发出租:  38   Median :39.9  
-##  Mean   :10.8   整套出租:2331   Mean   :39.9  
-##  3rd Qu.:15.0                   3rd Qu.:40.0  
-##  Max.   :53.0                   Max.   :40.4  
-##    longitude   district_with_outer  is_foreigner  
-##  Min.   :116   朝阳区:1666         Min.   :0.000  
-##  1st Qu.:116   东城区: 371         1st Qu.:0.000  
-##  Median :116   丰台区: 341         Median :1.000  
-##  Mean   :116   海淀区: 642         Mean   :0.634  
-##  3rd Qu.:116   其他  : 489         3rd Qu.:1.000  
-##  Max.   :117   西城区: 302         Max.   :1.000  
-##     is_cook         is_wifi         is_party    
-##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
-##  1st Qu.:1.000   1st Qu.:1.000   1st Qu.:0.000  
-##  Median :1.000   Median :1.000   Median :0.000  
-##  Mean   :0.809   Mean   :0.994   Mean   :0.305  
-##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
-##  Max.   :1.000   Max.   :1.000   Max.   :1.000  
-##    is_washing    is_refrigerator    is_smoke    
-##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
-##  1st Qu.:1.000   1st Qu.:1.000   1st Qu.:0.000  
-##  Median :1.000   Median :1.000   Median :0.000  
-##  Mean   :0.958   Mean   :0.965   Mean   :0.429  
-##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
-##  Max.   :1.000   Max.   :1.000   Max.   :1.000  
-##    is_parking     is_security     is_elevator   
-##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
-##  1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.000  
-##  Median :0.000   Median :1.000   Median :1.000  
-##  Mean   :0.469   Mean   :0.695   Mean   :0.727  
-##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
-##  Max.   :1.000   Max.   :1.000   Max.   :1.000  
-##     is_soap      is_drinkingwater   is_heating   
-##  Min.   :0.000   Min.   :0.000    Min.   :0.000  
-##  1st Qu.:0.000   1st Qu.:0.000    1st Qu.:1.000  
-##  Median :1.000   Median :1.000    Median :1.000  
-##  Mean   :0.738   Mean   :0.745    Mean   :0.965  
-##  3rd Qu.:1.000   3rd Qu.:1.000    3rd Qu.:1.000  
-##  Max.   :1.000   Max.   :1.000    Max.   :1.000  
-##  is_aircondition     is_tv        is_hotwater   
-##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
-##  1st Qu.:1.000   1st Qu.:1.000   1st Qu.:1.000  
-##  Median :1.000   Median :1.000   Median :1.000  
-##  Mean   :0.967   Mean   :0.813   Mean   :0.996  
-##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
-##  Max.   :1.000   Max.   :1.000   Max.   :1.000  
-##   toilet_type        rule_n         rule_a    
-##  Min.   :0.000   Min.   :1.00   Min.   :1.00  
-##  1st Qu.:0.000   1st Qu.:1.00   1st Qu.:1.00  
-##  Median :1.000   Median :3.00   Median :1.00  
-##  Mean   :0.655   Mean   :3.54   Mean   :2.74  
-##  3rd Qu.:1.000   3rd Qu.:7.00   3rd Qu.:4.00  
-##  Max.   :1.000   Max.   :7.00   Max.   :7.00  
-##  otherscore_clean otherscore_description
-##  Min.   :3.00     Min.   :3.60          
-##  1st Qu.:4.80     1st Qu.:4.80          
-##  Median :4.90     Median :4.90          
-##  Mean   :4.87     Mean   :4.88          
-##  3rd Qu.:5.00     3rd Qu.:5.00          
-##  Max.   :5.00     Max.   :5.00          
-##  otherscore_trans otherscore_safe
-##  Min.   :3.30     Min.   :3.60   
-##  1st Qu.:4.80     1st Qu.:4.90   
-##  Median :4.90     Median :5.00   
-##  Mean   :4.88     Mean   :4.92   
-##  3rd Qu.:5.00     3rd Qu.:5.00   
-##  Max.   :5.00     Max.   :5.00   
-##  otherscore_performance   subway_num   hospital_num
-##  Min.   :3.00           3个以上:3381   无:   5     
-##  1st Qu.:4.80           3个以下: 430   有:3806     
-##  Median :4.90                                      
-##  Mean   :4.85                                      
-##  3rd Qu.:5.00                                      
-##  Max.   :5.00                                      
-##  college_num scenic_spot_num price_landmark_mean
-##  无:  81     无:   7         Min.   :  88.7     
-##  有:3730     有:3804         1st Qu.: 319.2     
-##                              Median : 362.2     
-##                              Mean   : 370.7     
-##                              3rd Qu.: 402.5     
-##                              Max.   :2163.6     
-##  vol_landmark_mean vol_other_landmark_mean
-##  Min.   : 0.00     Min.   :  0.0          
-##  1st Qu.: 5.83     1st Qu.: 30.6          
-##  Median : 7.04     Median : 41.5          
-##  Mean   : 7.50     Mean   : 49.0          
-##  3rd Qu.: 8.93     3rd Qu.: 66.7          
-##  Max.   :15.69     Max.   :167.7          
-##       sp2             sp4             sp6       
-##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
-##  1st Qu.:0.194   1st Qu.:0.257   1st Qu.:0.000  
-##  Median :0.440   Median :0.526   Median :0.531  
-##  Mean   :0.456   Mean   :0.515   Mean   :0.430  
-##  3rd Qu.:0.703   3rd Qu.:0.786   3rd Qu.:0.700  
-##  Max.   :0.994   Max.   :0.995   Max.   :0.992  
-##       sp8             sp10            sp12      
-##  Min.   :0.000   Min.   :0.000   Min.   :0.000  
-##  1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.000  
-##  Median :0.556   Median :0.571   Median :0.625  
-##  Mean   :0.442   Mean   :0.439   Mean   :0.466  
-##  3rd Qu.:0.710   3rd Qu.:0.722   3rd Qu.:0.745  
-##  Max.   :0.992   Max.   :0.992   Max.   :0.988  
-##       sp14            sp16      
-##  Min.   :0.000   Min.   :0.000  
-##  1st Qu.:0.000   1st Qu.:0.454  
-##  Median :0.500   Median :0.537  
-##  Mean   :0.418   Mean   :0.522  
-##  3rd Qu.:0.712   3rd Qu.:0.593  
-##  Max.   :0.988   Max.   :0.981</code></pre>
+<pre><code>##     house_id           vol_num          price          deposit    
+##  Min.   :1.10e+07   Min.   :  1.0   Min.   :   39   Min.   :   0  
+##  1st Qu.:2.92e+09   1st Qu.:  3.0   1st Qu.:  188   1st Qu.: 200  
+##  Median :6.32e+09   Median :  6.0   Median :  299   Median : 300  
+##  Mean   :7.72e+09   Mean   : 12.3   Mean   :  355   Mean   : 346  
+##  3rd Qu.:1.21e+10   3rd Qu.: 15.0   3rd Qu.:  428   3rd Qu.: 500  
+##  Max.   :2.06e+10   Max.   :219.0   Max.   :10000   Max.   :7000  
+##       area          capacity          bed             room      
+##  Min.   :  4.0   Min.   : 1.00   Min.   : 1.00   Min.   : 0.00  
+##  1st Qu.: 18.0   1st Qu.: 2.00   1st Qu.: 1.00   1st Qu.: 1.00  
+##  Median : 45.0   Median : 2.00   Median : 1.00   Median : 2.00  
+##  Mean   : 49.6   Mean   : 2.99   Mean   : 1.72   Mean   : 2.09  
+##  3rd Qu.: 65.0   3rd Qu.: 4.00   3rd Qu.: 2.00   3rd Qu.: 3.00  
+##  Max.   :750.0   Max.   :10.00   Max.   :18.00   Max.   :17.00  
+##      office         toilet         kitchen          balcony     
+##  Min.   :0.00   Min.   : 0.00   Min.   : 0.000   Min.   :0.000  
+##  1st Qu.:1.00   1st Qu.: 1.00   1st Qu.: 1.000   1st Qu.:1.000  
+##  Median :1.00   Median : 1.00   Median : 1.000   Median :1.000  
+##  Mean   :1.01   Mean   : 1.21   Mean   : 0.951   Mean   :0.949  
+##  3rd Qu.:1.00   3rd Qu.: 1.00   3rd Qu.: 1.000   3rd Qu.:1.000  
+##  Max.   :6.00   Max.   :17.00   Max.   :11.000   Max.   :6.000  
+##     history        book_type       latitude      longitude  
+##  Min.   : 1.0   床位出租: 115   Min.   :39.6   Min.   :116  
+##  1st Qu.: 3.0   独立单间:1327   1st Qu.:39.9   1st Qu.:116  
+##  Median : 7.0   沙发出租:  38   Median :39.9   Median :116  
+##  Mean   :10.8   整套出租:2331   Mean   :39.9   Mean   :116  
+##  3rd Qu.:15.0                   3rd Qu.:40.0   3rd Qu.:116  
+##  Max.   :53.0                   Max.   :40.4   Max.   :117  
+##  district_with_outer  is_foreigner      is_cook         is_wifi     
+##  朝阳区:1666         Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  东城区: 371         1st Qu.:0.000   1st Qu.:1.000   1st Qu.:1.000  
+##  丰台区: 341         Median :1.000   Median :1.000   Median :1.000  
+##  海淀区: 642         Mean   :0.634   Mean   :0.809   Mean   :0.994  
+##  其他  : 489         3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
+##  西城区: 302         Max.   :1.000   Max.   :1.000   Max.   :1.000  
+##     is_party       is_washing    is_refrigerator    is_smoke    
+##  Min.   :0.000   Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:0.000   1st Qu.:1.000   1st Qu.:1.000   1st Qu.:0.000  
+##  Median :0.000   Median :1.000   Median :1.000   Median :0.000  
+##  Mean   :0.305   Mean   :0.958   Mean   :0.965   Mean   :0.429  
+##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
+##  Max.   :1.000   Max.   :1.000   Max.   :1.000   Max.   :1.000  
+##    is_parking     is_security     is_elevator       is_soap     
+##  Min.   :0.000   Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.000  
+##  Median :0.000   Median :1.000   Median :1.000   Median :1.000  
+##  Mean   :0.469   Mean   :0.695   Mean   :0.727   Mean   :0.738  
+##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
+##  Max.   :1.000   Max.   :1.000   Max.   :1.000   Max.   :1.000  
+##  is_drinkingwater   is_heating    is_aircondition     is_tv      
+##  Min.   :0.000    Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:0.000    1st Qu.:1.000   1st Qu.:1.000   1st Qu.:1.000  
+##  Median :1.000    Median :1.000   Median :1.000   Median :1.000  
+##  Mean   :0.745    Mean   :0.965   Mean   :0.967   Mean   :0.813  
+##  3rd Qu.:1.000    3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.000  
+##  Max.   :1.000    Max.   :1.000   Max.   :1.000   Max.   :1.000  
+##   is_hotwater     toilet_type        rule_n         rule_a    
+##  Min.   :0.000   Min.   :0.000   Min.   :1.00   Min.   :1.00  
+##  1st Qu.:1.000   1st Qu.:0.000   1st Qu.:1.00   1st Qu.:1.00  
+##  Median :1.000   Median :1.000   Median :3.00   Median :1.00  
+##  Mean   :0.996   Mean   :0.655   Mean   :3.54   Mean   :2.74  
+##  3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:7.00   3rd Qu.:4.00  
+##  Max.   :1.000   Max.   :1.000   Max.   :7.00   Max.   :7.00  
+##  otherscore_clean otherscore_description otherscore_trans otherscore_safe
+##  Min.   :3.00     Min.   :3.60           Min.   :3.30     Min.   :3.60   
+##  1st Qu.:4.80     1st Qu.:4.80           1st Qu.:4.80     1st Qu.:4.90   
+##  Median :4.90     Median :4.90           Median :4.90     Median :5.00   
+##  Mean   :4.87     Mean   :4.88           Mean   :4.88     Mean   :4.92   
+##  3rd Qu.:5.00     3rd Qu.:5.00           3rd Qu.:5.00     3rd Qu.:5.00   
+##  Max.   :5.00     Max.   :5.00           Max.   :5.00     Max.   :5.00   
+##  otherscore_performance   subway_num   hospital_num college_num
+##  Min.   :3.00           3个以上:3381   无:   5      无:  81    
+##  1st Qu.:4.80           3个以下: 430   有:3806      有:3730    
+##  Median :4.90                                                  
+##  Mean   :4.85                                                  
+##  3rd Qu.:5.00                                                  
+##  Max.   :5.00                                                  
+##  scenic_spot_num price_landmark_mean vol_landmark_mean
+##  无:   7         Min.   :  88.7      Min.   : 0.00    
+##  有:3804         1st Qu.: 319.2      1st Qu.: 5.83    
+##                  Median : 362.2      Median : 7.04    
+##                  Mean   : 370.7      Mean   : 7.50    
+##                  3rd Qu.: 402.5      3rd Qu.: 8.93    
+##                  Max.   :2163.6      Max.   :15.69    
+##  vol_other_landmark_mean      sp2             sp4             sp6       
+##  Min.   :  0.0           Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.: 30.6           1st Qu.:0.194   1st Qu.:0.257   1st Qu.:0.000  
+##  Median : 41.5           Median :0.440   Median :0.526   Median :0.531  
+##  Mean   : 49.0           Mean   :0.456   Mean   :0.515   Mean   :0.430  
+##  3rd Qu.: 66.7           3rd Qu.:0.703   3rd Qu.:0.786   3rd Qu.:0.700  
+##  Max.   :167.7           Max.   :0.994   Max.   :0.995   Max.   :0.992  
+##       sp8             sp10            sp12            sp14      
+##  Min.   :0.000   Min.   :0.000   Min.   :0.000   Min.   :0.000  
+##  1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.000  
+##  Median :0.556   Median :0.571   Median :0.625   Median :0.500  
+##  Mean   :0.442   Mean   :0.439   Mean   :0.466   Mean   :0.418  
+##  3rd Qu.:0.710   3rd Qu.:0.722   3rd Qu.:0.745   3rd Qu.:0.712  
+##  Max.   :0.992   Max.   :0.992   Max.   :0.988   Max.   :0.988  
+##       sp16      
+##  Min.   :0.000  
+##  1st Qu.:0.454  
+##  Median :0.537  
+##  Mean   :0.522  
+##  3rd Qu.:0.593  
+##  Max.   :0.981</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n &lt;-<span class="st"> </span><span class="kw">nrow</span>(dat0)                                                   <span class="co">#观测数据数量n</span>
 n                                                                 <span class="co">#查看n值</span></code></pre></div>
 <pre><code>## [1] 3811</code></pre>
@@ -641,7 +601,7 @@ my_ggtheme &lt;-<span class="st"> </span><span class="cf">function</span>(){
 <span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">10</span>, <span class="dt">fill=</span><span class="st">&quot;lightblue&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;评论数&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;频数&quot;</span>) <span class="op">+</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">my_ggtheme</span>()</code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
 <p><strong>描述与解读</strong></p>
 <p>短租房的评论数量呈现明显的右偏分布。具体地，只有23.3%的短租房超过15人评论，门庭冷落的短租房较多，约有67.3%的短租房评论数不超过10条，因此大多数短租房的热度都偏低。其中，评论数最多（219条）的短租房是位于北京市西城区月坛街道真武庙社区的整套出租房，其附近有3个以上的地铁站，并且还有医院、学校和景点，可谓是短租房中的战斗机。</p>
 <p><strong>任务三</strong></p>
@@ -658,14 +618,14 @@ dat1<span class="op">$</span>price_flag =<span class="st"> </span><span class="k
 <span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>,<span class="st">&quot;lightpink&quot;</span>)) <span class="op">+</span><span class="st">                                   </span><span class="co">#设置箱子填充颜色</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;价格&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;对数评论数&quot;</span>) <span class="op">+</span><span class="st">                                                 </span><span class="co">#坐标轴名称</span>
 <span class="st">  </span><span class="kw">my_ggtheme</span>()</code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-43-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###绘制面积-评论数对比箱线图###
 dat1<span class="op">$</span>area_flag =<span class="st"> </span><span class="kw">factor</span>(dat1<span class="op">$</span>area_flag, <span class="dt">levels=</span><span class="kw">c</span>(<span class="st">&quot;小于或等于50平米&quot;,&quot;</span>大于50平米&quot;))    <span class="co">#调整面积的排序</span>
 <span class="kw">ggplot</span>(dat1, <span class="kw">aes</span>(<span class="dt">x =</span> area_flag, <span class="dt">y =</span> <span class="kw">log</span>(vol_num), <span class="dt">group =</span> area_flag)) <span class="op">+</span><span class="st">               </span><span class="co">#绘制箱线图</span>
 <span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>,<span class="st">&quot;lightpink&quot;</span>)) <span class="op">+</span><span class="st">                                   </span><span class="co">#设置箱子填充颜色</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;面积&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;对数评论数&quot;</span>) <span class="op">+</span><span class="st">                                                 </span><span class="co">#坐标轴名称</span>
 <span class="st">  </span><span class="kw">my_ggtheme</span>()</code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-43-2.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-37-2.png" width="672" /></p>
 <p><strong>描述与解读</strong></p>
 <p>从分组箱线图可以看出，不同价格的短租房和不同面积的短租房热度有一定的差异。其中，价格小于或等于300元和面积小于或等于50平米的的短租房热度更高，一种合理的推测是：短租房的需求更多来自于外地居民，由于较为迫切的需求，导致其对面积的要求不高，并且年轻人的经济实力不是很强，因此“便宜又小巧”成为短租房中更受青睐的种类。</p>
 <p><strong>任务四</strong></p>
@@ -679,7 +639,7 @@ dat1<span class="op">$</span>area_flag =<span class="st"> </span><span class="kw
 <span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">x =</span> district_name, <span class="dt">y =</span> ave_price, <span class="dt">label =</span> <span class="kw">round</span>(ave_price,<span class="dv">1</span>)), <span class="dt">vjust =</span> <span class="op">-</span><span class="fl">0.3</span>)<span class="op">+</span><span class="st">     </span><span class="co">#添加数据标签</span>
 <span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;平均评论数&quot;</span>, <span class="dt">caption =</span> <span class="st">&quot;（样本数量：341、642、302、1666、371、489）&quot;) +       #添加坐标轴名称和副标题</span>
 <span class="st">my_ggtheme()</span></code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-44-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
 <p><strong>描述与解读</strong></p>
 <p>通过条形图可以看出，虽然西城区的短租房数量最多，但是丰台区的房源热度（评价数量）最多，其他地区的房源热度最低。看来虽然西城区更靠近北京市中心，终究也是敌不过丰台区性价比更高的短租房来得“讨人欢心”。</p>
 <p><strong>任务五</strong></p>
@@ -702,17 +662,17 @@ other_flag<span class="op">$</span>other_factor =<span class="st"> </span><span 
 <span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&#39;identity&#39;</span>, <span class="dt">fill =</span> <span class="kw">c</span>(<span class="st">&quot;lightblue&quot;</span>,<span class="st">&quot;lightpink&quot;</span>), <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span><span class="st">               </span><span class="co">#设置颜色 </span>
 <span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;平均评论数&quot;</span>,                                                                  <span class="co">#坐标轴名称</span>
      <span class="dt">caption =</span> <span class="kw">paste</span>(<span class="st">&quot;（样本数量：&quot;</span>,                                                            <span class="co">#副标题名称，计算样本量</span>
-                     <span class="kw">nrow</span>(dat1[other_source_flag <span class="op">==</span><span class="st"> &quot;小于或等于4.8分&quot;</span>]),
+                     <span class="kw">nrow</span>(dat1[<span class="kw">get</span>(other_source_flag) <span class="op">==</span><span class="st"> &quot;小于或等于4.8分&quot;</span>]),
                      <span class="st">&quot;、&quot;</span>,
-                     <span class="kw">nrow</span>(dat1[other_source_flag <span class="op">==</span><span class="st"> &quot;大于4.8分&quot;</span>]),
+                     <span class="kw">nrow</span>(dat1[<span class="kw">get</span>(other_source_flag) <span class="op">==</span><span class="st"> &quot;大于4.8分&quot;</span>]),
                      <span class="st">&quot;）&quot;</span>)) <span class="op">+</span><span class="st"> </span>
 <span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">x =</span> other_factor, <span class="dt">y =</span> ave_vol_num, <span class="dt">label =</span> <span class="kw">round</span>(ave_vol_num,<span class="dv">1</span>), <span class="dt">vjust =</span> <span class="op">-</span><span class="fl">0.5</span>)) <span class="op">+</span><span class="st"> </span><span class="co">#添加数据标签</span>
 <span class="kw">my_ggtheme</span>()
 }</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">PlotOtherSource</span>(<span class="st">&quot;other_disc_flag&quot;</span>)                                            <span class="co">#绘制描述得分-平均评论数柱状图</span></code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-46-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">PlotOtherSource</span>(<span class="st">&quot;other_perf_flag&quot;</span>)                                            <span class="co">#绘制性价比得分-平均评论数柱状图</span></code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-47-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
 <p><strong>描述与解读</strong></p>
 <p>通过两个柱状图可以看出，对其他房源表述相符得分和性价比得分方面，都是高分（大于4.8分）样本数量较多，而房主其他房源高分的短租房热度也高于其他房源低分的短租房。这说明大多数房主经营的租住房在性价比和描述相符方面都是较为优秀的，并且这会具有良性循环的效果，“你好我好大家好”，其他房源评价高，那这间房屋也不差。</p>
 <p><strong>任务六</strong></p>
@@ -742,53 +702,30 @@ lm.bic &lt;-<span class="st"> </span><span class="kw">step</span>(lm.full,<span 
 ## -1.8871 -0.4414 -0.0467  0.4314  2.3243 
 ## 
 ## Coefficients:
-##                         Estimate Std. Error t value
-## (Intercept)            -3.567264   0.379302   -9.40
-## area                    0.001091   0.000360    3.03
-## book_type独立单间       0.024818   0.065899    0.38
-## book_type沙发出租      -0.212920   0.119676   -1.78
-## book_type整套出租       0.303494   0.072467    4.19
-## is_smoke               -0.073270   0.022206   -3.30
-## is_parking             -0.064830   0.021559   -3.01
-## is_drinkingwater        0.079655   0.024705    3.22
-## rule_n                  0.031557   0.005814    5.43
-## rule_a                 -0.018085   0.006306   -2.87
-## otherscore_clean        0.379932   0.101212    3.75
-## otherscore_description  0.609519   0.111464    5.47
-## price_landmark_mean     0.000428   0.000108    3.95
-## vol_landmark_mean       0.035380   0.004169    8.49
-## sp6                     0.483276   0.077611    6.23
-## sp8                     0.435986   0.084961    5.13
-## sp10                    0.548505   0.066734    8.22
-## sp12                    0.528108   0.078227    6.75
-## sp16                   -0.352273   0.086484   -4.07
-## log_price              -0.302287   0.031722   -9.53
-## log_history             0.429846   0.012848   33.46
-##                        Pr(&gt;|t|)    
-## (Intercept)             &lt; 2e-16 ***
-## area                    0.00249 ** 
-## book_type独立单间       0.70649    
-## book_type沙发出租       0.07530 .  
-## book_type整套出租       2.9e-05 ***
-## is_smoke                0.00098 ***
-## is_parking              0.00265 ** 
-## is_drinkingwater        0.00127 ** 
-## rule_n                  6.1e-08 ***
-## rule_a                  0.00416 ** 
-## otherscore_clean        0.00018 ***
-## otherscore_description  4.8e-08 ***
-## price_landmark_mean     7.8e-05 ***
-## vol_landmark_mean       &lt; 2e-16 ***
-## sp6                     5.3e-10 ***
-## sp8                     3.0e-07 ***
-## sp10                    2.8e-16 ***
-## sp12                    1.7e-11 ***
-## sp16                    4.7e-05 ***
-## log_price               &lt; 2e-16 ***
-## log_history             &lt; 2e-16 ***
+##                         Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)            -3.567264   0.379302   -9.40  &lt; 2e-16 ***
+## area                    0.001091   0.000360    3.03  0.00249 ** 
+## book_type独立单间       0.024818   0.065899    0.38  0.70649    
+## book_type沙发出租      -0.212920   0.119676   -1.78  0.07530 .  
+## book_type整套出租       0.303494   0.072467    4.19  2.9e-05 ***
+## is_smoke               -0.073270   0.022206   -3.30  0.00098 ***
+## is_parking             -0.064830   0.021559   -3.01  0.00265 ** 
+## is_drinkingwater        0.079655   0.024705    3.22  0.00127 ** 
+## rule_n                  0.031557   0.005814    5.43  6.1e-08 ***
+## rule_a                 -0.018085   0.006306   -2.87  0.00416 ** 
+## otherscore_clean        0.379932   0.101212    3.75  0.00018 ***
+## otherscore_description  0.609519   0.111464    5.47  4.8e-08 ***
+## price_landmark_mean     0.000428   0.000108    3.95  7.8e-05 ***
+## vol_landmark_mean       0.035380   0.004169    8.49  &lt; 2e-16 ***
+## sp6                     0.483276   0.077611    6.23  5.3e-10 ***
+## sp8                     0.435986   0.084961    5.13  3.0e-07 ***
+## sp10                    0.548505   0.066734    8.22  2.8e-16 ***
+## sp12                    0.528108   0.078227    6.75  1.7e-11 ***
+## sp16                   -0.352273   0.086484   -4.07  4.7e-05 ***
+## log_price              -0.302287   0.031722   -9.53  &lt; 2e-16 ***
+## log_history             0.429846   0.012848   33.46  &lt; 2e-16 ***
 ## ---
-## Signif. codes:  
-## 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Residual standard error: 0.638 on 3790 degrees of freedom
 ## Multiple R-squared:  0.706,  Adjusted R-squared:  0.705 
@@ -889,7 +826,7 @@ rardarplot &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<spa
 ###绘制雷达图###
 <span class="kw">ggradar</span>(rardarplot, <span class="dt">grid.label.size =</span> <span class="dv">5</span>, <span class="dt">axis.label.size =</span> <span class="dv">5</span>, <span class="dt">group.point.size =</span> <span class="dv">4</span>, <span class="dt">plot.legend =</span> <span class="ot">FALSE</span>)<span class="op">+</span>
 <span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>)</code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-44-1.png" width="672" /></p>
 <p><strong>说明</strong></p>
 <p>每个维度得分的计算方法：</p>
 <ul>

@@ -25,7 +25,7 @@
 <meta name="author" content="yimeng">
 
 
-<meta name="date" content="2018-09-11">
+<meta name="date" content="2018-09-27">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -113,12 +113,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#section-1.3"><i class="fa fa-check"></i><b>1.3</b> 人才计划导师天团</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="wind.html"><a href="wind.html"><i class="fa fa-check"></i><b>2</b> 人才计划章程</a><ul>
-<li class="chapter" data-level="2.1" data-path="wind.html"><a href="wind.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 纪律</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="wind.html"><a href="wind.html#ddl"><i class="fa fa-check"></i><b>2.1.1</b> DDL</a></li>
-<li class="chapter" data-level="2.1.2" data-path="wind.html"><a href="wind.html#section-2.1.2"><i class="fa fa-check"></i><b>2.1.2</b> 礼貌</a></li>
-<li class="chapter" data-level="2.1.3" data-path="wind.html"><a href="wind.html#section-2.1.3"><i class="fa fa-check"></i><b>2.1.3</b> 作业</a></li>
-<li class="chapter" data-level="2.1.4" data-path="wind.html"><a href="wind.html#section-2.1.4"><i class="fa fa-check"></i><b>2.1.4</b> 退出</a></li>
-</ul></li>
+<li class="chapter" data-level="2.1" data-path="wind.html"><a href="wind.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 纪律</a></li>
 <li class="chapter" data-level="2.2" data-path="wind.html"><a href="wind.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 禁止抄袭</a></li>
 <li class="chapter" data-level="2.3" data-path="wind.html"><a href="wind.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 作业质量</a></li>
 <li class="chapter" data-level="2.4" data-path="wind.html"><a href="wind.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 自学</a></li>
@@ -336,54 +331,38 @@ trip[,<span class="kw">c</span>(<span class="st">&quot;starttime_h&quot;</span>,
 ##  3rd Qu.:9304310   3rd Qu.:2016-04-23 19:05:00  
 ##  Max.   :9379901   Max.   :2016-04-30 23:59:00  
 ##                                                 
-##     stoptime                       bikeid    
-##  Min.   :2016-04-01 00:09:00   Min.   :   1  
-##  1st Qu.:2016-04-12 18:26:00   1st Qu.:1317  
-##  Median :2016-04-17 20:39:00   Median :2595  
-##  Mean   :2016-04-17 15:26:46   Mean   :2531  
-##  3rd Qu.:2016-04-23 19:25:00   3rd Qu.:3773  
-##  Max.   :2016-05-01 14:55:00   Max.   :4837  
-##                                              
-##   tripduration   from_station_id
-##  Min.   :   60   Min.   :  2    
-##  1st Qu.:  381   1st Qu.: 75    
-##  Median :  656   Median :158    
-##  Mean   :  942   Mean   :177    
-##  3rd Qu.: 1114   3rd Qu.:268    
-##  Max.   :86186   Max.   :511    
-##                                 
-##                     from_station_name  to_station_id
-##  Streeter Dr &amp; Grand Ave     :  3860   Min.   :  2  
-##  Clinton St &amp; Washington Blvd:  3588   1st Qu.: 74  
-##  Lake Shore Dr &amp; Monroe St   :  3176   Median :157  
-##  Clinton St &amp; Madison St     :  2760   Mean   :177  
-##  Theater on the Lake         :  2549   3rd Qu.:268  
-##  Canal St &amp; Adams St         :  2486   Max.   :511  
-##  (Other)                     :213216                
-##                      to_station_name  
-##  Streeter Dr &amp; Grand Ave     :  4624  
-##  Canal St &amp; Madison St       :  3205  
-##  Clinton St &amp; Washington Blvd:  3131  
-##  Lake Shore Dr &amp; Monroe St   :  3039  
-##  Theater on the Lake         :  2672  
-##  Clinton St &amp; Madison St     :  2528  
-##  (Other)                     :212436  
-##        usertype         gender         birthyear    
-##  Customer  : 49392         : 49418   Min.   :1899   
-##  Subscriber:182243   Female: 42947   1st Qu.:1974   
-##                      Male  :139270   Median :1983   
-##                                      Mean   :1980   
-##                                      3rd Qu.:1988   
-##                                      Max.   :2000   
-##                                      NA&#39;s   :49392  
-##   starttime_h     stoptime_h  
-##  Min.   : 0.0   Min.   : 0.0  
-##  1st Qu.:10.0   1st Qu.:10.0  
-##  Median :14.0   Median :15.0  
-##  Mean   :13.6   Mean   :13.8  
-##  3rd Qu.:17.0   3rd Qu.:17.0  
-##  Max.   :23.0   Max.   :23.0  
-##                               
+##     stoptime                       bikeid      tripduration  
+##  Min.   :2016-04-01 00:09:00   Min.   :   1   Min.   :   60  
+##  1st Qu.:2016-04-12 18:26:00   1st Qu.:1317   1st Qu.:  381  
+##  Median :2016-04-17 20:39:00   Median :2595   Median :  656  
+##  Mean   :2016-04-17 15:26:46   Mean   :2531   Mean   :  942  
+##  3rd Qu.:2016-04-23 19:25:00   3rd Qu.:3773   3rd Qu.: 1114  
+##  Max.   :2016-05-01 14:55:00   Max.   :4837   Max.   :86186  
+##                                                              
+##  from_station_id                    from_station_name  to_station_id
+##  Min.   :  2     Streeter Dr &amp; Grand Ave     :  3860   Min.   :  2  
+##  1st Qu.: 75     Clinton St &amp; Washington Blvd:  3588   1st Qu.: 74  
+##  Median :158     Lake Shore Dr &amp; Monroe St   :  3176   Median :157  
+##  Mean   :177     Clinton St &amp; Madison St     :  2760   Mean   :177  
+##  3rd Qu.:268     Theater on the Lake         :  2549   3rd Qu.:268  
+##  Max.   :511     Canal St &amp; Adams St         :  2486   Max.   :511  
+##                  (Other)                     :213216                
+##                      to_station_name         usertype         gender      
+##  Streeter Dr &amp; Grand Ave     :  4624   Customer  : 49392         : 49418  
+##  Canal St &amp; Madison St       :  3205   Subscriber:182243   Female: 42947  
+##  Clinton St &amp; Washington Blvd:  3131                       Male  :139270  
+##  Lake Shore Dr &amp; Monroe St   :  3039                                      
+##  Theater on the Lake         :  2672                                      
+##  Clinton St &amp; Madison St     :  2528                                      
+##  (Other)                     :212436                                      
+##    birthyear      starttime_h     stoptime_h  
+##  Min.   :1899    Min.   : 0.0   Min.   : 0.0  
+##  1st Qu.:1974    1st Qu.:10.0   1st Qu.:10.0  
+##  Median :1983    Median :14.0   Median :15.0  
+##  Mean   :1980    Mean   :13.6   Mean   :13.8  
+##  3rd Qu.:1988    3rd Qu.:17.0   3rd Qu.:17.0  
+##  Max.   :2000    Max.   :23.0   Max.   :23.0  
+##  NA&#39;s   :49392                                
 ##        t                      
 ##  Min.   :2016-04-01 00:14:00  
 ##  1st Qu.:2016-04-12 18:24:00  
@@ -405,14 +384,14 @@ trip[,<span class="kw">c</span>(<span class="st">&quot;starttime_h&quot;</span>,
 ##    11.0    15.0    15.0    17.2    19.0    47.0</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###绘制站点规模直方图###
 <span class="kw">ggplot</span>(station, <span class="kw">aes</span>(<span class="dt">x=</span>dpcapacity)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth=</span><span class="dv">5</span>, <span class="dt">fill=</span><span class="st">&quot;steelblue4&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">xlim</span>(<span class="dv">10</span>, <span class="dv">50</span>) <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;车桩数&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;频数&quot;</span>)</code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p><strong>分析</strong></p>
 <p>站点规模明显右偏，由于均值容易受异常值影响，因此参考中位数更为科学。由结果可以看出，平均站点规模为一个站点停放15辆共享单车。而一个站点15辆车也符合日常看到的共享单车站点情况。</p>
 <p><strong>任务四</strong></p>
 <p>请按用户类型统计行程数，输出条形图。这个工作自行车系统，从使用量上来讲，哪个人群是主力呢，贡献了百分之多少的流量呢？</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###统计不同类型用户的行程数###
 <span class="kw">ggplot</span>(trip, <span class="kw">aes</span>(<span class="dt">x=</span>usertype)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;count&quot;</span>,<span class="dt">fill=</span><span class="st">&quot;steelblue4&quot;</span>)  <span class="op">+</span><span class="kw">scale_x_discrete</span>(<span class="dt">name=</span><span class="st">&#39;用户类型&#39;</span>, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&#39;游客&#39;</span>,<span class="st">&#39;居民&#39;</span>)) <span class="op">+</span><span class="st"> </span><span class="kw">scale_y_continuous</span>(<span class="dt">name=</span><span class="st">&#39;出行数量&#39;</span>)  <span class="co">#绘制直方图</span></code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">table</span>(trip<span class="op">$</span>usertype)<span class="op">/</span><span class="kw">length</span>(trip<span class="op">$</span>usertype)
 <span class="kw">percent</span>(<span class="kw">as.vector</span>(a), <span class="dt">accuracy =</span> <span class="fl">0.01</span>)                  <span class="co">#两类用户贡献流量占比，保留两位小数</span></code></pre></div>
 <pre><code>## [1] &quot;21.32%&quot; &quot;78.68%&quot;</code></pre>
@@ -429,7 +408,7 @@ bikeuseid &lt;-<span class="st"> </span><span class="kw">unique</span>(trip[,.(b
 ##       1      35      52      51      67     184</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###绘制每辆自行车月均使用次数直方图###
 <span class="kw">ggplot</span>(bikeuseid, <span class="kw">aes</span>(<span class="dt">x=</span>monthlyuse)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth=</span><span class="dv">10</span>, <span class="dt">fill=</span><span class="st">&quot;steelblue4&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;自行车日均使用次数&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;频率&quot;</span>)</code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <p><strong>分析</strong></p>
 <p>根据数据结果，平均每一辆自行车一个月内会被使用51.05次，其5-number特征数如上所示。</p>
 <p>虽然最高的使用频率是一个月184次，即一天6次，但是一辆共享单车平均每天只会被使用不到2次。从这个角度来看，此共享单车系统的使用率偏低。</p>
@@ -440,13 +419,13 @@ trip[,usehour <span class="op">:</span><span class="er">=</span><span class="st"
 trip[,hourlyuse <span class="op">:</span><span class="er">=</span><span class="st"> </span><span class="kw">length</span>(trip_id), by =<span class="st"> &quot;usehour&quot;</span>]   <span class="co">#每个小时借车的数量</span>
 startuse &lt;-<span class="st"> </span><span class="kw">unique</span>(trip[,.(usehour,hourlyuse)])       <span class="co">#得到绘制条形图的数据框</span>
 <span class="kw">ggplot</span>(startuse,<span class="kw">aes</span>(<span class="dt">x =</span> usehour, <span class="dt">y =</span> hourlyuse)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>(<span class="dt">stat=</span><span class="st">&#39;identity&#39;</span>, <span class="dt">fill=</span><span class="st">&quot;steelblue4&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;使用小时&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;借车量&quot;</span>)                    <span class="co">#绘制时均借车量直方图</span></code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###绘制时均还车量直方图###
 trip[,backhour <span class="op">:</span><span class="er">=</span><span class="st"> </span><span class="kw">hour</span>(stoptime)]                     <span class="co">#还车的小时index</span>
 trip[,hourlyback <span class="op">:</span><span class="er">=</span><span class="st"> </span><span class="kw">length</span>(trip_id), by =<span class="st"> &quot;backhour&quot;</span>]  <span class="co">#每个小时还车的数量</span>
 stopuse &lt;-<span class="st"> </span><span class="kw">unique</span>(trip[,.(backhour,hourlyback)])       <span class="co">#得到绘制条形图的数据框</span>
 <span class="kw">ggplot</span>(stopuse,<span class="kw">aes</span>(<span class="dt">x =</span> backhour, <span class="dt">y =</span> hourlyback)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>(<span class="dt">stat=</span><span class="st">&#39;identity&#39;</span>, <span class="dt">fill=</span><span class="st">&quot;steelblue4&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;使用小时&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;还车量&quot;</span>)                   <span class="co">#绘制时均还车量直方图</span></code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-26-2.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-20-2.png" width="672" /></p>
 <p><strong>分析</strong></p>
 <p>根据直方图，共享单车的借车和还车都具有早晚高峰。对于借车、还车来说，早高峰都为早上8点，晚高峰都为下午5点，并且晚高峰时段借还车量都大于早高峰。早晚高峰时间正好是上下班、上下学的时间，结果符合预期。</p>
 <p>对于早高峰的还车量较多，一个推测是：通常上班族会在临近上班的时间到达目的地，因此还车量在这个时刻会很高，而出发时间取决于其居住地点的远近，因此借车量没有还车量高。</p>
@@ -454,19 +433,20 @@ stopuse &lt;-<span class="st"> </span><span class="kw">unique</span>(trip[,.(bac
 <p>分用户类型统计周内日均还车量。至此，你应该充分掌握了绘制条形图的方法，尝试将游客和居民的周内日均还车量绘制成条形图。理解不同用户类型的出行特点并解读。提示，工作日使用单车多，还是非工作日多？不同人群一样吗？</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###定义绘制某类用户周内日均还车量直方图的函数###
 <span class="kw">detach</span>(<span class="st">&quot;package:data.table&quot;</span>)                                <span class="co">#由于&quot;data.table&quot;和&quot;lubridate&quot;有共同的函数，因此临时detach一个包</span>
-PlotUserBack &lt;-<span class="st"> </span><span class="cf">function</span>(usertype){                         <span class="co">#绘制日均还车量（星期）条形图函数</span>
-  subtrip &lt;-<span class="st"> </span>trip[trip<span class="op">$</span>usertype <span class="op">==</span><span class="st"> </span>usertype,]               <span class="co">#选出不同类型的骑车人</span>
+PlotUserBack &lt;-<span class="st"> </span><span class="cf">function</span>(user){                         <span class="co">#绘制日均还车量（星期）条形图函数</span>
+  subtrip &lt;-<span class="st"> </span>trip[trip<span class="op">$</span>usertype <span class="op">==</span><span class="st"> </span>user,]               <span class="co">#选出不同类型的骑车人</span>
   day_in_week &lt;-<span class="st"> </span><span class="kw">c</span>()
-  day_in_week &lt;-<span class="st"> </span><span class="kw">wday</span>(subtrip<span class="op">$</span>stoptime,<span class="dt">label =</span> T)           <span class="co">#取出还车时间的星期</span>
+  day_in_week &lt;-<span class="st"> </span><span class="kw">weekdays</span>(subtrip<span class="op">$</span>stoptime)
+  <span class="co"># day_in_week &lt;- wday(subtrip$stoptime,label = T)           #取出还车时间的星期</span>
   sub_back_date &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">date =</span> day_in_week)           <span class="co">#设置还车星期数据框</span>
-  sub_back_date<span class="op">$</span>date =<span class="st"> </span><span class="kw">factor</span>(sub_back_date<span class="op">$</span>date, <span class="dt">levels=</span><span class="kw">c</span>(<span class="st">&#39;周一&#39;</span>,<span class="st">&#39;周二&#39;</span>,<span class="st">&#39;周三&#39;</span>,<span class="st">&#39;周四&#39;</span>,<span class="st">&#39;周五&#39;</span>,<span class="st">&#39;周六&#39;</span>,<span class="st">&#39;周日&#39;</span>)) <span class="co">#重新对星期level排序</span>
+  sub_back_date<span class="op">$</span>date =<span class="st"> </span><span class="kw">factor</span>(sub_back_date<span class="op">$</span>date, <span class="dt">levels=</span><span class="kw">c</span>(<span class="st">&#39;星期一&#39;</span>,<span class="st">&#39;星期二&#39;</span>,<span class="st">&#39;星期三&#39;</span>,<span class="st">&#39;星期四&#39;</span>,<span class="st">&#39;星期五&#39;</span>,<span class="st">&#39;星期六&#39;</span>,<span class="st">&#39;星期日&#39;</span>)) <span class="co">#重新对星期level排序</span>
   <span class="kw">ggplot</span>(sub_back_date, <span class="kw">aes</span>(<span class="dt">x=</span>date)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;count&quot;</span>,<span class="dt">fill=</span><span class="st">&quot;steelblue4&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;星期&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;还车量&quot;</span>)                                       <span class="co">#绘制一周内日均还车量直方图</span>
 }   
 
 <span class="kw">PlotUserBack</span>(<span class="st">&quot;Subscriber&quot;</span>)                                    <span class="co">#绘制居民日均还车量</span></code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">PlotUserBack</span>(<span class="st">&quot;Customer&quot;</span>)                                        <span class="co">#绘制游客日均还车量</span></code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-21-2.png" width="672" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(data.table)                                         <span class="co">#再library回刚才的data.table包</span></code></pre></div>
 <p><strong>分析</strong></p>
 <p>还车量可以代表出行数量，由直方图可以看出，不同类型的用户具有不同的出行时间特点。</p>
@@ -503,7 +483,7 @@ totalfreq &lt;-<span class="st"> </span><span class="kw">sum</span>(trip_use_tim
 ##    1.00   28.03   55.25   93.55 1436.43</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">###绘制出行时长累积密度曲线###
 <span class="kw">ggplot</span>(use_time_freq) <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">x =</span> time, <span class="dt">y =</span> accu_pro)) <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;出行时长（单位：分钟）&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;Pr[X&lt;x]&quot;</span>)</code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 <p><strong>分析</strong></p>
 <p>累积分布曲线的斜率是概率密度，因此由图可以看出，行程每增加一分钟，数量增加的越来越少。行程符合“二八定律”，即行程短的数量多，行程较长的数量少。</p>
 <p><strong>任务九</strong></p>

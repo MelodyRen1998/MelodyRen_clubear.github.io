@@ -25,7 +25,7 @@
 <meta name="author" content="yimeng">
 
 
-<meta name="date" content="2018-09-11">
+<meta name="date" content="2018-09-27">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -113,12 +113,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#section-1.3"><i class="fa fa-check"></i><b>1.3</b> 人才计划导师天团</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="wind.html"><a href="wind.html"><i class="fa fa-check"></i><b>2</b> 人才计划章程</a><ul>
-<li class="chapter" data-level="2.1" data-path="wind.html"><a href="wind.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 纪律</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="wind.html"><a href="wind.html#ddl"><i class="fa fa-check"></i><b>2.1.1</b> DDL</a></li>
-<li class="chapter" data-level="2.1.2" data-path="wind.html"><a href="wind.html#section-2.1.2"><i class="fa fa-check"></i><b>2.1.2</b> 礼貌</a></li>
-<li class="chapter" data-level="2.1.3" data-path="wind.html"><a href="wind.html#section-2.1.3"><i class="fa fa-check"></i><b>2.1.3</b> 作业</a></li>
-<li class="chapter" data-level="2.1.4" data-path="wind.html"><a href="wind.html#section-2.1.4"><i class="fa fa-check"></i><b>2.1.4</b> 退出</a></li>
-</ul></li>
+<li class="chapter" data-level="2.1" data-path="wind.html"><a href="wind.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 纪律</a></li>
 <li class="chapter" data-level="2.2" data-path="wind.html"><a href="wind.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 禁止抄袭</a></li>
 <li class="chapter" data-level="2.3" data-path="wind.html"><a href="wind.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 作业质量</a></li>
 <li class="chapter" data-level="2.4" data-path="wind.html"><a href="wind.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 自学</a></li>
@@ -237,22 +232,22 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>某银行的董事长兼CEO老王发现最近消费金融的发展如火如荼，于是也计划在自己的公司开展提供消费贷款的服务，以吸引更多的客户，提高本公司收益规模。但是提供什么样的贷款才能吸引更多的申请客户呢？老王为此十分着急。就在此时，得力助手小张获取了1046家消费金融公司所发放的，贷款金额为10万元、还款期限为12月的消费贷款明细，包括审批时间、担保方式等7个借贷变量，月供、还款总费用等4个还贷变量，以及贷款申请人数变量。老王在对数据进行深入了解后，凭借大学掌握的统计学知识开展了描述性分析，看看什么因素对贷款的申请人数有影响。</p>
 <div id="section-6.3.1" class="section level3">
 <h3><span class="header-section-number">6.3.1</span> 对申请人数（因变量）进行描述</h3>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 <p>由直方图（图1）可以看出，申请人数呈现明显的右偏分布。具体而言，申请人数的均值为1201人，中位数为33人，最大值为62898人，最小值为0人。由于均值容易受异常值影响，因此均值与中位数相差较大是由于有几个申请人数非常多的贷款产品存在。这在老王的预料范围之内——相当出色的贷款产品是少数，也存在很多没有申请人数的贷款产品。因此老王推测，在形形色色的贷款产品中，大多数人都会选择市面上口碑较好、贷款人数较多的，从而导致有少数极端热门贷款和部分无人申请贷款的局面出现。鉴于数据明显右偏，后续的直方图分类比较中，老王做了取对数的处理，从而使得对比结果更直观。</p>
 </div>
 <div id="section-6.3.2" class="section level3">
 <h3><span class="header-section-number">6.3.2</span> 对借贷变量（自变量）进行描述</h3>
 <p>老王的公司具有全国各地分公司，但是应该在哪一家分公司发行消费贷款产品呢？他对不同城市贷款产品的申请人数绘制了直方图。 由图2看出，济南的申请人数平均水平（中位数）最低，重庆的最高，除了这两个城市之外，其他10个城市平均水平（中位数）和波动范围的差异比较不明显。其中上海和深圳的平均水平较高，贷款规模较大的数量也比较多，老王认为这是两所城市消费水平较高所导致的；对于北京的贷款规模平平，老王查阅资料后发现消费金融是不能经营“车贷”和“房贷”的，而北京市民更多负担房贷，消费金融水平自然就不高了；成都、重庆、杭州和西安四所城市的贷款规模较高，他推测这四所新一线城市的经济快速增长带来了消费金融的繁荣。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 <p>从借入贷款的角度考虑，贷款人提出申请到发放贷款之间等待的总时长是否会影响贷款规模呢？通过条形图（图3），老王发现间隔时间为3-4天的贷款产品申请人数最多，随着等待时间的增加，申请人数整体呈现降低趋势。他猜想，间隔时间太短，可能会给客户留下审批程序不严格的不良印象，而时间太长又会引起客户的不耐烦，因此等待时长3-4天为最佳。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
 <p>担保方式不同的贷款产品会不会对客户的申请借款意愿产生影响呢？老王通过箱线图发现，“担保贷”竟然是一条直线！原来是因为“担保贷”的数据中申请人数非零的只有一条。其他三种担保方式中，信用贷的申请人数平均水平（中位数）明显高于“抵押贷”和“自由选”，说明凭借借款人信誉，无需提供抵押品或第三方担保的贷款更受客户青睐。</p>
 </div>
 <div id="section-6.3.3" class="section level3">
 <h3><span class="header-section-number">6.3.3</span> 对还贷变量（自变量）进行描述</h3>
 <p>从还款过程来看，月管理费（图5）收取的是每个月的利息，而“一次性收费”的贷款产品申请人数全为0，因此老王没有将这一种放在比较范围内。箱线图显示，“参考月利率”方式的平均申请人数高于“月管理费”方式，说明客户更喜欢申请按照贷款余额的一定比例计算利息，老王推测，由于贷款余额是可调整的，客户会更偏好按照不同时期个人经济状况来调整月管理费水平。</p>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-34-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-34-2.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-28-1.png" width="672" /><img src="bookdown_files/figure-html/unnamed-chunk-28-2.png" width="672" /></p>
 <p>三种还款方式中（图6），老王发现分期还款的贷款产品申请人数最多，他推测进行消费借贷的客户一般是经济状况不够好的，而到期还款和随借随还的还贷压力较大，分期还款更适合这一类贷款人。</p>
 </div>
 <div id="section-6.3.4" class="section level3">
@@ -297,7 +292,7 @@ data_no_zero &lt;-<span class="st"> </span><span class="kw">data.table</span>(da
 data_no_zero[,med_apply <span class="op">:</span><span class="er">=</span><span class="st"> </span><span class="kw">median</span>(apply), by =<span class="st"> &quot;city&quot;</span>]                <span class="co">#计算每个城市申请人数的中位数</span>
 <span class="kw">ggplot</span>(data_no_zero, <span class="kw">aes</span>(<span class="dt">x =</span> city,<span class="dt">y=</span><span class="kw">log</span>(apply)))<span class="op">+</span><span class="st">                     </span><span class="co">#绘制箱线图</span>
 <span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>city))<span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>data_no_zero,<span class="kw">aes</span>(<span class="dt">x=</span><span class="kw">factor</span>(city),<span class="dt">y=</span><span class="kw">log</span>(med_apply)),<span class="dt">shape=</span><span class="dv">15</span>,<span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>data_no_zero,<span class="kw">aes</span>(<span class="dt">x=</span><span class="kw">reorder</span>(city, med_apply),<span class="dt">y=</span><span class="kw">log</span>(med_apply)),<span class="dt">shape=</span><span class="dv">15</span>,<span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data=</span>data_no_zero,<span class="kw">aes</span>(<span class="dt">x=</span>city,<span class="dt">y=</span><span class="kw">log</span>(med_apply),<span class="dt">group =</span> <span class="dv">1</span>),<span class="dt">color =</span> <span class="st">&quot;black&quot;</span>,<span class="dt">size=</span><span class="dv">1</span>,<span class="dt">linetype =</span> <span class="dv">1</span>)<span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;城市&quot;</span>,<span class="dt">y =</span> <span class="st">&quot;申请人数&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;城市&quot;</span>)<span class="op">+</span>
 <span class="st">  </span><span class="kw">my_ggtheme</span>()

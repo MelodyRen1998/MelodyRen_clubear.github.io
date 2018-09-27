@@ -212,38 +212,54 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(readxl)
 task_3_data &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;task_3_data.xlsx&quot;</span>)  <span class="co">#读入数据</span>
 <span class="kw">summary</span>(task_3_data)                           <span class="co">#变量概览</span></code></pre></div>
-<pre><code>##    公司名称             城市             贷款金额        
-##  Length:1046        Length:1046        Length:1046       
-##  Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character  
-##                                                          
-##                                                          
-##                                                          
-##                                                          
-##      期限                月供         还款总费用     月管理费        
-##  Length:1046        Min.   : 8333   Min.   :0.00   Length:1046       
-##  Class :character   1st Qu.: 9333   1st Qu.:1.22   Class :character  
-##  Mode  :character   Median :10133   Median :2.16   Mode  :character  
-##                     Mean   : 9984   Mean   :1.99                     
-##                     3rd Qu.:10633   3rd Qu.:2.76                     
-##                     Max.   :12633   Max.   :5.16                     
-##                                                                      
-##   期限最低范围    期限最高范围     还款方式           放款日期        
-##  Min.   : 1.00   Min.   : 12.0   Length:1046        Length:1046       
-##  1st Qu.: 3.00   1st Qu.: 36.0   Class :character   Class :character  
-##  Median :12.00   Median : 36.0   Mode  :character   Mode  :character  
-##  Mean   : 8.36   Mean   : 36.7                                        
-##  3rd Qu.:12.00   3rd Qu.: 36.0                                        
-##  Max.   :12.00   Max.   :360.0                                        
-##                                                                       
-##     审批时间    担保方式            申请人数       申请条件        
-##  Min.   : 0   Length:1046        Min.   :    0   Length:1046       
-##  1st Qu.: 1   Class :character   1st Qu.:    0   Class :character  
-##  Median : 2   Mode  :character   Median :   33   Mode  :character  
-##  Mean   : 2                      Mean   : 1201                     
-##  3rd Qu.: 2                      3rd Qu.:  462                     
-##  Max.   :21                      Max.   :62898                     
-##  NA&#39;s   :2</code></pre>
+<pre><code>##    公司名称             城市          
+##  Length:1046        Length:1046       
+##  Class :character   Class :character  
+##  Mode  :character   Mode  :character  
+##                                       
+##                                       
+##                                       
+##                                       
+##    贷款金额             期限                月供      
+##  Length:1046        Length:1046        Min.   : 8333  
+##  Class :character   Class :character   1st Qu.: 9333  
+##  Mode  :character   Mode  :character   Median :10133  
+##                                        Mean   : 9984  
+##                                        3rd Qu.:10633  
+##                                        Max.   :12633  
+##                                                       
+##    还款总费用     月管理费          期限最低范围  
+##  Min.   :0.00   Length:1046        Min.   : 1.00  
+##  1st Qu.:1.22   Class :character   1st Qu.: 3.00  
+##  Median :2.16   Mode  :character   Median :12.00  
+##  Mean   :1.99                      Mean   : 8.36  
+##  3rd Qu.:2.76                      3rd Qu.:12.00  
+##  Max.   :5.16                      Max.   :12.00  
+##                                                   
+##   期限最高范围     还款方式           放款日期        
+##  Min.   : 12.0   Length:1046        Length:1046       
+##  1st Qu.: 36.0   Class :character   Class :character  
+##  Median : 36.0   Mode  :character   Mode  :character  
+##  Mean   : 36.7                                        
+##  3rd Qu.: 36.0                                        
+##  Max.   :360.0                                        
+##                                                       
+##     审批时间    担保方式            申请人数    
+##  Min.   : 0   Length:1046        Min.   :    0  
+##  1st Qu.: 1   Class :character   1st Qu.:    0  
+##  Median : 2   Mode  :character   Median :   33  
+##  Mean   : 2                      Mean   : 1201  
+##  3rd Qu.: 2                      3rd Qu.:  462  
+##  Max.   :21                      Max.   :62898  
+##  NA&#39;s   :2                                      
+##    申请条件        
+##  Length:1046       
+##  Class :character  
+##  Mode  :character  
+##                    
+##                    
+##                    
+## </code></pre>
 </div>
 <div id="good-work-1" class="section level2">
 <h2><span class="header-section-number">4.3</span> Good Work</h2>

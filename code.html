@@ -331,38 +331,54 @@ trip[,<span class="kw">c</span>(<span class="st">&quot;starttime_h&quot;</span>,
 ##  3rd Qu.:9304310   3rd Qu.:2016-04-23 19:05:00  
 ##  Max.   :9379901   Max.   :2016-04-30 23:59:00  
 ##                                                 
-##     stoptime                       bikeid      tripduration  
-##  Min.   :2016-04-01 00:09:00   Min.   :   1   Min.   :   60  
-##  1st Qu.:2016-04-12 18:26:00   1st Qu.:1317   1st Qu.:  381  
-##  Median :2016-04-17 20:39:00   Median :2595   Median :  656  
-##  Mean   :2016-04-17 15:26:46   Mean   :2531   Mean   :  942  
-##  3rd Qu.:2016-04-23 19:25:00   3rd Qu.:3773   3rd Qu.: 1114  
-##  Max.   :2016-05-01 14:55:00   Max.   :4837   Max.   :86186  
-##                                                              
-##  from_station_id                    from_station_name  to_station_id
-##  Min.   :  2     Streeter Dr &amp; Grand Ave     :  3860   Min.   :  2  
-##  1st Qu.: 75     Clinton St &amp; Washington Blvd:  3588   1st Qu.: 74  
-##  Median :158     Lake Shore Dr &amp; Monroe St   :  3176   Median :157  
-##  Mean   :177     Clinton St &amp; Madison St     :  2760   Mean   :177  
-##  3rd Qu.:268     Theater on the Lake         :  2549   3rd Qu.:268  
-##  Max.   :511     Canal St &amp; Adams St         :  2486   Max.   :511  
-##                  (Other)                     :213216                
-##                      to_station_name         usertype         gender      
-##  Streeter Dr &amp; Grand Ave     :  4624   Customer  : 49392         : 49418  
-##  Canal St &amp; Madison St       :  3205   Subscriber:182243   Female: 42947  
-##  Clinton St &amp; Washington Blvd:  3131                       Male  :139270  
-##  Lake Shore Dr &amp; Monroe St   :  3039                                      
-##  Theater on the Lake         :  2672                                      
-##  Clinton St &amp; Madison St     :  2528                                      
-##  (Other)                     :212436                                      
-##    birthyear      starttime_h     stoptime_h  
-##  Min.   :1899    Min.   : 0.0   Min.   : 0.0  
-##  1st Qu.:1974    1st Qu.:10.0   1st Qu.:10.0  
-##  Median :1983    Median :14.0   Median :15.0  
-##  Mean   :1980    Mean   :13.6   Mean   :13.8  
-##  3rd Qu.:1988    3rd Qu.:17.0   3rd Qu.:17.0  
-##  Max.   :2000    Max.   :23.0   Max.   :23.0  
-##  NA&#39;s   :49392                                
+##     stoptime                       bikeid    
+##  Min.   :2016-04-01 00:09:00   Min.   :   1  
+##  1st Qu.:2016-04-12 18:26:00   1st Qu.:1317  
+##  Median :2016-04-17 20:39:00   Median :2595  
+##  Mean   :2016-04-17 15:26:46   Mean   :2531  
+##  3rd Qu.:2016-04-23 19:25:00   3rd Qu.:3773  
+##  Max.   :2016-05-01 14:55:00   Max.   :4837  
+##                                              
+##   tripduration   from_station_id
+##  Min.   :   60   Min.   :  2    
+##  1st Qu.:  381   1st Qu.: 75    
+##  Median :  656   Median :158    
+##  Mean   :  942   Mean   :177    
+##  3rd Qu.: 1114   3rd Qu.:268    
+##  Max.   :86186   Max.   :511    
+##                                 
+##                     from_station_name  to_station_id
+##  Streeter Dr &amp; Grand Ave     :  3860   Min.   :  2  
+##  Clinton St &amp; Washington Blvd:  3588   1st Qu.: 74  
+##  Lake Shore Dr &amp; Monroe St   :  3176   Median :157  
+##  Clinton St &amp; Madison St     :  2760   Mean   :177  
+##  Theater on the Lake         :  2549   3rd Qu.:268  
+##  Canal St &amp; Adams St         :  2486   Max.   :511  
+##  (Other)                     :213216                
+##                      to_station_name  
+##  Streeter Dr &amp; Grand Ave     :  4624  
+##  Canal St &amp; Madison St       :  3205  
+##  Clinton St &amp; Washington Blvd:  3131  
+##  Lake Shore Dr &amp; Monroe St   :  3039  
+##  Theater on the Lake         :  2672  
+##  Clinton St &amp; Madison St     :  2528  
+##  (Other)                     :212436  
+##        usertype         gender         birthyear    
+##  Customer  : 49392         : 49418   Min.   :1899   
+##  Subscriber:182243   Female: 42947   1st Qu.:1974   
+##                      Male  :139270   Median :1983   
+##                                      Mean   :1980   
+##                                      3rd Qu.:1988   
+##                                      Max.   :2000   
+##                                      NA&#39;s   :49392  
+##   starttime_h     stoptime_h  
+##  Min.   : 0.0   Min.   : 0.0  
+##  1st Qu.:10.0   1st Qu.:10.0  
+##  Median :14.0   Median :15.0  
+##  Mean   :13.6   Mean   :13.8  
+##  3rd Qu.:17.0   3rd Qu.:17.0  
+##  Max.   :23.0   Max.   :23.0  
+##                               
 ##        t                      
 ##  Min.   :2016-04-01 00:14:00  
 ##  1st Qu.:2016-04-12 18:24:00  
